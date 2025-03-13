@@ -175,22 +175,15 @@ h1, h2, h3 {
 
 /* Video boucle en haut de app */
 
-.video-container-app {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
+.video-container-appGIF {
+  position: center;
+  top: 0; /* Colle la vidéo tout en haut */
+  left: 0;
+  width: 110vw;
+  height: 90vh;
   overflow: hidden;
 }
 
-.background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1; /* Place la vidéo derrière le contenu */
-}
 
 /*  Ajustement du texte dans le bandeau_bleu */
 
