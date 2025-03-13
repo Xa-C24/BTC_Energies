@@ -2,7 +2,7 @@
   <div ref="sidebar" class="sidebar">
     <!-- Logo en haut de la sidebar -->
     <div ref="logoL" class="logo-containerL mb-6 flex justify-center">
-      <img src="/logo_btc.png" alt="BTC Énergies Logo"/>
+      <img src="/logo_sidebar.png" alt="BTC Énergies Logo"/>
     </div>
 
     <br>
@@ -74,7 +74,7 @@ export default {
         duration: 0.3,
         ease: "power2.out",
       });
-    }); // ← Cette accolade ferme correctement la boucle forEach()
+    }); //  Cette accolade ferme correctement la boucle forEach()
   });
 
       gsap.from(logoS.value, {
