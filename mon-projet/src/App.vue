@@ -1,6 +1,27 @@
 <template>
   <div id="app" class="flex flex-col font-montserrat">
     <Header />
+    
+    <template>
+  <div id="app" class="flex flex-col font-montserrat">
+    <Header />
+
+  </div>
+</template>
+
+        <!-- Affichage de la vidéo en local -->
+        <div class="relative w-full h-[90vh] flex items-center justify-center overflow-hidden">
+          <video 
+            class="absolute w-full h-full object-cover"
+            autoplay 
+            loop 
+            muted 
+            playsinline>
+            <source src="/videos/videoplayback.mp4" type="video/mp4" />
+            Votre navigateur ne supporte pas la lecture de vidéos.
+          </video>
+        </div>
+
 
     <!-- Bandeau bleu fixe -->
     <div class="bandeau_bleu">
@@ -22,7 +43,7 @@
     <!-- 1 -->
     <div class="page-blanche_app-block">
       <div class="page-blanche_app-logo">
-        <img src="/logo1app.png" alt="Nos services">
+        <img src="/logo1app.png" alt="Nos services BTC Energies">
       </div>
 
       <div class="page-blanche_app-content">
@@ -35,7 +56,7 @@
     <!-- 2 -->
     <div class="page-blanche_app-block">
       <div class="page-blanche_app-logo"> 
-        <img src="/logo2app.png" alt="Nos services">
+        <img src="/logo2app.png" alt="Nos services BTC Energies">
       </div>
 
       <div class="page-blanche_app-content">
@@ -49,7 +70,7 @@
     <!-- 3 -->
     <div class="page-blanche_app-block">
       <div class="page-blanche_app-logo"> 
-        <img src="/logo3app.png" alt="Nos services">
+        <img src="/logo3app.png" alt="Nos services BTC Energies">
       </div>
 
       <div class="page-blanche_app-content">
@@ -63,7 +84,7 @@
       <!-- 4 -->
       <div class="page-blanche_app-block">
         <div class="page-blanche_app-logo"> 
-        <img src="/logo4app.png" alt="Nos services">
+        <img src="/logo4app.png" alt="Nos services BTC Energies">
       </div>
 
       <div class="page-blanche_app-content">
@@ -75,7 +96,7 @@
       <!-- 5 -->
       <div class="page-blanche_app-block">
       <div class="page-blanche_app-logo"> 
-        <img src="/logo5app.png" alt="Nos services">
+        <img src="/logo5app.png" alt="Nos services BTC Energies">
       </div>
 
       <div class="page-blanche_app-content">
@@ -87,7 +108,7 @@
       <!-- 6 -->
       <div class="page-blanche_app-block">
       <div class="page-blanche_app-logo"> 
-        <img src="/logo6app.png" alt="Nos services">
+        <img src="/logo6app.png" alt="Nos services BTC Energies">
       </div>
 
       <div class="page-blanche_app-content">
@@ -100,8 +121,7 @@
 </section>
 
     
-<div class="border-t-2 border-gray-400 my-6"></div>
-
+<div class="border-t-2 border-[#8BC367] w-16 mx-auto mt-2"></div>
 
 
 <!-- Section Notre Constat -->
@@ -122,10 +142,89 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen>
       </iframe>
+      
     </div>
+    
   </div>
+
 </section>
 
+      <div class="border-t-2 border-[#8BC367] w-16 mx-auto mt-2"></div>
+
+    <section class="page-blanche_app">
+      <div class="page-blanche_app-wrapper"> 
+        <h2 class="page-blanche_app-title">Notre équipe</h2>
+        <div class="page-blanche_app-Trombi"> 
+<br>   
+</div>
+
+    <!-- Trombinoscope app.vue-->
+
+        <div class="trombinoscope-app-container">
+            <div class="profile">
+              <img src="/Trombi/T_B.png" alt="Trombinoscope BTC Energie">
+              <p class="profile-name">Thibault Béthencourt</p>
+              <p class="profile-title">Président (CEO)</p>
+              <p class="profile-role">Porteur de projet</p>
+              <p class="profile-phone">+33 6 29 56 07 56</p>
+            </div>
+
+            <div class="profile">
+              <img src="/Trombi/A_D.png" alt="Trombinoscope BTC Energie">
+              <p class="profile-name">Alain Degans</p>
+              <p class="profile-title">Directeur Général (COO)</p>
+              <p class="profile-phone">+33 6 29 56 07 56</p>
+            </div>
+
+            <div class="profile">
+              <img src="/Trombi/C_F.png" alt="Trombinoscope BTC Energie">
+              <p class="profile-name">Camille Faure</p>
+              <p class="profile-title">Responsable RH</p>
+              <p class="profile-title">(HR Manager)</p>
+            </div>
+
+            <div class="profile">
+              <img src="/Trombi/R_P.png" alt="Trombinoscope BTC Energie">
+              <p class="profile-name">Rémi Pichonneau</p>
+              <p class="profile-title">Responsable Technique</p>
+              <p class="profile-title">(CTO)</p>
+            </div>
+
+            <div class="profile">
+              <img src="/Trombi/O_C.png" alt="Trombinoscope BTC Energie">
+              <p class="profile-name">Olivier Cot</p>
+              <p class="profile-title">Responsable Commercial</p>
+              <p class="profile-title">(CBO)</p>
+            </div>
+        
+            <div class="profile">
+              <img src="/Trombi/P_S.png" alt="Trombinoscope BTC Energie">
+              <p class="profile-name">Philippe Stuarik</p>
+              <p class="profile-title">Responsable QHSE</p>
+              <p class="profile-title">(QSE Manager)</p>
+            </div>
+
+            <div class="profile">
+              <img src="/Trombi/A_O.png" alt="Trombinoscope BTC Energie">
+              <p class="profile-name">Anaïs Olive</p>
+              <p class="profile-title">Cheffe de proje Outre Mer</p>
+              <p class="profile-title">(Project Manager)</p>
+            </div>
+
+
+            <div class="profile">
+              <img src="/Trombi/Rubie.png" alt="Trombinoscope BTC Energie">
+              <p class="profile-name">Rubie </p>
+              <p class="profile-title">Responsable Bien-être au travail</p>
+              <p class="profile-title">(Chief Happiness Officer)</p>
+            </div>
+
+      </div>
+
+        </div>
+
+         
+      </section>
     <div class="content flex">
       <Sidebar />
       <div class="flex-1 p-6">
@@ -221,5 +320,12 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import "./assets/styles.css";
 
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajuste la hauteur comme tu veux */
+}
 
 </style>
+
