@@ -1,12 +1,16 @@
+/* ========================
+   VARIABLES & BASE
+=========================*/
+
 /* Variables personnalisées */
 :root {
-  --primary-color: #003b46; /* Couleur de fond principale */
-  --secondary-color: #f1642c; /* Couleur secondaire pour les accents */
-  --text-color: #ffffff; /* Couleur du texte principal */
-  --background-color: #f4f4f4; /* Couleur de fond générale */
+  --primary-color: #003b46;       /* Couleur de fond principale */
+  --secondary-color: #f1642c;     /* Couleur secondaire pour les accents */
+  --text-color: #ffffff;          /* Couleur du texte principal */
+  --background-color: #f4f4f4;    /* Couleur de fond générale */
 }
 
-/* Appliquer la couleur primaire au body */
+/* Base */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -14,42 +18,42 @@ body {
   color: var(--text-color);
 }
 
-/* Modifier le texte des titres */
 h1, h2, h3 {
   color: var(--primary-color);
   font-weight: bold;
 }
 
-/* Par exemple, un bouton personnalisé */
+/* Bouton personnalisé */
 .btn-custom {
   background-color: var(--secondary-color);
   color: var(--text-color);
-  padding: 10px 20px;
+  padding: 0.6rem 1.2rem;
   border-radius: 5px;
   text-align: center;
+  cursor: pointer;
 }
-
 .btn-custom:hover {
-  background-color: #019d92; /* Un peu plus foncé au survol */
+  background-color: #019d92; 
 }
 
-
-
-/* ================ Sidebar ================== 
-==============================================*/
-
+/* ========================
+   SIDEBAR
+=========================*/
 
 .sidebar {
   background: linear-gradient(to right, #000417, #040c29, #0c2049, #1a2f5e);
   font-family: 'Urbanist', sans-serif;
   font-weight: bold;
-  max-width: 20vw; /* Limite sa largeur en responsive */
-  min-width: 200px;
-  position: fixed; /* Utilisation de `fixed` pour la position */
-  left: 0; /* Positionner à gauche */
+  position: fixed; /* Sidebar fixe par défaut sur desktop */
+  left: 0;
   top: 0;
-  padding-top: 40px;
-  z-index: 10; /* Pour s'assurer qu'elle soit au-dessus des autres éléments */
+  z-index: 10;         /* Pour s'assurer qu'elle soit au-dessus du contenu */
+  padding-top: .5rem; /* Espace en haut pour le logo / menu */
+  
+  /* Largeur définie en % ou vw pour s’adapter */
+  width: 20vw;         /* Sur grands écrans : 20% de la fenêtre */
+  min-width: 200px;    /* Taille minimale pour ne pas trop rétrécir */
+  max-width: 300px;    /* Évite qu’elle devienne trop large */
 }
 
 .sidebar ul {
@@ -59,242 +63,221 @@ h1, h2, h3 {
 }
 
 .sidebar ul li {
-  padding: 6px;
+  padding: 0.4rem 0.8rem;
 }
 
 .sidebar ul li a {
   font-family: 'Urbanist', sans-serif;
-  font-size: 16px;  /* Modifie la taille du texte des pages */
-  color: white;
+  font-size: 1rem;
+  color: #fff;
   text-decoration: none;
 }
 
 .sidebar ul li a:hover {
-  color: #22b17a; /* Effet hover */
+  color: #22b17a;
 }
 
-/* Ajouter un style personnalisé pour garantir une taille correcte */
+/* Zone du logo */
 .logo-container img {
-  width: 100%;  /* S'assurer que l'image prenne toute la largeur */
-  height: auto;  /* Garder les proportions de l'image */
-  object-fit: contain;  /* Maintenir l'intégrité de l'image sans la déformer */
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
+/* Trois variantes de logo (si besoin) */
 .logo-containerL img {
-  width: 120px;  /* Réduire la largeur */
-  height: auto;  /* La hauteur s'ajustera automatiquement pour garder les proportions */
-  object-fit: contain;  /* Maintenir les proportions sans déformer l'image */
+  width: 120px; 
+  height: auto;
+  object-fit: contain;
 }
 
 .logo-containerS img {
-  width: 200px;  /* Réduire la largeur */
-  height: auto;  /* La hauteur s'ajustera automatiquement pour garder les proportions */
-  object-fit: contain;  /* Maintenir les proportions sans déformer l'image */
+  width: 200px;
+  height: auto;
+  object-fit: contain;
 }
 
-/* Appliquer un scroll avec une hauteur maximale */
+/* Liste déroulante scrollable */
 .scrollable-list {
-  max-height: 50vh; /* Limiter la hauteur à 70% de la hauteur de l'écran */
-  overflow-y: auto;   /* Activer le défilement vertical */
-  padding-right: 10px; /* Espacement à droite pour que la barre de défilement ne chevauche pas les éléments */
-  margin-top: 20px;    /* Pour espacer légèrement la liste du contenu au-dessus */
-  
-  /* Personnalisation de la barre de défilement */
-  scrollbar-width: thin;  /* Réduire la largeur de la barre de défilement */
-  scrollbar-color: transparent transparent; /* Cacher la barre de défilement */
-}
+  max-height: 50vh;      /* Limite la hauteur */
+  overflow-y: auto;      
+  padding-right: 0.6rem; /* Évite la superposition scrollbar/texte */
+  margin-top: 1.25rem;
 
-/* Pour les navigateurs basés sur WebKit (comme Chrome, Safari, etc.) */
+  /* Personnalisation scrollbar (Firefox & Webkit) */
+  scrollbar-width: thin;   
+  scrollbar-color: transparent transparent; 
+}
 .scrollable-list::-webkit-scrollbar {
-  width: 8px;  /* Largeur de la barre de défilement */
+  width: 8px;
 }
-
 .scrollable-list::-webkit-scrollbar-thumb {
-  background-color: transparent; /* Cache la partie principale de la barre */
+  background-color: transparent; 
 }
-
 .scrollable-list::-webkit-scrollbar-track {
-  background: transparent;  /* Couleur du fond de la barre de défilement */
+  background: transparent;
 }
 
-/* Flèches en haut et en bas */
+/* Flèches scrollbar webkit */
 .scrollable-list::-webkit-scrollbar-button:vertical:start {
   content: "";
   display: block;
-  width: 12px;
-  height: 12px;
+  width: 12px; height: 12px;
   background-color: transparent;
   border-left: 2px solid #22b17a;
   border-bottom: 2px solid #22b17a;
-  transform: rotate(45deg); /* Flèche en haut */
+  transform: rotate(45deg);
   margin: 0 auto;
 }
-
 .scrollable-list::-webkit-scrollbar-button:vertical:end {
   content: "";
   display: block;
-  width: 12px;
-  height: 12px;
+  width: 12px; height: 12px;
   background-color: transparent;
   border-left: 2px solid #22b17a;
   border-top: 2px solid #22b17a;
-  transform: rotate(225deg); /* Flèche en bas */
+  transform: rotate(225deg);
   margin: 0 auto;
 }
-/* Flèche centrée au-dessus du menu */
-.menu-arrow_H {
-  width: 5px;
-  height: 5px;
-  background-color: transparent;
-  border-left: 3px solid #22b17a;
-  border-bottom: 3px solid #22b17a;
-  transform: rotate(135deg); /* Rotation de la flèche */
-  margin: 0 auto; /* Centrer la flèche */
-  margin-bottom: 0.1px; /* Espacer de la liste */
-}
-/* Flèche centrée au-dessus du menu */
+
+/* Flèches au-dessus du menu */
+.menu-arrow_H,
 .menu-arrow_B {
   width: 5px;
   height: 5px;
   background-color: transparent;
   border-left: 3px solid #22b17a;
   border-bottom: 3px solid #22b17a;
-  transform: rotate(318deg); /* Rotation de la flèche */
-  margin: 0 auto; /* Centrer la flèche */
-  margin-bottom: 10px; /* Espacer de la liste */
+  margin: 0 auto;
+}
+.menu-arrow_H {
+  transform: rotate(135deg);
+  margin-bottom: 0.1px;
+}
+.menu-arrow_B {
+  transform: rotate(318deg);
+  margin-bottom: 0.6rem;
 }
 
 .active-link {
-  color: #22b17a; /* Vert pour le lien actif */
+  color: #22b17a;
   font-weight: bold;
 }
 
-/* ===================================================
-   -------------------App.vue-----------------------
-====================================================== */
+/* ========================
+   VIDEO EN ARRIERE-PLAN (App.vue)
+=========================*/
 
-/* Video boucle en haut de app */
-
-.video-container-appGIF {
-  position: center;
-  top: 0; /* Colle la vidéo tout en haut */
-  left: 0;
-  width: 110vw;
+/* Video boucle en haut */
+.video-wrapper {
+  width: 100vw;
   height: 90vh;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.video-container-appGIF {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* S'assure que la vidéo prend tout l'espace */
+}
 
-/*  Ajustement du texte dans le bandeau_bleu */
+/* ========================
+   BANDEAU BLEU
+=========================*/
 
 .bandeau_bleu {
   position: relative;
   background: linear-gradient(to right, #060A27, #152742, #5f7b9e);
-  padding: 5vw 0; /* Utilisation de vw pour un padding responsive */
-  width: 100%; /* S'assure que la bannière prend toute la largeur */
+  padding: 5vw 0;
+  width: 100%;
   max-width: 100%;
-  left: 0;
-  right: 0;
+  left: 0; right: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center; /* Centre le texte */
-  margin-left: 5vw;
+  text-align: center; 
 }
 
-/* Ajustement du container du texte */
+/* Container texte dans le bandeau */
 .bandeau_bleu-text-container {
-  max-width: 85%; /* Permet au texte d'avoir plus d’espace */
-  text-align: center; /* Centre bien le texte */
-  margin: 0 auto; /* Centre horizontalement */
+  max-width: 85%;
+  margin: 0 auto;
+  margin-right: 2vw;
+  padding: 0 4vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 15px;
-  margin-right: 2vw;
-  padding: 0 4vw
+  text-align: center;
 }
 
-/* Ajustement du texte */
+/* Texte du bandeau */
 .bandeau_bleu-text {
-  font-size: clamp(1.5rem, 2vw, 2.5rem); /* Texte responsive */
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
   color: rgb(238, 232, 232);
   letter-spacing: 1.5px;
-  white-space: normal; /* Évite que tout soit sur une seule ligne */
-  word-wrap: break-word; /* Coupe proprement si besoin */
+  white-space: normal; 
+  word-wrap: break-word;
   overflow-wrap: break-word;
-  max-width: 100%; /* Permet au texte de ne pas dépasser */
+  max-width: 100%;
 }
 
-/*  Traits au-dessus et en dessous du texte */
+/* Traits au-dessus et en dessous du texte */
 .bandeau_bleu-text-container::before,
 .bandeau_bleu-text-container::after {
   content: "";
-  width: 15vw; /* Taille responsive */
+  width: 15vw;
   height: 4px;
   background: linear-gradient(to right, #22b17a, #4fad89, #74b19a);
   display: block;
 }
 
-@media (max-width: 1024px) {
-  .bandeau_bleu {
-    margin-left: 12vw; /* 🔥 Ajuste légèrement pour les écrans plus petits */
-  }
+/* ========================
+   PAGE BLANCHE (Nos services, etc.)
+=========================*/
 
-  .bandeau_bleu-text-container {
-    transform: translateX(1vw); /* 🔥 Réduit le décalage */
-  }
-}
-
-@media (max-width: 768px) {
-  .bandeau_bleu {
-    margin-left: 0; /* 🔥 Supprime le décalage sur mobile */
-  }
-}
-
-/* ======== Section page blanche Vue.app Nos service Notre Constat ========  */
-
-.page-blanche_app-section {
+.page-blanche_app {
   display: flex;
   justify-content: center;
-  padding: 50px 20px;
+  padding: 3rem 1rem;
   background: #F4F4F4;
 }
 
 .page-blanche_app-wrapper {
-  background: #ffffff; /*  Cadre blanc */
-  padding: 40px;
-  border-radius: 12px; /* Coins arrondis */
-  box-shadow: 0px 100px 300px #31976B(516, 99, 99, 0.1); /*  Effet d'ombre */
-  max-width: 900px; /*  Largeur max */
-  width: 90%; /*  Permet au cadre de s'adapter aux petits écrans */
-  margin-left: 200px;
+  max-width: 900px; 
+  width: 100%;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0px 30px 60px rgba(49, 151, 107, 0.1);
 }
 
-/* Ajout d'un "max-width" pour empêcher le titre d'être trop large */
+/* Titre page blanche */
 .page-blanche_app-title {
-  font-size: 38px;
+  font-size: 2.375rem; /* 38px approx. */
   font-weight: bold;
   color: #777777;
   margin-bottom: 20px;
   max-width: 80%;
   margin: 0 auto;
+  text-align: center;  /* On centre le titre */
 }
 
-/* Trait sous le vert h3 */
-
+/* Trait sous le titre */
 .page-blanche_app-title::after {
-  content: ""; /* Pseudo-élément pour le trait */
+  content: "";
   display: block;
-  width: 70px; /* Longueur du trait */
-  height: 3px; /* Épaisseur */
-  background-color: #8BC367; /* Couleur verte */
-  margin: 8px auto 0; /* Centre le trait */
+  width: 70px;
+  height: 3px;
+  background-color: #8BC367;
+  margin: 8px auto 0;
 }
 
-
-/*  Centrer les éléments et éviter les coupures */
+/* Blocs internes */
 .page-blanche_app-block {
   display: flex;
   flex-direction: column;
@@ -302,21 +285,19 @@ h1, h2, h3 {
   margin-bottom: 30px;
 }
 
-/*  Ajustement des logos pour qu'ils s'adaptent aux petits écrans */
+/* Logos */
 .page-blanche_app-logo img {
-  width: 150px; /* Taille normale sur desktop */
+  width: 150px;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-/*  Limite la largeur du texte pour éviter qu'il soit trop étiré */
+/* Texte interne */
 .page-blanche_app-content {
   max-width: 80%;
   text-align: center;
 }
-
-/*  Ajustement du texte */
 .page-blanche_app-content h3 {
   font-size: 22px;
   color: #8BC34A;
@@ -328,80 +309,42 @@ h1, h2, h3 {
   margin: 15px 0;
 }
 
-
-/* 📱 Responsivité sur écrans plus petits (tablettes et mobiles) */
-@media (max-width: 768px) {
-  .page-blanche_app-wrapper {
-    padding: 30px; /* Réduit le padding pour éviter la perte d'espace */
-    width: 95%; /* Permet au cadre de mieux s'adapter sur mobile */
-  }
-
-  .page-blanche_app-title {
-    font-size: 24px; /*  Réduit la taille du titre pour éviter les coupures */
-  }
-
-  .page-blanche_app-logo img {
-    width: 80px; /*  Réduit la taille du logo sur mobile */
-  }
-
-  .page-blanche_app-content {
-    max-width: 95%; /*  Évite que le texte soit trop compressé */
-  }
-
-  .page-blanche_app-content p {
-    font-size: 14px; /*  Ajuste la taille du texte pour plus de lisibilité */
-  }
-}
-
-/* Trait de séparation entre chaque bloc */
-
+/* Trait de séparation */
 .border-t-2 {
   border-top: 2px solid #8BC367;
-  width: 80%;  /* La ligne fait 80% de la largeur de l’écran */
-  max-width: 800px;  /* Ne dépasse pas 800px */
+  width: 80%;
+  max-width: 800px;
   margin: 2px auto;
-  margin-left: 19vw; /* Décale la ligne vers la droite en fonction de la taille de l’écran */
-}
-@media (max-width: 768px) {  /* Écrans de moins de 768px (tablette et mobile) */
-  .border-t-2 {
-    width: 90%;  /* Règle la largeur */
-    margin-left: auto; /* Remet la ligne centrée */
-  }
 }
 
+/* ========================
+   VIDEO NOTRE CONSTAT
+=========================*/
 
-/* Video App.vue Notre Constat */
-
-.video-app-constat{
+.video-app-constat {
   position: relative;
   width: 100%;
-  max-width: 950px; /*  Ajuste la taille max */
-  margin: 30px auto; /*  Centre la vidéo */
+  max-width: 950px;
+  margin: 2rem auto;
   overflow: hidden;
-  box-shadow: 0px 30px 50px rgba(164, 212, 172, 0.1); /*  Effet d'ombre */
+  box-shadow: 0px 30px 50px rgba(164, 212, 172, 0.1);
 }
 
 .video-app-constat iframe {
   width: 100%;
-  height: 400px;
   height: 500px;
   border-radius: 12px;
 }
 
-/*  Responsive pour mobile */
-@media (max-width: 768px) {
-  .video-app-constatiframe {
-    height: 300px;
-  }
-}
-
-/* Trombinoscope App.vue */
+/* ========================
+   TROMBINOSCOPE
+=========================*/
 
 .trombinoscope-app-container {
   display: flex;
-  justify-content: center; /* Centre les images horizontalement */
-  align-items: center; /* Aligne verticalement */
-  gap: 50px; /* Espacement entre les images */
+  justify-content: center;
+  align-items: center;
+  gap: 3rem; 
 }
 
 .profile {
@@ -419,32 +362,178 @@ h1, h2, h3 {
   border: 2px solid #8BC367;
 }
 
-/*  Nom en plus grand et en gras */
 .profile-name {
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px */
   font-weight: bold;
-  font-family: "Montserrat", sans-serif; /* Change la police si nécessaire */
+  font-family: "Montserrat", sans-serif;
   color: #333;
 }
-
-/*  Titre en italique et plus petit */
 .profile-title {
-  font-size: 18px;
+  font-size: 1.125rem; 
   font-style: italic;
   font-family: "Georgia", serif;
   color: #555;
 }
-
-/*  Numéro en couleur */
 .profile-phone {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   color: #25A875;
 }
-
-/*  Rôle en couleur plus discrète */
 .profile-role {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   color: #555;
 }
+
+/* ========================
+   MEDIA QUERIES
+=========================*/
+
+/* --- 1) Grandes tablettes/écrans moyens --- 
+  .sidebar {
+    width: 25vw;
+    min-width: 180px; 
+    max-width: 250px;
+  }
+  .page-blanche_app-wrapper {
+    margin-left: 180px; 
+  }
+  .border-t-2 {
+    margin-left: 15vw;
+  }
+  .video-app-constat iframe {
+    height: 400px;
+  }
+}
+
+/* --- 2) Tablettes et écrans intermédiaires (max 768px) --- 
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9rem;
+  }
+  h1, h2, h3 {
+    font-size: 1.25rem; 
+  }
+  .sidebar {
+    width: 100%;
+    min-width: unset;
+    position: relative;  /* Ne sera plus fixée, évite chevauchement 
+    padding: 1rem 0;
+  }
+  .sidebar ul li {
+    text-align: center;
+  }
+
+  /* Logo sidebar 
+  .logo-container img {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  /* Vidéo App.vue 
+  .video-container-appGIF {
+    top: 0;
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  /* Bandeau bleu 
+  .bandeau_bleu {
+    padding: 10vw 0;
+  }
+  .bandeau_bleu-text-container {
+    max-width: 95%;
+    padding: 0 2vw;
+  }
+  .bandeau_bleu-text {
+    font-size: 1.2rem;
+  }
+
+  /* Section page blanche 
+  .page-blanche_app-section {
+    padding: 2rem 1rem;
+  }
+  .page-blanche_app-wrapper {
+    width: 95%;
+    padding: 1.5rem;
+  }
+  .page-blanche_app-title {
+    font-size: 1.375rem; /* ~22px 
+  }
+  .page-blanche_app-content h3 {
+    font-size: 1rem;
+  }
+  .page-blanche_app-content p {
+    font-size: 0.9rem;
+  }
+  .border-t-2 {
+    width: 90%;
+    margin-left: auto;
+  }
+
+  /* Vidéo Notre Constat 
+  .video-app-constat iframe {
+    height: 250px;
+  }
+
+  /* Trombinoscope 
+  .trombinoscope-app-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+  }
+  .profile-name {
+    font-size: 1rem;
+  }
+  .profile-title {
+    font-size: 0.9rem;
+  }
+  .profile-phone,
+  .profile-role {
+    font-size: 0.9rem;
+  }
+}
+
+/* --- 3) Petits smartphones (max 480px) --- 
+@media (max-width: 480px) {
+  body {
+    font-size: 0.8rem;
+  }
+  .sidebar {
+    padding: 0.5rem 0;
+  }
+  .sidebar ul li a {
+    font-size: 0.9rem; 
+  }
+
+  .video-container-appGIF {
+    height: 40vh;
+  }
+
+  .bandeau_bleu {
+    padding: 12vw 0; 
+  }
+  .bandeau_bleu-text {
+    font-size: 1rem;
+  }
+
+  .page-blanche_app-wrapper {
+    padding: 1rem;
+  }
+  .page-blanche_app-title {
+    font-size: 1.2rem;
+  }
+  .video-app-constat iframe {
+    height: 200px;
+  }
+  .profile img {
+    width: 120px;
+    height: 120px;
+  }
+}
+*/
