@@ -23,6 +23,7 @@
         </div>
 
 
+
     <!-- Bandeau bleu fixe -->
     <div class="bandeau_bleu">
       <div class="bandeau_bleu-text-container">
