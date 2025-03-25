@@ -242,7 +242,7 @@ h1, h2, h3 {
 .page-blanche_app {
     max-width: 100%;  /* Prend toute la largeur */
     width: 100vw;  /* 100% de la largeur de l’écran */
-    padding: 3rem 5vw; /* Ajoute un peu d’espace sur les côtés */
+    padding: 3rem 20vw; /* Ajoute un peu d’espace sur les côtés */
   }
 
 .page-blanche_app-wrapper {
