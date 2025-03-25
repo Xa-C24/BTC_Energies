@@ -2,6 +2,7 @@
 
 import { createApp } from 'vue'
 
+<<<<<<< HEAD
 // Styles globaux existants
 import './style.css'
 import './assets/tailwind.css'
@@ -30,4 +31,34 @@ const app = createApp(App)
 app.use(vuetify)
 
 // 6) On monte l’application
+=======
+// Styles globaux
+import './style.css'
+import './assets/tailwind.css'
+
+// Composant racine
+import App from './App.vue'
+import router from './router'
+
+// Vuetify
+import { createVuetify } from 'vuetify'
+import 'vuetify/styles'
+import * as components from 'vuetify/components'
+import * as directives from 'vuetify/directives'
+
+// Création des instances
+const vuetify = createVuetify({
+  components,
+  directives
+})
+
+// ✅ Crée une seule fois l'app
+const app = createApp(App)
+
+// ✅ Utilise Vuetify et le Router AVANT le mount
+app.use(vuetify)
+app.use(router)
+
+// ✅ Monte l’app une seule fois
+>>>>>>> d775ca6 (psh de photos page constat et accueil)
 app.mount('#app')

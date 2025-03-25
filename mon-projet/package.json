@@ -17,9 +17,14 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4.0.12",
     "@vitejs/plugin-vue": "^5.2.1",
-    "autoprefixer": "^10.4.20",
+    "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
-    "tailwindcss": "^4.0.12",
+    "tailwindcss": "^3.4.1",
     "vite": "^6.2.0"
-  }
+  },
+  "description": "Bienvenue dans le projet de refonte du site web de **BTC Énergies** ! Ce projet a pour objectif de moderniser et d'optimiser l'interface utilisateur, ainsi que d'améliorer les performances et les fonctionnalités du site existant.",
+  "main": "tailwind.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

@@ -1,5 +1,27 @@
 <template>
-  <div ref="sidebar" class="sidebar">
+
+<!-- BOUTON BURGER visible en mobile uniquement -->
+<button 
+  @click="toggleSidebar" 
+  class="md:hidden fixed top-4 left-4 z-50 bg-[#061832] text-white p-2 rounded shadow-lg">
+  ☰
+</button>
+
+<!-- OVERLAY FOND FLOU en mobile -->
+<div
+  v-if="isSidebarOpen"
+  @click="isSidebarOpen = false"
+  class="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
+></div>
+<div
+  ref="sidebar"
+  :class="[
+    'sidebar z-50 bg-[#061832] text-white fixed top-0 left-0 h-screen w-64 p-4',
+    isSidebarOpen ? 'block' : 'hidden',
+    'md:block'
+  ]"
+>
+
     <!-- Logo en haut de la sidebar -->
     <div ref="logoL" class="logo-containerL mb-6 flex justify-center">
       <img src="/logo_sidebar.png" alt="BTC Énergies Logo"/>
@@ -19,7 +41,12 @@
 
     <ul ref="menuList" class="scrollable-list font-Urbanist text-white text-lg">
       <li v-for="(item, index) in menuItems" :key="index" ref="menuItems">
-        <a href="#">{{ item }}</a>
+            <router-link
+          :to="item.route"
+          class="block hover:text-blue-500 transition-colors duration-300"
+        >
+          {{ item.label }}
+      </router-link>
       </li>
     </ul>
 
@@ -39,16 +66,22 @@ export default {
     const logoL = ref(null);
     const logoS = ref(null);
     const menuList = ref(null);
+    const isSidebarOpen = ref(false);
+    const toggleSidebar = () => {
+  isSidebarOpen.value = !isSidebarOpen.value;
+};
     const menuItems = [
-      "Accueil",
-      "Notre Constat",
-      "Nos solutions",
-      "Financements et partenaires",
-      "Notre équipe",
-      "Contact",
-      "Et demain ?",
-      "Mentions légales"
-    ];
+    { label: "Accueil", route: "/" },
+    { label: "Notre Constat", route: "/constat" },
+    { label: "Nos solutions", route: "/solutions" },
+    { label: "Financements et partenaires", route: "/partenaires" },
+    { label: "Notre équipe", route: "/equipe" },
+    { label: "Contact", route: "/contact" },
+    { label: "Et demain ?", route: "/avenir" },
+    { label: "Mentions légales", route: "/mentions-legales" },
+  ];
+
+    
 
     onMounted(() => {
   gsap.from(logoL.value, {
@@ -76,6 +109,7 @@ export default {
       });
     }); //  Cette accolade ferme correctement la boucle forEach()
   });
+  
 
       gsap.from(logoS.value, {
         opacity: 0,
@@ -94,6 +128,7 @@ export default {
         ease: "power2.out",
       });
     });
+   
 
     return {
       sidebar,
@@ -101,6 +136,8 @@ export default {
       logoS,
       menuList,
       menuItems,
+      isSidebarOpen,
+      toggleSidebar,
     };
   }, // <- Fermeture correcte de `setup()`
 };

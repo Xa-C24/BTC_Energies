@@ -1,13 +1,16 @@
 /* ========================
    VARIABLES & BASE
 =========================*/
-
+html, body {
+  margin: 0;
+  padding: 0;
+}
 /* Variables personnalisées */
 :root {
   --primary-color: #003b46;       /* Couleur de fond principale */
   --secondary-color: #f1642c;     /* Couleur secondaire pour les accents */
   --text-color: #ffffff;          /* Couleur du texte principal */
-  --background-color: #f4f4f4;    /* Couleur de fond générale */
+  --background-color: #ffffff;    /* Couleur de fond générale */
 }
 
 /* Base */
@@ -169,19 +172,13 @@ h1, h2, h3 {
 =========================*/
 
 /* Video boucle en haut */
-.video-wrapper {
-  width: 100vw;
-  height: 90vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .video-container-appGIF {
-  width: 100%;
-  height: 100%;
+  width: 115%;
+  height: 115%;
   object-fit: cover; /* S'assure que la vidéo prend tout l'espace */
+  top: 0;
+  left: 0;
 }
 
 /* ========================
@@ -192,19 +189,20 @@ h1, h2, h3 {
   position: relative;
   background: linear-gradient(to right, #060A27, #152742, #5f7b9e);
   padding: 5vw 0;
-  width: 100%;
-  max-width: 100%;
+  width: 115%;
   left: 0; right: 0;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center; 
+  text-align: center;
+  overflow-x: hidden;
 }
 
 /* Container texte dans le bandeau */
 .bandeau_bleu-text-container {
-  max-width: 85%;
+  max-width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
   margin-right: 2vw;
   padding: 0 4vw;
@@ -242,18 +240,17 @@ h1, h2, h3 {
 =========================*/
 
 .page-blanche_app {
-  display: flex;
-  justify-content: center;
-  padding: 3rem 1rem;
-  background: #F4F4F4;
-}
+    max-width: 100%;  /* Prend toute la largeur */
+    width: 100vw;  /* 100% de la largeur de l’écran */
+    padding: 3rem 5vw; /* Ajoute un peu d’espace sur les côtés */
+  }
 
 .page-blanche_app-wrapper {
-  max-width: 900px; 
+  max-width: 100%; 
   width: 100%;
   padding: 2.5rem;
   border-radius: 12px;
-  box-shadow: 0px 30px 60px rgba(49, 151, 107, 0.1);
+  box-shadow: 0px 30px 60px rgba(153, 165, 160, 0.1);
 }
 
 /* Titre page blanche */
@@ -341,22 +338,24 @@ h1, h2, h3 {
 =========================*/
 
 .trombinoscope-app-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
   justify-content: center;
   align-items: center;
-  gap: 3rem; 
+  gap: 1em; 
 }
 
 .profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
+  max-width: 250px;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .profile img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 30px;
   border: 2px solid #8BC367;
