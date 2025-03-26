@@ -1,40 +1,30 @@
 <template>
   <v-app>
-    <v-main>
-      <v-container fluid class="font-montserrat pa-0">
-  <v-row no-gutters>
-    <!-- Sidebar -->
-    <v-col cols="12" md="2" class="pa-0">
-            <div class="sidebar">
-              <Sidebar />
-            </div>
-          </v-col>
+  <v-main class="pa-0 ma-0">
+    <v-row no-gutters class="pa-0 ma-0">
+      <!-- Sidebar -->
+      <v-col cols="12" md="2" class="pa-0">
+        <div class="sidebar">
+          <Sidebar />
+        </div>
+      </v-col>
 
-    <!-- Contenu principal -->
-    <v-col cols="12" md="10" class="pa-0">
-      <div class="main-content">
-      <Header />
+      <!-- Contenu principal avec la vidéo -->
+      <v-col cols="12" md="10" class="pa-0 ma-0">
+        <div class="video-full-width_gif">
+          <video autoplay loop muted playsinline>
+            <source src="/videos/videoplayback.mp4" type="video/mp4" />
+            Votre navigateur ne supporte pas la lecture de vidéos.
+          </video>
+        </div>
 
-      <!-- Vidéo de présentation -->
-      <v-row justify="center">
-  <v-col cols="12" md="10" class="flex justify-center">
-    <div class="w-full max-w-6xl aspect-video">
-      <video
-        class="w-full h-full object-cover rounded-lg shadow-lg"
-        autoplay
-        loop
-        muted
-        playsinline
-      >
-        <source src="/videos/videoplayback.mp4" type="video/mp4" />
-        Votre navigateur ne supporte pas la lecture de vidéos.
-      </video>
-    </div>
-  </v-col>
-</v-row>
+            <!-- Le reste du contenu -->
+            <div class="main-content">
+              <Header />
 
+    
+             <!-- Section Notre Constat -->
 
-            <!-- Section Notre Constat -->
             <section class="page-blanche_app">
               <div class="page-blanche_app-wrapper">
                 <h2 class="page-blanche_app-title">Notre Constat</h2>
@@ -112,7 +102,7 @@
                 <!-- Image + légendes -->
                 <v-row justify="center" class="my-6">
                   <v-col cols="12" md="8" class="text-center">
-                    <img src="/Q_C_C.png" alt="Nos services BTC Energies" class="w-full max-w-3xl mx-auto" />
+                    <img src="/Q_C_C.png" alt="Nos services BTC Energies" class="w-full max-w-3xl mx-auto  class= w-full max-w-3xl mx-auto transition-transform duration-500 transform hover:scale-105" />
                     <div class="flex justify-center items-center gap-4 text-sm mt-2 text-gray-600">
                       <p>UM : Unité de Méthanisation</p>
                       <p>UGH : Unité de Gazéification Hydrothermale</p>
@@ -176,53 +166,73 @@
                     <p class="text-[#475C79] font-bold">
                       Notre industrie 5.0 est celle de la dépollution, de la décarbonation et de la pluri-sectorialité. 
                     </p>
+                    <div class="flex flex-col items-center text-center">
+                  <h2 class="font-montserrat font-semibold text-4xl mb-4 text-white">Nous contacter</h2>
+                  <br>
+                  <a href="/solutions"
+                  class="font-montserrat font-bold text-black bg-[#C2C4C7] px-6 py-3 rounded-xl shadow transition duration-300 transform
+          hover:bg-[#989A9D] hover:text-white hover:scale-105 hover:shadow-lg
+          active:scale-95 active:shadow-inner flex items-center gap-2">                    
+          Nos Solutions
+                  </a>
+                </div>
                   </v-col>
                 </v-row>
 
                 <!-- Ligne de sépartion verte-->
                 <div class="border-t-2 border-[#8BC367] w-16 mx-auto mt-6"></div>
               </div>
-
-              
-
-              <!-- Bandeau bas -->
-              <div class="bandeau_bleu mt-6">
-                <div class="bandeau_bleu-text-container">
-                  <div class="flex flex-col items-center justify-center text-center bg-gradient-to-r">
-                    <img
-                      src="/logo_sidebar.png"
-                      alt="BTC Énergies Logo"
-                      class="w-40 h-auto"
-                      style="max-height: 8rem"
-                    />
-                  </div>
-                </div>
-                <br />
-                <div class="text-center">
-                  <h2 class="page-blanche_app-title font-semibold mt-4 text-white" style="font-size: 40px">
-                    Nous contacter
-                  </h2>
-                  <br />
-                  <a
-                    href="/contact"
-                    class="cursor-pointer bg-white text-[#061832] font-semibold px-6 py-3 rounded-2xl shadow-md"
-                  >
-                    Nos Coordonnées
-                  </a>
-                </div>
-              </div>
-            </section>
+           </section>
           </div>
+
+                        <!-- Bandeau bas -->
+            <div class="bandeau_bleu mt-6 w-full bg-gradient-to-r from-[#000926] to-[#3c5a81]">
+              <div class="grid grid-cols-3 items-center text-white px-8 py-6">
+                
+                <!-- Colonne 1 : Logo -->
+                <div class="flex justify-center">
+                  <img
+                    src="/logo_sidebar.png"
+                    alt="BTC Énergies Logo"
+                    class="w-40 h-auto max-h-32"
+                  />
+                </div>
+
+                <!-- Colonne 2 : Vide ou contenu futur -->
+                <div></div>
+
+                <!-- Colonne 3 : Texte et bouton -->
+                <div class="flex flex-col items-center text-center">
+  <h2 class="font-montserrat font-semibold text-4xl mb-4 text-white">Nous contacter</h2>
+
+  <a href="/contact"
+  class="font-montserrat font-bold text-black bg-[#C2C4C7] px-6 py-3 rounded-xl shadow transition duration-300 transform
+          hover:bg-[#989A9D] hover:text-white hover:scale-105 hover:shadow-lg
+          active:scale-95 active:shadow-inner flex items-center gap-2">
+            <span class="text-lg"></span>
+            Nos Coordonnées
+  </a>
+</div>
+
+
+
+              </div>
+            </div>
           </v-col>
         </v-row>
-      </v-container>
+      
     </v-main>
   </v-app>
 </template>
 
 <script>
+import { onMounted } from 'vue'
 import Sidebar from './Sidebar.vue'
 import Header from './Header.vue'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 export default {
   name: 'Constat',
@@ -230,10 +240,89 @@ export default {
     Sidebar,
     Header,
   },
+  setup() {
+    onMounted(() => {
+      // Animation d'apparition progressive des titres <h3>
+      gsap.utils.toArray('h3').forEach((el) => {
+        gsap.from(el, {
+          scrollTrigger: {
+            trigger: el,
+            start: 'top 80%',
+            toggleActions: 'play reverse play reverse',
+          },
+          y: 50,
+          opacity: 0,
+          duration: 0.8,
+          ease: 'power2.out',
+        })
+      })
+
+      // Animation des paragraphes
+      gsap.utils.toArray('p').forEach((el) => {
+        gsap.from(el, {
+          scrollTrigger: {
+            trigger: el,
+            start: 'top 80%',
+            toggleActions: 'play reverse play reverse',
+          },
+          y: 30,
+          opacity: 0,
+          duration: 0.8,
+          ease: 'power1.out',
+        })
+      })
+
+      // Animation du logo dans le bandeau
+      gsap.from('.bandeau_bleu img', {
+        scrollTrigger: {
+          trigger: '.bandeau_bleu',
+          start: 'top bottom',
+          start: 'top 80%',
+         toggleActions: 'play reverse play reverse',
+        },
+        scale: 0.5,
+        opacity: 0,
+        duration: 8,
+        ease: 'back.out(1.7)',
+        
+      })
+    })
+  },
 }
 </script>
 
 
-<style scoped>
 
+<style scoped>
+.v-main {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+.v-application--wrap {
+  max-width: 100vw !important;
+}
+
+.video-full-width_gif {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+.video-full-width_gif video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ✅ Version mobile */
+@media (max-width: 960px) {
+  .video-full-width_gif {
+    margin-left: 0;
+    width: 100%;
+  }
+}
 </style>
