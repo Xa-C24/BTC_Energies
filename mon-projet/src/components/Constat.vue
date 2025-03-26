@@ -247,7 +247,7 @@ export default {
         gsap.from(el, {
           scrollTrigger: {
             trigger: el,
-            start: 'top 80%',
+            start: 'top 85%',
             toggleActions: 'play reverse play reverse',
           },
           y: 50,
@@ -262,7 +262,7 @@ export default {
         gsap.from(el, {
           scrollTrigger: {
             trigger: el,
-            start: 'top 80%',
+            start: 'top 85%',
             toggleActions: 'play reverse play reverse',
           },
           y: 30,
