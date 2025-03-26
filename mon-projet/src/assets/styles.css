@@ -54,10 +54,15 @@ h1, h2, h3 {
   padding-top: .5rem; /* Espace en haut pour le logo / menu */
   
   /* Largeur définie en % ou vw pour s’adapter */
-  width: 20vw;         /* Sur grands écrans : 20% de la fenêtre */
-  min-width: 200px;    /* Taille minimale pour ne pas trop rétrécir */
-  max-width: 300px;    /* Évite qu’elle devienne trop large */
+  width: 260px;         /* Sur grands écrans : 20% de la fenêtre */
+  min-width: 260px;    /* Taille minimale pour ne pas trop rétrécir */
+  max-width: 260px;    /* Évite qu’elle devienne trop large */
 }
+.main-content {
+  margin-left: 260px;
+}
+
+
 
 .sidebar ul {
   list-style-type: none;
@@ -78,6 +83,22 @@ h1, h2, h3 {
 
 .sidebar ul li a:hover {
   color: #22b17a;
+}
+
+@media (max-width: 960px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    min-width: unset;
+    max-width: unset;
+    padding: 1rem 0;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 /* Zone du logo */
@@ -171,15 +192,15 @@ h1, h2, h3 {
    VIDEO EN ARRIERE-PLAN (App.vue)
 =========================*/
 
-/* Video boucle en haut */
+/* Video boucle en haut 
 
 .video-container-appGIF {
-  width: 115%;
-  height: 115%;
-  object-fit: cover; /* S'assure que la vidéo prend tout l'espace */
+  width: 50%;
+  height: 50%;
+  object-fit: cover;  S'assure que la vidéo prend tout l'espace 
   top: 0;
   left: 0;
-}
+}*/
 
 /* ========================
    BANDEAU BLEU
@@ -240,10 +261,10 @@ h1, h2, h3 {
 =========================*/
 
 .page-blanche_app {
-    max-width: 100%;  /* Prend toute la largeur */
-    width: 100vw;  /* 100% de la largeur de l’écran */
-    padding: 3rem 20vw; /* Ajoute un peu d’espace sur les côtés */
-  }
+  width: 100%;
+  padding: 3rem 2rem; /* ou 3rem 3rem selon le confort */
+  box-sizing: border-box;
+}
 
 .page-blanche_app-wrapper {
   max-width: 100%; 
