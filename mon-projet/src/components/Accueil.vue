@@ -9,7 +9,7 @@
   </div>
 </template>
 
-        <!-- Affichage de la vidéo en local -->
+<!-- Affichage de la vidéo en local -->
         <div>
           <video 
             class="video-container-appGIF"
@@ -243,8 +243,8 @@
       <!-- Bandeau bleu fixe bas de page -->
       <div class="bandeau_bleu mt-6">
         <div class="bandeau_bleu-text-container">
-          <div class="flex flex-col items-center justify-center text-center bg-gradient-to-r from-[#061832] to-[#5a789d] text-white py-10">
-            <img src="/logo_sidebar.png" alt="BTC Énergies Logo" class="w-12 h-auto" style="max-height: 6rem;" />
+          <div class="flex flex-col items-center justify-center text-center bg-gradient-to-r">
+            <img src="/logo_sidebar.png" alt="BTC Énergies Logo" class="w-40 h-auto" style="max-height: 8rem;" />
           </div>
         </div>
           <br>
