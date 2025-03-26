@@ -11,16 +11,8 @@ import App from './App.vue'
 import router from './router'
 
 // Vuetify
-import { createVuetify } from 'vuetify'
-import 'vuetify/styles'
-import * as components from 'vuetify/components'
-import * as directives from 'vuetify/directives'
+import vuetify from './plugins/vuetify'
 
-// Création des instances
-const vuetify = createVuetify({
-  components,
-  directives
-})
 
 // ✅ Crée une seule fois l'app
 const app = createApp(App)
