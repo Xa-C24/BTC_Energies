@@ -192,15 +192,9 @@ h1, h2, h3 {
    VIDEO EN ARRIERE-PLAN (App.vue)
 =========================*/
 
-/* Video boucle en haut 
+/* Video boucle en haut */ 
 
-.video-container-appGIF {
-  width: 50%;
-  height: 50%;
-  object-fit: cover;  S'assure que la vidéo prend tout l'espace 
-  top: 0;
-  left: 0;
-}*/
+
 
 /* ========================
    BANDEAU BLEU
@@ -262,14 +256,17 @@ h1, h2, h3 {
 
 .page-blanche_app {
   width: 100%;
-  padding: 3rem 2rem; /* ou 3rem 3rem selon le confort */
+  padding: 3rem 0; /* ou 3rem 3rem selon le confort */
   box-sizing: border-box;
+  justify-content: center; 
 }
 
 .page-blanche_app-wrapper {
-  max-width: 100%; 
+  max-width: 1100px; 
   width: 100%;
-  padding: 2.5rem;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  background-color: rgb(255, 255, 255);
   border-radius: 12px;
   box-shadow: 0px 30px 60px rgba(153, 165, 160, 0.1);
 }
@@ -334,6 +331,20 @@ h1, h2, h3 {
   max-width: 800px;
   margin: 2px auto;
 }
+
+.video-wrapper {
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 
 /* ========================
    VIDEO NOTRE CONSTAT
