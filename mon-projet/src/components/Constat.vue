@@ -1,7 +1,11 @@
 <template>
+  
   <v-app>
+    
   <v-main class="pa-0 ma-0">
+    
     <v-row no-gutters class="pa-0 ma-0">
+      
       <!-- Sidebar -->
       <v-col cols="12" md="2" class="pa-0">
         <div class="sidebar">
@@ -10,18 +14,23 @@
       </v-col>
 
       <!-- Contenu principal avec la vidéo -->
-      <v-col cols="12" md="10" class="pa-0 ma-0">
-        <div class="video-full-width_gif">
-          <video autoplay loop muted playsinline>
-            <source src="/videos/videoplayback.mp4" type="video/mp4" />
-            Votre navigateur ne supporte pas la lecture de vidéos.
-          </video>
-        </div>
-
-            <!-- Le reste du contenu -->
+      <v-col>    
+        
+          <!-- Le reste du contenu -->
             <div class="main-content">
               <Header />
-
+              <div class="w-full h-[90vh] overflow-hidden">
+  <video
+    class="w-full h-full object-cover"
+    autoplay
+    loop
+    muted
+    playsinline
+  >
+    <source src="/videos/videoplayback.mp4" type="video/mp4" />
+    Votre navigateur ne supporte pas la lecture de vidéos.
+  </video>
+</div>
     
              <!-- Section Notre Constat -->
 
@@ -282,7 +291,7 @@ export default {
         },
         scale: 0.5,
         opacity: 0,
-        duration: 8,
+        duration: 5,
         ease: 'back.out(1.7)',
         
       })

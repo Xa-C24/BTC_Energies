@@ -1,21 +1,30 @@
 <template>
+  
   <v-app>
     <div id="app" class="flex flex-col font-montserrat">
+
+   
+
+
       <Header />
       <Sidebar />
+    <v-col>
 
-      <!-- Vidéo d'introduction locale -->
-      <div>
-          <video 
-            class="video-container-appGIF"
-            autoplay 
-            loop 
-            muted 
-            playsinline>
-            <source src="/videos/videoplayback.mp4" type="video/mp4" />
-            Votre navigateur ne supporte pas la lecture de vidéos.
-          </video>
-        </div>
+
+         <!-- Video GIF haut de page -->
+      
+      <div class="ml-[120px] w-[calc(100vw-164px)] h-[90vh] overflow-hidden">
+        <video
+          class="w-full h-full object-cover"
+          autoplay
+          loop
+          muted
+          playsinline
+        >
+          <source src="/videos/videoplayback.mp4" type="video/mp4" />
+          Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+      </div>
 
         <!-- Bandeau bleu -->
         <div class="bandeau_bleu w-full py-30 bg-gradient-to-r from-[#000926] to-[#3c5a81]">
@@ -126,7 +135,7 @@
                   <img
                     src="/logo_sidebar.png"
                     alt="BTC Énergies Logo"
-                    class="w-40 h-auto max-h-32"
+                    class="w-40 h-auto max-h-32 bandeau_bleu-logo"
                   />
                 </div>
 
@@ -144,7 +153,7 @@
         </div>
       </div>
 
-        
+    </v-col>   
     </div>
   </v-app>
 </template>
@@ -291,8 +300,20 @@ export default {
         scale: 0.90,
         duration: 0.9,
         ease: 'power2.out',
-        stagger: 0.15 // effet cascade
+        stagger: 0.20 // effet cascade
       });
+    });
+    // Logo du bandeau bleu (zoom + fade)
+    gsap.from(".bandeau_bleu-logo", {
+      scrollTrigger: {
+        trigger: ".bandeau_bleu-logo",
+        start: "top 90%",
+        toggleActions: "play none none none",
+      },
+      opacity: 0,
+      scale: 0.8,
+      duration: 1.9,
+      ease: "power2.out",
     });
   });
 
