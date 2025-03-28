@@ -15,19 +15,15 @@
           <div class="main-content">
             <Header />
 
-            <!-- Vidéo -->
-            <div class="w-full h-[90vh] overflow-hidden">
-              <video
-                class="w-full h-full object-cover"
-                autoplay
-                loop
-                muted
-                playsinline
-              >
-                <source src="/videos/videoplayback.mp4" type="video/mp4" />
-                Votre navigateur ne supporte pas la lecture de vidéos.
-              </video>
-            </div>
+           <!-- Video GIF haut de page -->
+      
+         <div class="video-banner-gif">
+          <video autoplay loop muted playsinline>
+            <source src="/videos/videoplayback.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+          </video>
+        </div>
+
 
             <!-- Section Nos Solutions -->
             <section class="bg-white py-10 px-6 md:px-16">
@@ -295,6 +291,21 @@
   </v-app>
 </template>
 
+<style>
+.v-application--wrap {
+  padding-top: 0 !important;
+}
+
+.v-col,
+.main-content {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+video {
+  display: block;
+}
+</style>
 
 
 <script setup>
@@ -321,8 +332,6 @@ onMounted(() => {
       }
     });
   });
-
-  
 
   gsap.from(logoBandeau.value, {
     scrollTrigger: {

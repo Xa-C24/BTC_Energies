@@ -72,9 +72,9 @@ export default {
 };
     const menuItems = [
     { label: "Accueil", route: "/" },
-    { label: "Notre Constat", route: "/constat" },
-    { label: "Nos solutions", route: "/solutions" },
-    { label: "Financements et partenaires", route: "/partenaires" },
+    { label: "Notre Constat", route: "/Constat" },
+    { label: "Nos solutions", route: "/Solutions" },
+    { label: "Financements et partenaires", route: "/Partenaires" },
     { label: "Notre équipe", route: "/equipe" },
     { label: "Contact", route: "/contact" },
     { label: "Et demain ?", route: "/avenir" },

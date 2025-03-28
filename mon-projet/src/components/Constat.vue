@@ -19,18 +19,13 @@
           <!-- Le reste du contenu -->
             <div class="main-content">
               <Header />
-              <div class="w-full h-[90vh] overflow-hidden">
-  <video
-    class="w-full h-full object-cover"
-    autoplay
-    loop
-    muted
-    playsinline
-  >
-    <source src="/videos/videoplayback.mp4" type="video/mp4" />
-    Votre navigateur ne supporte pas la lecture de vidéos.
-  </video>
-</div>
+              
+              <div class="video-banner-gif">
+          <video autoplay loop muted playsinline>
+            <source src="/videos/videoplayback.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+          </video>
+        </div>
     
              <!-- Section Notre Constat -->
 

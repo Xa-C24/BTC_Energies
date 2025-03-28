@@ -2,8 +2,10 @@
   
   <v-app>
     <div id="app" class="flex flex-col font-montserrat">
-      <Header />
       <Sidebar />
+      <Header />
+      <div class="content flex-grow">
+      
     <v-col>
 
 
@@ -149,10 +151,13 @@
         </div>
       </div>
 
-    </v-col>   
+      </v-col>   
     </div>
+  </div>
   </v-app>
 </template>
+
+
 
 <script>
 import { onMounted } from 'vue';
@@ -214,6 +219,7 @@ export default {
         {
           name: 'Cédric Chauvet',
           title: 'Développeur IA et Automatisation',
+          img: '/Trombi/C_C.jpg',
         },
         {
           name: 'Xavier Piedallu',
@@ -308,7 +314,7 @@ export default {
       },
       opacity: 0,
       scale: 0.8,
-      duration: 1.9,
+      duration: 5,
       ease: "power2.out",
     });
   });
