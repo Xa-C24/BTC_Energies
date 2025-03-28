@@ -2,10 +2,6 @@
   
   <v-app>
     <div id="app" class="flex flex-col font-montserrat">
-
-   
-
-
       <Header />
       <Sidebar />
     <v-col>
