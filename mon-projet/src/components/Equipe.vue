@@ -499,7 +499,7 @@
                           <div class="mt-4">
                             <p class="italic font-semibold text-gray-700">Études :</p>
                             <p class="text-gray-600 mt-1">
-                              Bac+2 : Développement Web RNCP5 
+                              Bac+2 : Développement Web Full-Stack RNCP5 
                             </p>
                           </div>
                         </div>

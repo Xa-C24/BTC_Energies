@@ -77,7 +77,7 @@ export default {
     { label: "Financements et partenaires", route: "/Partenaires" },
     { label: "Notre équipe", route: "/equipe" },
     { label: "Contact", route: "/contact" },
-    { label: "Et demain ?", route: "/avenir" },
+    { label: "Et demain ?", route: "/EtDemain" },
     { label: "Mentions légales", route: "/mentions-legales" },
   ];
 

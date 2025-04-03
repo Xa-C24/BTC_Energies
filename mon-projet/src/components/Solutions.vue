@@ -336,7 +336,7 @@ onMounted(() => {
   gsap.from(logoBandeau.value, {
     scrollTrigger: {
       trigger: '.bandeau_bleu',
-      start: 'top 80%',
+      start: 'top 90%',
       toggleActions: 'play reverse play reverse',
     },
     scale: 0.5,

@@ -46,6 +46,7 @@
             <h2 class="page-blanche_app-title">Nos services</h2>
             <br><br>
 
+              <!-- bloc 1 -->
             <v-row class="page-blanche_app-block" align="center">
               <v-col cols="12" md="2" class="page-blanche_app-logo">
                 <img src="/logo1app.png" alt="Nos services BTC Energies">
@@ -60,6 +61,7 @@
               </v-col>
             </v-row>
 
+                <!-- bloc 2 -->
             <v-row class="page-blanche_app-block" align="center">
               <v-col cols="12" md="2" class="page-blanche_app-logo">
                 <img src="/logo2app.png" alt="Nos services BTC Energies">
@@ -76,6 +78,71 @@
                 </p>
               </v-col>
             </v-row>
+
+              <!-- bloc 3 -->
+            <v-row class="page-blanche_app-block" align="center">
+              <v-col cols="12" md="2" class="page-blanche_app-logo">
+                <img src="/logo3app.png" alt="Nos services BTC Energies">
+              </v-col>
+              <v-col cols="12" md="10" class="page-blanche_app-content">
+                <h3 class="font-semibold text-[#475C79]">
+                  Valorisation des effluents de station d'épuration et des eaux usées (STEP/STEU) et du lixiviat
+                </h3>
+                <p>
+                  Nous pouvons assurer la valorisation des effluents de stations d'épuration et celles de traitement des eaux usées : y compris lorsqu'elles sont souillées (mercure, pathogènes et autres polluants comme des micro-plastiques et une partie des PFAS).
+                </p>
+                <p>
+                  Nous pouvons utiliser les ressources présentes dans les eaux usées et ainsi contribuer à la préservation de l'environnement.
+                </p>
+              </v-col>
+            </v-row>
+
+            <!-- bloc 4 -->
+            <v-row class="page-blanche_app-block" align="center">
+              <v-col cols="12" md="2" class="page-blanche_app-logo">
+                <img src="/logo4app.png" alt="Nos services BTC Energies">
+              </v-col>
+              <v-col cols="12" md="10" class="page-blanche_app-content">
+                <h3 class="font-semibold text-[#475C79]">
+                  Gestion des déchets agricoles
+                </h3>
+                <p>
+                  Les pratiques de gestion des déchets agricoles sont essentielles pour préserver l'environnement et maintenir la durabilité de l'agriculture. Nous pouvons ainsi valoriser le digestat, en particuliers lorsqu’il ne peut pas être épandu, et traiter l'ensemble des déchets agricoles (produits phyto-sanitaires, production hors-calibre, matière non-méthanisable).                </p>
+             
+              </v-col>
+            </v-row>
+
+             <!-- bloc 5 -->
+             <v-row class="page-blanche_app-block" align="center">
+              <v-col cols="12" md="2" class="page-blanche_app-logo">
+                <img src="/logo5app.png" alt="Nos services BTC Energies">
+              </v-col>
+              <v-col cols="12" md="10" class="page-blanche_app-content">
+                <h3 class="font-semibold text-[#475C79]">
+                  Traitement des effluents industriels
+                </h3>
+                <p>
+                  Le traitement des effluents industriels est essentiel pour préserver l'environnement et assurer la qualité des ressources en eau. Nous pouvons valoriser une grande variété d'effluents issus de la plupart de ces secteurs.
+                </p>
+                
+              </v-col>
+            </v-row>
+
+            <!-- bloc 6 -->
+            <v-row class="page-blanche_app-block" align="center">
+              <v-col cols="12" md="2" class="page-blanche_app-logo">
+                <img src="/logo6app.png" alt="Nos services BTC Energies">
+              </v-col>
+              <v-col cols="12" md="10" class="page-blanche_app-content">
+                <h3 class="font-semibold text-[#475C79]">
+                  Opérations de Dépollution
+                </h3>
+                <p>
+                  Nous pouvons organiser des opérations de réhabilitation massive de terrains pollués (anciennes décharges, sols pollués aux métaux lourds).                 </p>
+                
+              </v-col>
+            </v-row>
+
           </div>
         </v-container>
 
@@ -294,7 +361,7 @@ export default {
       gsap.from(card, {
         scrollTrigger: {
           trigger: card,
-          start: 'top 75%',
+          start: 'top 85%',
           toggleActions: 'play reverse play reverse',
         },
         opacity: 0,
