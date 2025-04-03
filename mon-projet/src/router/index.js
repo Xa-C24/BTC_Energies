@@ -7,6 +7,7 @@ import Equipe from '../components/Equipe.vue'
 import Contact from '../components/Contact.vue'
 import Demain from '../components/Etdemain.vue'
 import Etdemain from '../components/Etdemain.vue'
+import MentionsLegales from '../components/MentionsLegales.vue'
 
 
 const routes = [
@@ -17,6 +18,7 @@ const routes = [
   { path: '/equipe', name: 'Equipe', component: Equipe },
   { path: '/contact', name: 'Contact', component: Contact },
   { path: '/EtDemain', name: 'Demain', component: Etdemain },
+  { path: '/mentions-legales', name: 'Mentions Legales', component: MentionsLegales },
 ]
 
 const router = createRouter({

@@ -249,7 +249,7 @@ export default {
           scrollTrigger: {
             trigger: el,
             start: 'top 90%',
-            toggleActions: 'play reverse play reverse',
+            toggleActions: "play none none reset",
           },
           y: 50,
           opacity: 0,
@@ -264,7 +264,7 @@ export default {
           scrollTrigger: {
             trigger: el,
             start: 'top 90%',
-            toggleActions: 'play reverse play reverse',
+            toggleActions: "play none none reset",
           },
           y: 30,
           opacity: 0,

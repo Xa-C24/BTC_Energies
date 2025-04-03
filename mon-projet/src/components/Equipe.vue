@@ -234,7 +234,8 @@
                             <p class="text-gray-600 mt-1">
                               Diplôme d'Ingénieur en conduite de projets industriels
                             </p>
-                            <p>Master SYSPEC</p>
+                            <p class="text-gray-600 mt-1">
+                              Master SYSPEC</p>
                           </div>
                         </div>
                       </div>
@@ -261,9 +262,6 @@
                             </p> 
                           </div>
 
-                        
-                          <!-- Ligne de sépartion verte-->
-                        <div class="border-t-2 border-[#8BC367] w-16 mx-auto mt-6"></div>
                         </div>
                       </div>
                     </div>
@@ -309,7 +307,9 @@
                           <p class="text-gray-600 mt-1">
                             Bac+5   Programme Grande Ecole
                           </p>
-                          <p>(Business Development Management Finance)</p>
+                          <p class="text-gray-600 mt-1">
+                            (Business Development Management Finance)
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -547,7 +547,7 @@
                         <div class="mt-4">
                             <p class="italic font-semibold text-gray-700">Études :</p>
                             <p class="text-gray-600 mt-1">
-                              Canine Buisness School - Licence Happiness Management
+                              Canine Buisness School - Master Canin
                             </p>
                           </div>
                         </div>

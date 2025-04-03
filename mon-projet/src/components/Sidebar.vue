@@ -78,7 +78,7 @@ export default {
     { label: "Notre équipe", route: "/equipe" },
     { label: "Contact", route: "/contact" },
     { label: "Et demain ?", route: "/EtDemain" },
-    { label: "Mentions légales", route: "/mentions-legales" },
+    { label: "MentionsLegales", route: "/mentions-legales" },
   ];
 
     
@@ -107,7 +107,7 @@ export default {
         duration: 0.3,
         ease: "power2.out",
       });
-    }); //  Cette accolade ferme correctement la boucle forEach()
+    }); 
   });
   
 
@@ -115,7 +115,7 @@ export default {
         opacity: 0,
         y: -30,
         duration: 1,
-        delay: 0.3,
+        delay: 0.9,
         ease: "power2.out",
       });
 
@@ -123,8 +123,8 @@ export default {
         opacity: 0,
         x: -50,
         stagger: 0.1,
-        duration: 0.8,
-        delay: 0.6,
+        duration: 0.9,
+        delay: 1,
         ease: "power2.out",
       });
     });

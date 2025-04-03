@@ -243,7 +243,7 @@ onMounted(() => {
       scrollTrigger: {
         trigger: bloc,
         start: "top 90%",
-        toggleActions: "play reverse play reverse",
+        toggleActions: "play none none reset",
       }
     });
   });
