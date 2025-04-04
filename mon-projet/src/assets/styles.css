@@ -86,9 +86,6 @@ h1, h2, h3 {
   min-width: 260px;    /* Taille minimale pour ne pas trop rétrécir */
   max-width: 260px;    /* Évite qu’elle devienne trop large */
 }
-.main-content {
-  margin-left: 260px;
-}
 
 .content {
   margin-left: 200px; /* largeur de ta sidebar */
@@ -104,10 +101,12 @@ h1, h2, h3 {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .sidebar ul li {
   padding: 0.4rem 0.8rem;
+  text-align: center;
 }
 
 .sidebar ul li a {
@@ -115,6 +114,7 @@ h1, h2, h3 {
   font-size: 1rem;
   color: #fff;
   text-decoration: none;
+  display: inline-block;
 }
 
 .sidebar ul li a:hover {
@@ -625,7 +625,7 @@ h1, h2, h3 {
     font-size: 1rem;
   }
 
-  .page-blanche_app-wrapper {
+  .page-blanche_app-wrapper 
     padding: 1rem;
   }
   .page-blanche_app-title {
