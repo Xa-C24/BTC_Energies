@@ -1,6 +1,9 @@
 // main.js
 
 import { createApp } from 'vue'
+import 'vuetify/styles'
+// import '@mdi/font/css/materialdesignicons.css' // (si tu utilises des icônes mdi)
+
 
 // Styles globaux
 import './style.css'
