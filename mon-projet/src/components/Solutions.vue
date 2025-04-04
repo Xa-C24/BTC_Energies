@@ -314,53 +314,63 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import Header from './Header.vue';
 import Sidebar from './Sidebar.vue';
+import Footer from './Footer.vue';
 
 const logoBandeau = ref(null);
 gsap.registerPlugin(ScrollTrigger);
 
 onMounted(() => {
+  // ✅ Animation sur les blocs avec gsap-bloc
   gsap.utils.toArray(".gsap-bloc").forEach((bloc) => {
-  // Animation au scroll
-  gsap.from(bloc, {
-    opacity: 0,
-    y: 50,
-    duration: 1,
-    ease: "power2.out",
-    scrollTrigger: {
-      trigger: bloc,
-      start: "top 85%",
-      toggleActions: "play none none reset",
-    }
-  });
+    // Animation d'entrée au scroll
+    gsap.from(bloc, {
+      scale: window.innerWidth > 768 ? 1.1 : 1.04,
+      duration: 0.9,
+      ease: 'power2.out',
+      boxShadow:
+        window.innerWidth > 768
+          ? '0px 10px 20px rgba(0, 0, 0, 0.3)'
+          : '0px 5px 10px rgba(0, 0, 0, 0.2)',
+      scrollTrigger: {
+        trigger: bloc,
+        start: 'top 85%',
+        toggleActions: 'play none none reset',
+      },
+    });
 
-  // Animation au survol (hover)
-  bloc.addEventListener("mouseenter", () => {
-    gsap.to(bloc, {
-      scale: 1.05, // Zoom léger
-      duration: 0.8,
-      ease: "power2.out"
+    // ✅ Animation au survol (hover)
+    bloc.addEventListener('mouseenter', () => {
+      gsap.to(bloc, {
+        scale: 1.06,
+        duration: 0.4,
+        ease: 'power2.out',
+        boxShadow: '0px 12px 24px rgba(0, 0, 0, 0.4)',
+      });
+    });
+
+    bloc.addEventListener('mouseleave', () => {
+      gsap.to(bloc, {
+        scale: 1,
+        duration: 0.6,
+        ease: 'power2.out',
+        boxShadow: 'none',
+      });
     });
   });
 
-  bloc.addEventListener("mouseleave", () => {
-    gsap.to(bloc, {
-      scale: 1,
-      duration: 0.6,
-      ease: "power2.out"
+  // ✅ Animation du logo dans le bandeau
+  if (logoBandeau.value) {
+    gsap.from(logoBandeau.value, {
+      scrollTrigger: {
+        trigger: '.bandeau_bleu',
+        start: 'top 90%',
+        toggleActions: 'play reverse play reverse',
+      },
+      scale: 0.5,
+      opacity: 0,
+      duration: 5,
+      ease: 'back.out(1.7)',
     });
-  });
-});
-
-  gsap.from(logoBandeau.value, {
-    scrollTrigger: {
-      trigger: '.bandeau_bleu',
-      start: 'top 90%',
-      toggleActions: 'play reverse play reverse',
-    },
-    scale: 0.5,
-    opacity: 0,
-    duration: 5,
-    ease: 'back.out(1.7)',
-  });
+  }
 });
 </script>
