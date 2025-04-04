@@ -1,8 +1,16 @@
 <template>
-  <div id="app" class="flex">
+  <div id="app">
     <Sidebar />
-    <div class="flex-1">
-      <router-view /> <!-- c’est ici que toutes les pages s’affichent -->
+    <div class="layout-wrapper">
+      <div class="layout-content">
+        <router-view />
+      </div>
+      <Footer />
     </div>
   </div>
 </template>
+
+<script setup>
+import Sidebar from './components/Sidebar.vue'
+import Footer from './components/Footer.vue'
+</script>

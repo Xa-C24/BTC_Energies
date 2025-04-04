@@ -72,9 +72,18 @@
                             Téléphone : <span class="text-[#8BC367]">+33 6 29 56 07 56</span>
                           </p>
                           <p class="text-lg italic font-semibold text-gray-700">Email :</p>
-                          <p class="text-xl text-[#8BC367]">direction@btc-energies.fr</p>
-                          <p class="text-xl text-[#8BC367]">kermon31@gmail.com</p>
-                        </div>
+                            <a href="mailto:direction@btc-energies.fr" 
+                             class="inline-block text-xl text-[#8BC367] hover:text-[#8BC367] no-underline hover:no-underline transform transition-transform duration-200 hover:scale-105"
+                            >
+                              direction@btc-energies.fr
+                            </a> 
+                            <div class="mt-1 space-y-1"></div>
+                            <a href="mailto:kermon31@gmail.com" 
+                             class="inline-block text-xl text-[#8BC367] hover:text-[#8BC367] no-underline hover:no-underline transform transition-transform duration-200 hover:scale-105"
+                             >
+                              kermon31@gmail.com
+                            </a>                        
+                          </div>
                         <div class="mt-8 space-y-2"></div>
                                              
                       </div>

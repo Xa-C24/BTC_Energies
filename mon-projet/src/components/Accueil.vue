@@ -1,53 +1,55 @@
+
 <template>
-  
-  <v-app>
-    <div id="app" class="flex flex-col font-montserrat">
-      <Sidebar />
-      <Header />
-      <div class="content flex-grow">
-      
-    <v-col>
+  <div class="main-content-wrapper">
+
+    <!-- Video GIF haut de page -->
+    <div class="w-full h-[90vh] overflow-hidden">
+      <video
+        class="w-full h-full object-cover"
+        autoplay
+        loop
+        muted
+        playsinline
+      >
+        <source src="/videos/videoplayback.mp4" type="video/mp4" />
+        Votre navigateur ne supporte pas la lecture de vidéos.
+      </video>
+    </div>
+
+    <!-- Bandeau bleu -->
+    <div class="bandeau_bleu w-full py-30 bg-gradient-to-r from-[#000926] to-[#3c5a81]">
+  <div class="w-full max-w-[1200px] mx-auto text-center px-4">
+    <div class="w-[200px] h-1 bg-[#22B17A] mb-14 bandeau_bleu-trait mx-auto"></div>
+    <h1 class="bandeau_bleu-text font-montserrat text-white whitespace-nowrap" style="font-size: clamp(1rem, 2.5vw, 2rem);">
+      Développement, Gestion et Exploitation de<br> projets industriels
+    </h1>
+    <div class="w-[200px] h-1 bg-[#22B17A] mt-14 bandeau_bleu-trait mx-auto"></div>
+  </div>
+</div>
 
 
-         <!-- Video GIF haut de page -->
-      
-      <div class="ml-[120px] w-[calc(100vw-164px)] h-[90vh] overflow-hidden">
-        <video
-          class="w-full h-full object-cover"
-          autoplay
-          loop
-          muted
-          playsinline
-        >
-          <source src="/videos/videoplayback.mp4" type="video/mp4" />
-          Votre navigateur ne supporte pas la lecture de vidéos.
-        </video>
-      </div>
 
-        <!-- Bandeau bleu -->
-        <div class="bandeau_bleu w-full py-30 bg-gradient-to-r from-[#000926] to-[#3c5a81]">
-          <div class="flex flex-col items-center text-center px-4">
 
-            <div class="w-[200px] h-1 bg-[#22B17A] mb-14 bandeau_bleu-trait"></div>
+    <v-main>
 
-            <h1 class="bandeau_bleu-text font-montserrat text-white text-2xl md:text-3xl pl-10">
-              Développement, Gestion et Exploitation de projets industriels
-            </h1>
-            <div class="w-[200px] h-1 bg-[#22B17A] mt-14 bandeau_bleu-trait"></div>
-          </div>
-        </div>
+      <!-- Nos services -->
+      <v-container fluid class="page-blanche_app py-12">
+        <div class="page-blanche_app-wrapper">
+          <h2 class="page-blanche_app-title">Nos services</h2>
+          <br><br>
 
-      <v-main class="ml-[200px]">
-        
-
-        <!-- Nos services -->
-        <v-container fluid class="page-blanche_app py-12">
-          <div class="page-blanche_app-wrapper">
-            <h2 class="page-blanche_app-title">Nos services</h2>
-            <br><br>
-
-              <!-- bloc 1 -->
-            <v-row class="page-blanche_app-block" align="center">
+          <!-- blocs services -->
+          <v-row class="page-blanche_app-block" align="center" v-for="(service, index) in services" :key="index">
+            <v-col cols="12" md="2" class="page-blanche_app-logo">
+              <img :src="service.logo" :alt="service.title" />
+            </v-col>
+            <v-col cols="12" md="10" class="page-blanche_app-content">
+              <h3 class="font-semibold text-[#475C79]">{{ service.title }}</h3>
+              <p v-for="(text, i) in service.description" :key="i">{{ text }}</p>
+            </v-col>
+          </v-row>
+          <!-- bloc 1 -->
+        <v-row class="page-blanche_app-block" align="center">
               <v-col cols="12" md="2" class="page-blanche_app-logo">
                 <img src="/logo1app.png" alt="Nos services BTC Energies">
               </v-col>
@@ -143,88 +145,82 @@
               </v-col>
             </v-row>
 
-          </div>
-        </v-container>
+        </div>
+      </v-container>
 
-        <!-- Notre Constat -->
-        <v-container fluid class="page-blanche_app py-12">
-          <h2 class="page-blanche_app-title">Notre Constat</h2>
-          <div class="video-app-constat w-full max-w-4xl mx-auto aspect-video">
-            <iframe 
-              class="w-full h-full"
-              src="https://www.youtube.com/embed/hOIWuE_eEsM" 
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
-          </div>
-        </v-container>
+      <!-- Notre Constat -->
+      <v-container fluid class="page-blanche_app py-12">
+        <h2 class="page-blanche_app-title">Notre Constat</h2>
 
-        <!-- Notre équipe -->
-        <v-container fluid class="page-blanche_app py-12">
-          <h2 class="page-blanche_app-title">Notre équipe</h2>
-          <br> <br>
+        
 
-          <!-- Trombinoscope -->
-          <v-row class="trombinoscope-app-container" justify="center">
-            <v-col 
-            cols="12" 
-            md="3" 
+        <div class="video-app-constat w-full max-w-4xl mx-auto aspect-video">
+          <iframe
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/hOIWuE_eEsM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </v-container>
+
+      <!-- Notre équipe -->
+      <v-container fluid class="page-blanche_app py-12">
+        <h2 class="page-blanche_app-title">Notre équipe</h2>
+        <br><br>
+
+        <v-row class="trombinoscope-app-container" justify="center">
+          <v-col
+            cols="12"
+            md="3"
             class="text-center trombi-card"
-            v-for="member in team" 
+            v-for="member in team"
             :key="member.name"
-            >
+          >
             <div class="bg-white rounded-xl p-4 shadow-sm transition transform hover:scale-110 duration-500 leading-relaxed">
-                <img
-                  :src="member.img"
-                  :alt="member.name"
-                  class="mx-auto w-56 h-56 object-cover rounded-xl"
-                />
-                <p class="profile-name font-bold mt-4">{{ member.name }}</p>
-                <p class="profile-title italic text-sm text-gray-600">{{ member.title }}</p>
-                <p v-if="member.role" class="profile-role italic text-sm text-gray-600 mt-2 font-semibold">{{ member.role }}</p>
-                <p v-if="member.phone" class="profile-phone text-sm text-gray-500 font-bold mt-2">{{ member.phone }}</p>
-              </div>
-            </v-col>
-          </v-row>
-        </v-container>
-      </v-main>
+              <img
+                :src="member.img"
+                :alt="member.name"
+                class="mx-auto w-56 h-56 object-cover rounded-xl"
+              />
+              <p class="profile-name font-bold mt-4">{{ member.name }}</p>
+              <p class="profile-title italic text-sm text-gray-600">{{ member.title }}</p>
+              <p v-if="member.role" class="profile-role italic text-sm text-gray-600 mt-2 font-semibold">{{ member.role }}</p>
+              <p v-if="member.phone" class="profile-phone text-sm text-gray-500 font-bold mt-2">{{ member.phone }}</p>
+            </div>
+          </v-col>
+        </v-row>
+      </v-container>
 
-      <!-- Mentions légales -->
-      <div class="bandeau_bleu mt-6 w-full bg-gradient-to-r from-[#000926] to-[#3c5a81]">
-              <div class="grid grid-cols-2 items-center text-white px-8 py-6">
-                
-                <!-- Colonne 1 : Logo -->
-                <div class="flex justify-center">
-                  <img
-                    src="/logo_sidebar.png"
-                    alt="BTC Énergies Logo"
-                    class="w-40 h-auto max-h-32 bandeau_bleu-logo"
-                  />
-                </div>
+    </v-main>
 
-          <!-- Texte -->
-          <div class="text-white text-center md:text-left">
-            <h2 class="font-bold  text-white text-xl mb-1">Mentions légales</h2>
-            <br>
-            <p class="text-xs">
-              BTC Énergies (SAS) au capital de 120€, enregistrée au RCS de Toulouse 
-            </p>
-           
-            <p class="text-xs">
-             Numéro SIRET : 928 497 585 00010</p>
-          </div>
+    <!-- Mentions légales -->
+    <div class="bandeau_bleu mt-6 w-full bg-gradient-to-r from-[#000926] to-[#3c5a81]">
+      <div class="grid grid-cols-2 items-center text-white px-8 py-6">
+
+        <!-- Logo -->
+        <div class="flex justify-center">
+          <img
+            src="/logo_sidebar.png"
+            alt="BTC Énergies Logo"
+            class="w-40 h-auto max-h-32 bandeau_bleu-logo"
+          />
+        </div>
+
+        <!-- Texte -->
+        <div class="text-white text-center md:text-left">
+          <h2 class="font-bold text-white text-xl mb-1">Mentions légales</h2>
+          <br />
+          <p class="text-xs">BTC Énergies (SAS) au capital de 120€, enregistrée au RCS de Toulouse</p>
+          <p class="text-xs">Numéro SIRET : 928 497 585 00010</p>
         </div>
       </div>
-
-      </v-col>   
     </div>
+
   </div>
-  </v-app>
 </template>
-
-
 
 <script>
 import { onMounted } from 'vue';
@@ -362,7 +358,7 @@ export default {
         scrollTrigger: {
           trigger: card,
           start: 'top 85%',
-          toggleActions: 'play reverse play reverse',
+          toggleActions: 'play none none reset',
         },
         opacity: 0,
         y: 50,

@@ -48,84 +48,61 @@
 
             <!-- Bloc blanc après la vidéo -->
             <section>
-              <v-container fluid class="page-blanche_app py-12">
-                <div class="page-blanche_app-wrapper">
-<br>
-<br>           
-                 
-<v-form class="max-w-4xl mx-auto px-4" @submit.prevent="submitForm">
-  <v-row dense>
-    <v-col cols="12" md="6">
-      <v-text-field
-        v-model="form.nom"
-        label="Nom"
-        required
-        outlined
-        dense
-        class="bg-white rounded"
-      ></v-text-field>
-    </v-col>
+              <v-container>
+                
+              
 
-    <v-col cols="12" md="6">
-      <v-text-field
-        v-model="form.prenom"
-        label="Prénom"
-        required
-        outlined
-        dense
-        class="bg-white rounded"
-      ></v-text-field>
-    </v-col>
+          <div class="min-h-screen flex items-center justify-center bg-gray-50 px-8 py-12" style="background-image: url('/pattern.svg');">
+            <div class="w-full max-w-4xl bg-white bg-opacity-70 p-8 rounded-lg shadow-md">
+              <form @submit.prevent="envoyerFormulaire" class="space-y-6">
 
-    <v-col cols="12" md="6">
-      <v-text-field
-        v-model="form.email"
-        label="Email"
-        type="email"
-        required
-        outlined
-        dense
-        class="bg-white rounded"
-      ></v-text-field>
-    </v-col>
-
-    <v-col cols="12" md="6">
-      <v-text-field
-        v-model="form.telephone"
-        label="Téléphone"
-        type="tel"
-        outlined
-        dense
-        class="bg-white rounded"
-      ></v-text-field>
-    </v-col>
-
-    <v-col cols="12">
-      <v-textarea
-        v-model="form.message"
-        label="Votre message"
-        required
-        outlined
-        rows="5"
-        class="bg-white rounded"
-      ></v-textarea>
-    </v-col>
-
-    <v-col cols="12" class="text-center mt-4">
-      <v-btn type="submit" color="primary" class="px-6 py-2">
-        Envoyer
-      </v-btn>
-    </v-col>
-  </v-row>
-</v-form>
-
-    
-                    
-
+                <div class="flex items-center mb-4">
+                  <label for="nom" class="block text-lg font-semibold text-[#3E3E3E] mb-2 mr-7">Votre Nom et <br> Prénom</label>
+                  <input v-model="nom" id="nom" type="text" required
+                    class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
                 </div>
-                <br><br>
-              </v-container>
-            </section>
+
+                <div class="flex items-center mb-4">
+                  <label for="email" class="block text-lg font-semibold text-[#3E3E3E] mb-2 mr-10">Adresse <br>E-Mail</label>
+                  <input v-model="email" id="email" type="email" required
+                    class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                </div>
+
+                <div class="flex items-center mb-4">
+                  <label for="message" class="block text-lg font-semibold text-[#3E3E3E] mb-2 mr-4">Votre Message</label>
+                  <textarea v-model="message" id="message" rows="4" required
+                    class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+
+                <!-- Bouton d'envoi -->
+                <div class="text-center">
+                  <button type="submit"
+                    class="bg-gray-800 hover:bg-black text-white font-bold py-2 px-12 rounded-full shadow">
+                    Soumettre
+                  </button>
+                </div>
+
+                    <!-- Espace-->              
+                  <div class="mb-8"></div>
+
+                <!-- Bloc Contact -->
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-mg md:text-base px-2">
+                  <a href="mailto:direction@btc-energies.fr" 
+                   class="inline-block text-xl text-[#8BC367] hover:text-[#8BC367] no-underline hover:no-underline transform transition-transform duration-200 hover:scale-105"
+                   >
+                    direction@btc-energies.fr
+                  </a>
+                  <span class="italic text-[#8BC367]">
+                    +33 6 29 56 07 56
+                  </span>
+                </div>
+              </form>
+            </div>
+          </div>
+
+  
+  </v-container>
+</section>
 
             
 
@@ -140,39 +117,19 @@
 import { onMounted, ref } from 'vue';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import Header from './Header.vue';
 import Sidebar from './Sidebar.vue';
+
 
 const logoSidebar = ref(null);
 gsap.registerPlugin(ScrollTrigger);
 
-onMounted(() => {
-  gsap.utils.toArray(".gsap-bloc").forEach((bloc) => {
-    gsap.from(bloc, {
-      opacity: 0,
-      y: 50,
-      duration: 1,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: bloc,
-        start: "top 90%",
-        toggleActions: "play reverse play reverse",
-      }
-    });
-  });
+const nom = ref('')
+const email = ref('')
+const message = ref('')
 
-  //  Animation du logo au scroll
-  gsap.from(logoSidebar.value, {
-    scrollTrigger: {
-      trigger: logoSidebar.value,
-      start: 'top 90%',
-      toggleActions: 'play reverse play reverse',
-    },
-    scale: 0,
-    opacity: 0,
-    duration: 5,
-    ease: 'back.out(1.7)',
-  });
-});
+const envoyerFormulaire = () => {
+  console.log({ nom: nom.value, email: email.value, message: message.value })
+  alert('Formulaire envoyé (simulé) !')
+}
 </script>
 

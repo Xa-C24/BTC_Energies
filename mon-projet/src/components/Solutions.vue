@@ -45,18 +45,18 @@
             <img
               src="/solutions/logo1.png"
               alt="Nos services BTC Energies"
-              class="w-30 transition-transform duration-300 ease-in-out hover:scale-110"
+              class="w-30 transition-transform duration-300 ease-in-out"
             />
           </div>
 
           <!-- Titre 1 + soulignement -->
-          <div class="text-left mb-6">
-            <h2 class="text-3xl font-bold text-[#777777]">Préparation</h2>
-            <div class="w-14 h-0.5 bg-[#8BC367] rounded-full mt-1"></div>
+          <div class="indent-8 text-left mb-6">
+            <h2 class=" text-3xl font-bold text-[#777777]">Préparation</h2>
+            <div class="ml-8 w-14 h-0.5 bg-[#8BC367] rounded-full mt-1"></div>
           </div>
 
             <!-- Liste -->
-          <ol class="text-gray-500 text-bolt text-xl space-y-2 px-6">
+          <ol class="indent-12 text-gray-500 text-bolt text-xl space-y-2 px-6">
             <li>1. Récupération et acheminement des intrants sur site.</li>
             <li>2. Tri et séparation des intrants.</li>
             <li>3. Broyage des déchets valorisables.</li>
@@ -76,13 +76,13 @@
           </div>
 
           <!-- Titre 2 + soulignement -->
-          <div class="text-left mb-6">
+          <div class="indent-8 text-left mb-6">
             <h2 class="text-3xl font-bold text-[#777777]">Valorisation</h2>
-            <div class="w-14 h-0.5 bg-[#8BC367] rounded-full mt-1"></div>
+            <div class="ml-8 w-14 h-0.5 bg-[#8BC367] rounded-full mt-1"></div>
           </div>
 
             <!-- Liste -->
-          <ol class="text-gray-500 text-bolt text-xl space-y-2 px-6">
+          <ol class="text-center text-gray-500 text-bolt text-xl space-y-2 px-6">
             <p>La Gazéification Hydrothermale ou GH permet d'extraire différents gaz et minéraux par procédé catalytique ou par procédé de haute température.</p>
           </ol>
       </div>   
@@ -100,16 +100,16 @@
           </div>
 
           <!-- Titre 2 + soulignement -->
-          <div class="text-left mb-6">
+          <div class="indent-8 text-left mb-6">
             <h2 class="text-3xl font-bold text-[#777777]">Exploitation</h2>
-            <div class="w-14 h-0.5 bg-[#8BC367] rounded-full mt-1"></div>
+            <div class="ml-8 w-14 h-0.5 bg-[#8BC367] rounded-full mt-1"></div>
           </div>
 
             <!-- Liste -->
             <ol class="text-gray-500 text-bolt text-xl space-y-2 px-6">
             <li>1.  Gaz produits : (Di)Hydrogène, méthane et CO2 qui seront purifiés avant d'être réinjectés dans le réseau, transformés en électricité, comprimés ou exploités sur place.</li>
             <li>2.  Eau récupérée : sera traitée par un processus d'électrolyse (après passage en procédé d'osmose inverse ou en évapo-condensateur) et/ou réexploitée sur place.</li>
-            <li>3. Matière minérale extraite : sera séchée, séparée, et vendue à des cimentiers ou à des affineurs. Une partie des engrais seront également exploités sur place. </li>
+            <li>3.  Matière minérale extraite : sera séchée, séparée, et vendue à des cimentiers ou à des affineurs. Une partie des engrais seront également exploités sur place. </li>
           </ol>
         </div>  
   <br><br>
@@ -144,7 +144,7 @@
 
             <!-- Liste image 1 -->
           <ol class="text-gray-500 text-bolt text-xl space-y-2 px-6">
-          <p>Nous proposons nos services à toute structure (publique ou privée) souhaitant optimiser son système de traitement de déchets et d'eaux usées. Nous prenons en charge le traitement de leurs déchets et assurons le développement, la gestion et l'exploitation d'un système sur-mesure, adapté à leurs besoins.</p>
+          <p class="text-center">Nous proposons nos services à toute structure (publique ou privée) souhaitant optimiser son système de traitement de déchets et d'eaux usées. Nous prenons en charge le traitement de leurs déchets et assurons le développement, la gestion et l'exploitation d'un système sur-mesure, adapté à leurs besoins.</p>
           </ol>
       </div>
 <br>
@@ -178,7 +178,7 @@
 
           <!-- Liste image 2 -->
           <ol class="text-gray-500 text-bolt text-xl space-y-2 px-6">
-          <p>Nous destinons notre production de méthane aux entreprises : industriels, fournisseurs de gaz et énergéticiens, stations services et aux collectivités.</p>
+          <p class="text-center">Nous destinons notre production de méthane aux entreprises : industriels, fournisseurs de gaz et énergéticiens, stations services et aux collectivités.</p>
           </ol>
         </div>  
 <br>
@@ -195,7 +195,7 @@
 
           <!-- Liste image 3 -->
           <ol class="text-gray-500 text-bolt text-xl space-y-2 px-6">
-          <p>L’Hydrogène est redistribué aux entreprises et aux collectivités et transformé en électricité.</p>
+          <p class="text-center">L’Hydrogène est redistribué aux entreprises et aux collectivités et transformé en électricité.</p>
           </ol>
         </div>
 <br>
@@ -211,7 +211,7 @@
 
           <!-- Liste image 4 -->
           <ol class="text-gray-500 text-bolt text-xl space-y-2 px-6">
-          <p>Le CO2 est exploité dans le cadre d’activités agricoles et industrielles ou transformé en e-carburant.</p>
+          <p class="text-center">Le CO2 est exploité dans le cadre d’activités agricoles et industrielles ou transformé en e-carburant.</p>
         </ol>
       </div> 
 <br>
@@ -227,7 +227,7 @@
       
           <!-- Liste image 5 -->
           <ol class="text-gray-500 text-bolt text-xl space-y-2 px-6">
-          <p>L’eau, chargée d’azote, est osmosée ou exploitée pour produire des plantes.</p>
+          <p class="text-center">L’eau, chargée d’azote, est osmosée ou exploitée pour produire des plantes.</p>
         </ol>
       </div> 
 <br>
@@ -244,7 +244,7 @@
 
           <!-- Liste image 6  -->
           <ol class="text-gray-500 text-bolt text-xl space-y-2 px-6">
-          <p>La matières minérale peux contenir , en fonction de la matière valorisée, des engrais et des métaux. Il sont donc extraits et exploités par différents secteurs. </p>
+          <p class="text-center">La matières minérale peux contenir , en fonction de la matière valorisée, des engrais et des métaux. Il sont donc extraits et exploités par différents secteurs. </p>
         </ol>
       </div>
           
@@ -270,7 +270,7 @@
                 <div></div>
 
                 <!-- Colonne 3 : Texte et bouton -->
-                <div class="flex flex-col items-center text-center">
+                <div class="flex flex-col items-center text-center justify-self-start">
                   <h2 class="font-montserrat font-semibold text-4xl mb-4 text-white">Nous contacter</h2>
 
                   <a href="/contact"
@@ -320,18 +320,36 @@ gsap.registerPlugin(ScrollTrigger);
 
 onMounted(() => {
   gsap.utils.toArray(".gsap-bloc").forEach((bloc) => {
-    gsap.from(bloc, {
-      opacity: 0,
-      y: 50,
-      duration: 1,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: bloc,
-        start: "top 85%",
-        toggleActions: "play reverse play reverse",
-      }
+  // Animation au scroll
+  gsap.from(bloc, {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: bloc,
+      start: "top 85%",
+      toggleActions: "play none none reset",
+    }
+  });
+
+  // Animation au survol (hover)
+  bloc.addEventListener("mouseenter", () => {
+    gsap.to(bloc, {
+      scale: 1.05, // Zoom léger
+      duration: 0.8,
+      ease: "power2.out"
     });
   });
+
+  bloc.addEventListener("mouseleave", () => {
+    gsap.to(bloc, {
+      scale: 1,
+      duration: 0.6,
+      ease: "power2.out"
+    });
+  });
+});
 
   gsap.from(logoBandeau.value, {
     scrollTrigger: {
