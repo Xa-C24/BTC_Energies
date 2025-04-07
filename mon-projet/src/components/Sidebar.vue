@@ -1,146 +1,131 @@
 <template>
+  <!-- Sidebar overlay pour mobile -->
+  <div
+    v-if="props.isSidebarOpen"
+    class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40 lg:hidden"
+    @click="toggleSidebar"
+  ></div>
 
-<!-- BOUTON BURGER visible en mobile uniquement -->
-<button 
-  @click="toggleSidebar" 
-  class="md:hidden fixed top-4 left-4 z-50 bg-[#061832] text-white p-2 rounded shadow-lg">
-  ☰
-</button>
+  <!-- Sidebar -->
+  <div
+    :class="[
+      'fixed top-0 left-0 h-full w-72 bg-white text-gray-700 z-50 flex flex-col shadow-lg transition-transform duration-300 ease-in-out',
+      props.isSidebarOpen ? 'translate-x-0' : '-translate-x-full',
+      'lg:hidden'
+    ]"
+  >
+    <!-- Bouton de fermeture -->
+    <button
+      @click="toggleSidebar"
+      class="absolute top-4 right-4 text-gray-700 text-3xl focus:outline-none"
+    >
+      &times;
+    </button>
 
-<!-- OVERLAY FOND FLOU en mobile -->
-<div
-  v-if="isSidebarOpen"
-  @click="isSidebarOpen = false"
-  class="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
-></div>
-<div
-  ref="sidebar"
-  :class="[
-    'sidebar z-50 bg-[#061832] text-white fixed top-0 left-0 h-screen w-64 p-4',
-    isSidebarOpen ? 'block' : 'hidden',
-    'md:block'
-  ]"
->
+    <!-- Contenu de la sidebar -->
+    <div class="flex flex-col h-full pt-16 px-6">
 
-    <!-- Logo en haut de la sidebar -->
-    <div ref="logoL" class="logo-containerL mb-6 flex justify-center">
-      <img src="/logo_sidebar.png" alt="BTC Énergies Logo"/>
-    </div>
+      <!-- Logo principal -->
+      <div class="mb-8 flex justify-center">
+        <img src="/logo_sidebar.png" alt="BTC Énergies Logo" class="h-12 w-auto" />
+      </div>
 
-    <br>
-
-    <!-- Deuxième image avec taille plus grande -->
-    <div ref="logoS" class="logo-containerS mb-6 flex justify-center">
-      <img src="/LeSoDeDe.png" alt="Les Solutions de demain"/>
-    </div>
-
-    <br>
-
-    <!-- Flèche supplémentaire centrée au-dessus du menu -->
-    <div ref="arrowH" class="menu-arrow_H"></div>
-
-    <ul ref="menuList" class="scrollable-list font-Urbanist text-white text-lg">
-      <li v-for="(item, index) in menuItems" :key="index" ref="menuItems">
-            <router-link
-          :to="item.route"
-          class="block hover:text-blue-500 transition-colors duration-300"
+      <!-- Menu navigation -->
+      <ul class="flex-grow space-y-4 border-t border-gray-200 pt-4">
+        <li
+          v-for="(item, index) in menuItems"
+          :key="index"
+          class="border-b border-gray-200 pb-2"
         >
-          {{ item.label }}
-      </router-link>
-      </li>
-    </ul>
+          <router-link
+            :to="item.route"
+            class="block text-gray-700 hover:text-green-600 font-medium"
+            @click="handleLinkClick"
+          >
+            {{ item.label }}
+          </router-link>
+        </li>
+      </ul>
 
-    <!-- Flèche supplémentaire centrée sous le menu -->
-    <div ref="arrowB" class="menu-arrow_B"></div>
+      <!-- Réseaux sociaux -->
+      <div class="flex justify-center space-x-4 mt-6 text-gray-500">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+    </div>
   </div>
 </template>
 
-<script>
-import { onMounted, ref } from "vue";
-import gsap from "gsap";
+<script setup>
+import { onMounted, ref } from 'vue'
+import gsap from 'gsap'
 
-export default {
-  name: "Sidebar",
-  setup() {
-    const sidebar = ref(null);
-    const logoL = ref(null);
-    const logoS = ref(null);
-    const menuList = ref(null);
-    const isSidebarOpen = ref(false);
-    const toggleSidebar = () => {
-  isSidebarOpen.value = !isSidebarOpen.value;
-};
-    const menuItems = [
-    { label: "Accueil", route: "/" },
-    { label: "Notre Constat", route: "/Constat" },
-    { label: "Nos solutions", route: "/Solutions" },
-    { label: "Financements et partenaires", route: "/Partenaires" },
-    { label: "Notre équipe", route: "/equipe" },
-    { label: "Contact", route: "/contact" },
-    { label: "Et demain ?", route: "/EtDemain" },
-    { label: "MentionsLegales", route: "/mentions-legales" },
-  ];
+const props = defineProps({ isSidebarOpen: Boolean })
+const emit = defineEmits(['toggleSidebar'])
 
-    
+const logoL = ref(null)
+const logoS = ref(null)
+const menuList = ref(null)
 
-    onMounted(() => {
+const menuItems = [
+  { label: 'Accueil', route: '/' },
+  { label: 'Notre Constat', route: '/Constat' },
+  { label: 'Nos solutions', route: '/Solutions' },
+  { label: 'Financements et partenaires', route: '/Partenaires' },
+  { label: 'Notre équipe', route: '/equipe' },
+  { label: 'Contact', route: '/contact' },
+  { label: 'Et demain ?', route: '/EtDemain' },
+  { label: 'Mentions légales', route: '/mentions-legales' },
+]
+
+const toggleSidebar = () => {
+  emit('toggleSidebar')
+}
+
+const handleLinkClick = () => {
+  emit('toggleSidebar')
+}
+
+onMounted(() => {
   gsap.from(logoL.value, {
     opacity: 0,
     scale: 0.8,
-    duration: 2,
-    ease: "power2.out",
-  });
+    duration: 1.5,
+    ease: 'power2.out',
+  })
 
-  // Effet de zoom au survol pour chaque élément du menu
-  Array.from(menuList.value.children).forEach((item) => {
-    item.addEventListener("mouseenter", () => {
-      gsap.to(item, {
-        scale: 1.1, // Zoom léger
-        duration: 0.3,
-        ease: "power2.out",
-      });
-    });
+  gsap.from(logoS.value, {
+    opacity: 0,
+    y: -30,
+    duration: 1.5,
+    delay: 0.5,
+    ease: 'power2.out',
+  })
 
-    item.addEventListener("mouseleave", () => {
-      gsap.to(item, {
-        scale: 1, // Retour à la taille normale
-        duration: 0.3,
-        ease: "power2.out",
-      });
-    }); 
-  });
-  
+  if (menuList.value) {
+    gsap.from(menuList.value.children, {
+      opacity: 0,
+      x: -50,
+      stagger: 0.1,
+      duration: 0.9,
+      delay: 0.8,
+      ease: 'power2.out',
+    })
 
-      gsap.from(logoS.value, {
-        opacity: 0,
-        y: -30,
-        duration: 1,
-        delay: 0.9,
-        ease: "power2.out",
-      });
+    Array.from(menuList.value.children).forEach((item) => {
+      item.addEventListener('mouseenter', () => {
+        gsap.to(item, { scale: 1.1, duration: 0.3, ease: 'power2.out' })
+      })
 
-      gsap.from(menuList.value.children, {
-        opacity: 0,
-        x: -50,
-        stagger: 0.1,
-        duration: 0.9,
-        delay: 1,
-        ease: "power2.out",
-      });
-    });
-   
-
-    return {
-      sidebar,
-      logoL,
-      logoS,
-      menuList,
-      menuItems,
-      isSidebarOpen,
-      toggleSidebar,
-    };
-  }, // <- Fermeture correcte de `setup()`
-};
+      item.addEventListener('mouseleave', () => {
+        gsap.to(item, { scale: 1, duration: 0.3, ease: 'power2.out' })
+      })
+    })
+  }
+})
 </script>
 
 <style scoped>

@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <Sidebar />
+    <HeaderMobile @toggleSidebar="toggleSidebar" />
+    <Sidebar :isSidebarOpen="isSidebarOpen" @toggleSidebar="toggleSidebar" />
     <div class="layout-wrapper">
       <div class="layout-content">
         <router-view />
@@ -11,6 +12,14 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import Sidebar from './components/Sidebar.vue'
 import Footer from './components/Footer.vue'
+import HeaderMobile from './components/HeaderMobile.vue'
+
+const isSidebarOpen = ref(false)
+
+const toggleSidebar = () => {
+  isSidebarOpen.value = !isSidebarOpen.value
+}
 </script>

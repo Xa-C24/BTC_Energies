@@ -18,10 +18,10 @@
 
     <!-- Bandeau bleu -->
     <div class="bandeau_bleu w-full py-30 bg-gradient-to-r from-[#000926] to-[#3c5a81]">
-  <div class="w-full max-w-[1200px] mx-auto text-center px-4">
+  <div class="w-full max-w-[1200px] mx-auto text-center px-3">
     <div class="w-[200px] h-1 bg-[#22B17A] mb-14 bandeau_bleu-trait mx-auto"></div>
     <h1 class="bandeau_bleu-text font-montserrat text-white whitespace-nowrap" style="font-size: clamp(1rem, 2.5vw, 2rem);">
-      Développement, Gestion et Exploitation de<br> projets industriels
+      Développement, Gestion et Exploitation de projets industriels
     </h1>
     <div class="w-[200px] h-1 bg-[#22B17A] mt-14 bandeau_bleu-trait mx-auto"></div>
   </div>
