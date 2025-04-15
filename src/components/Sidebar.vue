@@ -1,6 +1,6 @@
 <template>
   <!-- Sidebar Desktop -->
-  <div class="hidden lg:flex fixed top-0 left-0 h-full w-72 bg-gradient-to-b from-[#000926] to-[#3c5a81] text-white flex-col z-50 shadow-lg">
+  <div class="hidden lg:flex fixed top-0 left-0 h-full w-72 bg-gradient-to-r from-[#040c29] via-[#0c2049] to-[#1a2f5e] text-white flex-col z-50 shadow-lg">
     <div class="flex flex-col h-full justify-between py-8">
 
       
@@ -16,7 +16,7 @@
       </div>
 
       <!-- Centre : menu avec scroll -->
-      <ul ref="menuList" class="text-center space-y-4 overflow-x-hidden flex-1 scrollbar-thin scrollbar-thumb-green-400 scrollbar-track-transparent">
+      <ul ref="menuList" class="menu-scroll text-center space-y-4 overflow-x-hidden flex-1 scrollbar-thin scrollbar-thumb-green-400 scrollbar-track-transparent">
         <li v-for="(item, index) in menuItems" :key="index" class="relative">
           <router-link
             :to="item.route"
@@ -187,6 +187,16 @@ onMounted(() => {
   height: 0px;
   background: transparent; /* facultatif, pour Safari */
 }
+
+.menu-scroll {
+  scrollbar-width: none;          /* Firefox */
+  -ms-overflow-style: none;       /* IE 10+ */
+}
+
+.menu-scroll::-webkit-scrollbar {
+  display: none;                  /* Chrome, Safari */
+}
+
 
 /* Scrollbar customisée */
 

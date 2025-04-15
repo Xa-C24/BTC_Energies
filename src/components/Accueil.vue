@@ -145,11 +145,11 @@
               </v-col>
             </v-row>
 
-        </div>
-      </v-container>
+        
+      
 
       <!-- Notre Constat -->
-      <v-container fluid class="page-blanche_app py-12">
+     
         <h2 class="page-blanche_app-title">Notre Constat</h2>
 
         
@@ -164,10 +164,11 @@
             allowfullscreen
           ></iframe>
         </div>
-      </v-container>
+      
+      
 
       <!-- Notre équipe -->
-      <v-container fluid class="page-blanche_app py-12">
+      
         <h2 class="page-blanche_app-title">Notre équipe</h2>
         <br><br>
 
@@ -192,6 +193,7 @@
             </div>
           </v-col>
         </v-row>
+      </div>
       </v-container>
 
     </v-main>

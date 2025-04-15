@@ -17,8 +17,8 @@
       <v-col>    
         
           <!-- Le reste du contenu -->
-            <div class="main-content-wrapper">
-              <Header />
+            
+          
               
               <div class="video-banner-gif">
           <video autoplay loop muted playsinline>
@@ -29,10 +29,11 @@
     
         
              <!-- Section Notre Constat -->
-
-            <section class="page-blanche_app">
+            <v-container fluid class="page-blanche_app py-12">
+            
               <div class="page-blanche_app-wrapper">
                 <h2 class="page-blanche_app-title">Notre Constat</h2>
+
                 <br />
                 <br />
                 <div class="text-[#475C79] text-center font-bold">
@@ -47,6 +48,7 @@
                     Restons ouverts aux opportunités et prêts à embrasser le changement pour un avenir prometteur.
                   </p>
                 </div>
+                
 
                 <br />
                 <br />
@@ -186,9 +188,10 @@
 
                 <!-- Ligne de sépartion verte-->
                 <div class="border-t-2 border-[#8BC367] w-16 mx-auto mt-6"></div>
+              
               </div>
-           </section>
-          </div>
+             </v-container>
+            
 
                         <!-- Bandeau bas -->
             <div class="bandeau_bleu mt-6 w-full bg-gradient-to-r from-[#000926] to-[#3c5a81]">
@@ -296,6 +299,7 @@ export default {
 
 
 <style scoped>
+
 .v-main {
   padding: 0 !important;
   margin: 0 !important;

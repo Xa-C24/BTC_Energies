@@ -26,6 +26,8 @@
 
 
             <!-- Section Nos Solutions -->
+            <v-container fluid class="page-blanche_app py-12">
+              <div class="page-blanche_app-wrapper">
             <section class="bg-white py-10 px-6 md:px-16">
               <h2 class="page-blanche_app-title">
                 Nos solutions
@@ -249,6 +251,8 @@
       </div>
           
 </section>
+</div>
+</v-container>
 </div>
 
 

@@ -10,7 +10,7 @@
         </v-col>
 
         <!-- Contenu principal -->
-        <v-col class="pa-0 ma-0">
+        <v-col class="pa-10 ma-10">
           <div class="main-content">
             <Header />
 
@@ -48,7 +48,8 @@
 
             <!-- Bloc blanc après la vidéo -->
             <section>
-              <v-container>
+              <v-container fluid class="page-blanche_app py-12">
+                <div class="page-blanche_app-wrapper">
                 
               
 
@@ -101,7 +102,8 @@
           </div>
 
   
-  </v-container>
+  </div>
+   </v-container>
 </section>
 
             

@@ -18,6 +18,8 @@
           Votre navigateur ne supporte pas la lecture de vidéos HTML5.
         </video>
 
+        
+
         <!-- Logo -->
         <div class="absolute top-6 left-1/2 transform -translate-x-1/2 z-20">
           <img src="/logo_sansfond.png" alt="Logo BTC Énergies" class="w-20 h-auto max-w-full" />
@@ -74,6 +76,7 @@
           <p class="text-gray-500 text-xl">French Tech Prépa Tremplin</p>
           <div class="border-t-2 border-[#8BC367] w-16 mx-auto mt-6"></div>
         </div>
+      
 
         <div class="text-center">
           <p class="text-gray-500 text-xl">2024 - 2025</p>
@@ -85,7 +88,9 @@
           </div>
           <p class="text-gray-500 text-xl">French Tech Toulouse</p>
         </div>
+     
       </section>
+
 
       <!-- Footer -->
       <footer class="w-full bg-[#0d111c] text-white text-center py-4 text-sm">
