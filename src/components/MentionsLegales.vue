@@ -26,7 +26,10 @@
                 <img src="/logo_sansfond.png" alt="Logo BTC Énergies" class="w-16 sm:w-20 md:w-24 lg:w-28 h-auto" />
               </div>
 
+
+              
               <!-- Texte centré -->
+                
               <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 font-serif z-10">
                 <h2 class="text-4xl md:text-5xl font-bold mb-8 text-white">Mentions Légales</h2>
                 <div class="w-16 h-1 bg-[#FFFF] rounded-full mt-1"></div>

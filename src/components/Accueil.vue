@@ -2,19 +2,16 @@
 <template>
   <div class="main-content-wrapper ">
 
+    
     <!-- Video GIF haut de page -->
-    <div class="w-full h-[90vh] overflow-hidden lg:pl-72">
-      <video
-        class="w-full h-full object-cover"
-        autoplay
-        loop
-        muted
-        playsinline
-      >
-        <source src="/videos/videoplayback.mp4" type="video/mp4" />
-        Votre navigateur ne supporte pas la lecture de vidéos.
-      </video>
-    </div>
+        <section>
+            <div class="video-banner-gif">
+              <video autoplay loop muted playsinline>
+                <source src="/videos/videoplayback.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+              </video>
+            </div>
+          </section>
 
     <!-- Bandeau bleu -->
     <div class="bandeau_bleu w-full py-30 bg-gradient-to-r from-[#000926] to-[#3c5a81]">
@@ -203,8 +200,9 @@
       <div class="grid grid-cols-2 items-center text-white px-8 py-6">
 
         <!-- Logo -->
-        <div class="flex justify-center">
+        <div class="flex justify-start pl-0 ml-4">
           <img
+            ref="bandeau_bleu-logo"
             src="/logo_sidebar.png"
             alt="BTC Énergies Logo"
             class="w-40 h-auto max-h-32 bandeau_bleu-logo"
@@ -219,6 +217,7 @@
           <p class="text-xs">Numéro SIRET : 928 497 585 00010</p>
         </div>
       </div>
+      
     </div>
 
   </div>
@@ -249,7 +248,7 @@ export default {
         {
           name: 'Alain Degans',
           title: 'Directeur Général (COO)',
-          phone: '+33 6 29 56 07 56',
+          phone: '+33 7 88 10 07 46',
           img: '/Trombi/A_D.png',
         },
         {
@@ -371,10 +370,10 @@ export default {
       scrollTrigger: {
         trigger: ".bandeau_bleu-logo",
         start: "top 90%",
-        toggleActions: "play none none none",
+        toggleActions: "play reverse play reverse",
       },
       opacity: 0,
-      scale: 0.8,
+      scale: 0.9,
       duration: 5,
       ease: "power2.out",
     });

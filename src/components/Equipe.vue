@@ -53,8 +53,12 @@
 
             <!-- Bloc blanc après la vidéo -->
             <section>
+
+              
               <v-container fluid class="page-blanche_app py-12">
-                <div class="page-blanche_app-wrapper">
+
+                <div class="pl-16 sm:pl-20 md:pl-24 lg:pl-40 xl:pl-60">
+                  <div class="page-blanche_app-wrapper">
 <br>
 <br>           
                   <!-- bloc 1 -->
@@ -77,7 +81,7 @@
                     <div class="flex-1">
                       <!-- Titre + soulignement -->
                       <div class="text-left mb-4">
-                        <h2 class="text-3xl font-bold text-[#555]">Thibault</h2>
+                        <h2 class="text-3xl font-bold text-[#555]">Thibault BÉTHENCOURT</h2>
                         <div class="w-16 h-1 bg-[#8BC367] rounded-full mt-1"></div>
                       </div>
 
@@ -562,6 +566,7 @@
 
                 </div>
                 <br><br>
+              </div>
               </v-container>
             </section>
 

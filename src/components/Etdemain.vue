@@ -39,19 +39,19 @@
             </section>
 
             <!-- Bloc blanc après la vidéo -->
-            <section>
+            
+              <section>
+              
               <v-container fluid class="page-blanche_app py-12 px-4 sm:px-6">
+                
+                <div class="pl-16 sm:pl-20 md:pl-24 lg:pl-40 xl:pl-60">
                 <div class="page-blanche_app-wrapper max-w-screen-xl mx-auto space-y-10">
 
                   <div class="gsap-bloc hover:scale-[1.08] transition-transform duration-300 ease-in-out">
                     <h1 class="text-3xl font-bold text-[#777777] text-left">Et demain, que ferons-nous ?</h1>
                     <div class="w-16 h-1 bg-[#8BC367] rounded-full mt-2"></div>
-
-                    <!-- Espace -->
                     <div class="mb-8"></div> 
-                    
 
-                    <!-- Image centrale -->
                     <div class="flex justify-center mt-8">
                       <img
                         src="/etdemain.png"
@@ -63,61 +63,64 @@
                     <p class="text-[#475C79] font-bold text-center mt-6">
                       De par la grande diversité des ressources que nous obtenons, nous avons la possibilité de porter et de développer tout un ensemble de projets industriels.
                     </p>
+                  </div>
 
                     <!-- Texte détaillé -->
-                    <div class="flex-1 space-y-4 mt-10">
+                    <div class="gsap-bloc mt-12">
 
-                    
-                      <!-- Ligne de sépartion -->
                       <div class="border-t-2 border-[#8BC367] w-16 mx-auto"></div>
-
-                      <!-- Espace -->
-                    <div class="mb-8"></div>
+                      <div class="mb-8"></div>
 
                       <p class="text-gray-600">
                         BTC Énergies prévoit ainsi de construire une zone de production de plantes à visées thérapeutiques exploitant une partie des ressources générées :
                       </p>
 
-                      <ul class="list-disc pl-8 text-gray-600 space-y-2">
+                      <ul class="list-disc pl-8 text-gray-600 space-y-2 mt-4">
                         <li>Le CO₂ purifié servira à booster la croissance des plantes et à en extraire les principes actifs.</li>
                         <li>Une partie du (di)hydrogène transformé en électricité alimentera les installations.</li>
                         <li>Les engrais ainsi que l'eau nourriront les plantes.</li>
                       </ul>
+                    </div>
                       <!-- Espace -->
                       <div class="mb-8"></div>
 
-                      <!-- Ligne verte de séparattion -->
-                      <div class="border-t-2 border-[#8BC367] w-16 mx-auto mt-6"></div>
+             
+              <!-- Ligne verte de séparattion -->
+              <div class="gsap-bloc mt-12">
 
-                      <!-- Espace -->
-                    <div class="mb-8"></div>
+                <div class="border-t-2 border-[#8BC367] w-16 mx-auto mt-6"></div>
+                  <div class="mb-8"></div>
 
-                      <p class="text-gray-600">
-                        Les plantes seront cultivées en environnement contrôlé (température, hygrométrie, taux de CO₂, alimentation en éléments nutritifs, etc.).
-                      </p>
-                      <p class="text-gray-600">
-                        Nous pourrons ainsi produire, sur commande, une grande diversité de plantes à haute valeur ajoutée pour l'industrie pharmaceutique, cosmétique ou alimentaire.
-                      </p>
-                      <p class="text-gray-600">
-                        Ces zones de production pourront également être construites à proximité d'unités de méthanisation déjà existantes.
-                      </p>
-                    </div>
+                  <p class="text-gray-600">
+                    Les plantes seront cultivées en environnement contrôlé (température, hygrométrie, taux de CO₂, alimentation en éléments nutritifs, etc.).
+                  </p>
+                  <div class="mb-4"></div>
+                  <p class="text-gray-600">
+                    Nous pourrons ainsi produire, sur commande, une grande diversité de plantes à haute valeur ajoutée pour l'industrie pharmaceutique, cosmétique ou alimentaire.
+                  </p>
+                  <div class="mb-4"></div>
+                  <p class="text-gray-600">
+                    Ces zones de production pourront également être construites à proximité d'unités de méthanisation déjà existantes.
+                  </p>
 
-                    <div class="border-t-2 border-[#8BC367] w-16 mx-auto mt-10"></div>
+                  <div class="border-t-2 border-[#8BC367] w-16 mx-auto mt-10"></div>
+                  <div class="mb-8"></div>
 
-                    <!-- Espace -->
-                    <div class="mb-8"></div>
-
-                    <!-- Phrase finale -->
-                    <p class="text-3xl text-[#8BC367] font-semibold text-center mt-6">
-                      Rien ne se perd, rien ne se crée, tout se transforme et s'exploite !
-                    </p>
-                  </div>
+              <div class="gsap-bloc mt-12">
+                  <p class="text-3xl text-[#8BC367] font-semibold text-center mt-6">
+                    Rien ne se perd, rien ne se crée, tout se transforme et s'exploite !
+                  </p>
                 </div>
-              </v-container>
+              </div>
+
+                </div>
+              </div>
+            </v-container>
+            
             </section>
-          </div>
-        </v-col>
+         
+        </div>
+      </v-col>
 
         <!-- Bandeau bas -->
         <div class="bandeau_bleu mt-6 w-full bg-gradient-to-r from-[#000926] to-[#3c5a81]">
@@ -154,7 +157,7 @@
 
 
 <script setup>
-import { onMounted, ref } from 'vue';
+import { onMounted, ref, nextTick } from 'vue';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import Header from './Header.vue';
@@ -163,7 +166,10 @@ import Sidebar from './Sidebar.vue';
 const logoSidebar = ref(null);
 gsap.registerPlugin(ScrollTrigger);
 
-onMounted(() => {
+onMounted(async () => {
+  await nextTick();
+
+  // Animation scroll des blocs de contenu
   gsap.utils.toArray(".gsap-bloc").forEach((bloc) => {
     gsap.from(bloc, {
       opacity: 0,
@@ -172,13 +178,14 @@ onMounted(() => {
       ease: "power2.out",
       scrollTrigger: {
         trigger: bloc,
-        start: "top 95%",
+        start: "top 85%",
         toggleActions: "play reverse play reverse",
-      }
+        // markers: true, // ← active pour debug
+      },
     });
   });
 
-  //  Animation du logo au scroll
+  // Animation du logo dans le bandeau bleu
   gsap.from(logoSidebar.value, {
     scrollTrigger: {
       trigger: logoSidebar.value,
@@ -192,4 +199,6 @@ onMounted(() => {
   });
 });
 </script>
+
+
 
