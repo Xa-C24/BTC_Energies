@@ -566,6 +566,7 @@
 
           </div>
         </v-col>
+        
         <!-- Bandeau bas -->
         <div class="bandeau_bleu mt-6 w-full bg-gradient-to-r from-[#000926] to-[#3c5a81]">
               <div class="grid grid-cols-3 items-center text-white px-8 py-6">

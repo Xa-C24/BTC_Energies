@@ -15,11 +15,7 @@
 
       <!-- Contenu principal avec la vidéo -->
       <v-col>    
-        
-          <!-- Le reste du contenu -->
-            
-          
-              
+
               <div class="video-banner-gif">
           <video autoplay loop muted playsinline>
             <source src="/videos/videoplayback.mp4" type="video/mp4">
@@ -29,9 +25,12 @@
     
         
              <!-- Section Notre Constat -->
-            <v-container fluid class="page-blanche_app py-12">
-            
-              <div class="page-blanche_app-wrapper">
+             <div class="pl-16 sm:pl-20 md:pl-24 lg:pl-40 xl:pl-60">
+
+             <v-container class="min-h-screen bg-gray-200 flex items-center justify-center px-4 py-8">
+
+             <div class="bg-white rounded-2xl shadow-md max-w-5xl w-full p-8">
+
                 <h2 class="page-blanche_app-title">Notre Constat</h2>
 
                 <br />
@@ -191,6 +190,8 @@
               
               </div>
              </v-container>
+            </div>
+            
             
 
                         <!-- Bandeau bas -->
