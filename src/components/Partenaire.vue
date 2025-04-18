@@ -1,68 +1,74 @@
 <template>
+  
   <v-app>
-  <div class="flex min-h-screen">
+    
+  <v-main class="pa-0 ma-0">
+    
+    <v-row no-gutters class="pa-0 ma-0">
+      
+      <!-- Sidebar -->
+      <v-col cols="12" md="2" class="pa-0">
+        <div class="sidebar">
+          <Sidebar />
+        </div>
+      </v-col>
 
-    <!-- Sidebar -->
-    <div>
-      <Sidebar />
-    </div>
+      <!-- Contenu principal avec la vidéo -->
+      <v-col>    
 
-    <!-- Contenu principal -->
-    <div class="flex-1 flex flex-col">
-      <Header />
-
-      <!-- Bloc vidéo -->
-      <section class="relative w-full h-[90vh] overflow-hidden">
+           <!-- Bloc vidéo -->
+      <section class="video-banner relative w-full h-[90vh] overflow-hidden">
         <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover">
           <source src="/videos/animation_eau2.mp4" type="video/mp4" />
           Votre navigateur ne supporte pas la lecture de vidéos HTML5.
         </video>
-
-        
-
+   
         <!-- Logo -->
         <div class="absolute top-6 left-1/2 transform -translate-x-1/2 z-20">
           <img src="/logo_sansfond.png" alt="Logo BTC Énergies" class="w-20 h-auto max-w-full" />
         </div>
 
-        <!-- Texte centré -->
-        <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 font-serif z-10">
-          <h2 class="text-4xl md:text-5xl font-bold mb-8">Financements et partenaires</h2>
-          <div class="w-full max-w-4xl border-t-[1px] border-white mb-6"></div>
-          <p class="text-white text-lg md:text-xl max-w-4xl mx-auto leading-relaxed">
-            Pour réaliser nos projets, nous nous rapprochons d'une grande variété d'acteurs qui nous soutiennent à chaque étape.
-          </p>
-          <div class="w-full max-w-4xl border-t-[1px] border-white mt-6"></div>
-        </div>
-      </section>
+            <!-- Texte centré -->
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 font-serif z-10">
+                <h2 class="text-4xl md:text-5xl font-bold mb-8 text-white ml-16">Financements et partenaires</h2>
 
-      <!-- Bandeau bleu -->
-      <section class="w-full bg-gradient-to-r from-[#000926] to-[#3c5a81] py-20">
-        <div class="flex flex-col items-center text-center px-4">
-          <div class="w-[200px] h-1 bg-[#22B17A] mb-14"></div>
-          <h1 class="font-montserrat text-white text-2xl md:text-3xl">
-            Nos documents Investisseurs
-          </h1>
-          <div class="w-[200px] h-1 bg-[#22B17A] mt-14"></div>
-        </div>
-      </section>
+                <!-- Trait supérieur -->
+              <div class="w-full max-w-4xl border-t-[1px] border-white mb-6"></div>
 
-      <!-- Bloc blanc -->
-      <section class="bg-white py-20 px-6 md:px-16 w-full">
-        <!-- Financement participatif -->
-        <div class="text-center mb-20">
-          <h2 class="text-3xl font-bold text-[#777777] mb-6">Financement participatif</h2>
-          <div class="flex justify-center items-center my-6">
+                <div class="w-full max-w-4xl border-t border-white mb-6"></div>
+                <p class="text-white text-lg md:text-xl max-w-4xl mx-auto leading-relaxed pl-10">
+                  Pour réaliser nos projets, nous nous rapprochons d'une grande variété d'acteurs qui  nous soutiennent à chaque étape.
+                </p>
+
+                <br> <br>
+                <!-- Trait inférieur -->
+                <div class="w-full max-w-4xl border-t-[1px] border-white mb-6"></div>
+              </div>
+            </section>
+
+    
+        
+             <!-- Section Notre Constat -->
+             <div class="pl-16 sm:pl-20 md:pl-24 lg:pl-40 xl:pl-60">
+
+             <v-container class="min-h-screen bg-gray-200 flex items-center justify-center px-4 py-8">
+              <div class="text-center mb-20">
+             <div class="bg-white rounded-2xl shadow-md max-w-5xl w-full p-8">
+
+              <h2 class="text-3xl font-bold text-[#777777] mb-6">Financement participatif</h2>
+              <div class="flex justify-center items-center my-6">
             <a href="https://fr.ulule.com/projet-promethee-energies-renouvelables/"
                target="_blank" rel="noopener noreferrer">
               <img src="/partenaire/ulule.png" alt="Ulule" class="w-30 hover:scale-110 transition-transform duration-300 ease-in-out" />
             </a>
           </div>
           <p class="text-gray-500 text-xl">Cliquez sur les logos si vous souhaitez nous soutenir ou découvrir notre démarche RSE.</p>
-          <div class="border-t-2 border-[#8BC367] w-16 mx-auto mt-6"></div>
-        </div>
+          
+          <div class="bandeau_bleu-trait border-t-2 border-[#8BC367] w-16 mx-auto mt-6"></div>
 
-        <!-- Partenaires -->
+          <p class="mb-8"></p>
+
+                  <!-- Partenaires -->
         <div class="text-center mb-20">
           <h2 class="text-3xl font-bold text-[#777777] mb-2">Nos partenaires</h2>
           <p class="text-gray-500 text-xl">2024</p>
@@ -74,9 +80,9 @@
             </a>
           </div>
           <p class="text-gray-500 text-xl">French Tech Prépa Tremplin</p>
-          <div class="border-t-2 border-[#8BC367] w-16 mx-auto mt-6"></div>
+          <div class="bandeau_bleu-trait border-t-2 border-[#8BC367] w-16 mx-auto mt-6"></div>
         </div>
-      
+       
 
         <div class="text-center">
           <p class="text-gray-500 text-xl">2024 - 2025</p>
@@ -88,57 +94,107 @@
           </div>
           <p class="text-gray-500 text-xl">French Tech Toulouse</p>
         </div>
-     
-      </section>
+        </div>
+                
 
+              
+                <br>
 
-      <!-- Footer -->
-      <footer class="w-full bg-[#0d111c] text-white text-center py-4 text-sm">
-        <p>Site optimisé pour la version ordinateur</p>
-        <p>
-          Optimisé par
-          <a href="https://www.webnode.fr" target="_blank" class="underline">Webnode</a> •
-          <a href="/cookies" class="underline">Cookies</a>
-        </p>
-      </footer>
+                <!-- Ligne de sépartion verte-->
+               <div class="bandeau_bleu-trait border-t-2 border-[#8BC367] w-16 mx-auto mt-6"></div>
 
-    </div>
+                <br />
+                <!-- Texte final -->
+                <v-row justify="center">
+                  <v-col cols="12" md="10">
+                    <p class="text-center text-[#475C79] font-bold">
+                      Chez BTC Énergies, nous croyons en la force du collectif pour bâtir les solutions de demain.
+                      C’est en unissant nos compétences, nos savoir-faire et nos convictions que nous pouvons relever les défis de la transition énergétique.
+                    </p>
+                    <br />
+                   
+                  
+                  </v-col>
+                </v-row>
 
-  </div>
-</v-app>
+                <!-- Ligne de sépartion verte-->
+             <div class="bandeau_bleu-trait border-t-2 border-[#8BC367] w-16 mx-auto mt-6"></div>
 
+              
+              </div>
+             </v-container>
+            </div>
+            
+            
+
+                        <!-- Bandeau bas -->
+            <div class="bandeau_bleu mt-6 w-full bg-gradient-to-r from-[#000926] to-[#3c5a81]">
+              <div class="grid grid-cols-3 items-center text-white px-8 py-6">
+                
+               <!-- Colonne 1 : Logo -->
+               <div class="flex justify-center">
+                  <img
+                  ref="logoSidebar"
+                  src="/logo_sidebar.png"
+                  alt="BTC Énergies Logo"
+                  class="w-40 h-auto max-h-32"
+                />
+                </div>
+
+                <!-- Colonne 2 : Vide ou contenu futur -->
+                <div></div>
+
+                <!-- Colonne 3 : Texte et bouton -->
+                <div class="flex flex-col items-center text-center">
+                  <h2 class="font-montserrat font-semibold text-4xl mb-4 text-white">Nous contacter</h2>
+
+                  <a href="/contact"
+                  class="font-montserrat font-bold text-black bg-[#C2C4C7] px-6 py-3 rounded-xl shadow transition duration-300 transform
+                          hover:bg-[#989A9D] hover:text-white hover:scale-105 hover:shadow-lg
+                          active:scale-95 active:shadow-inner flex items-center gap-2">
+                            <span class="text-lg"></span>
+                            Nos Coordonnées
+                  </a>
+                </div>
+              </div>
+            </div>
+          </v-col>
+        </v-row>
+      
+    </v-main>
+  </v-app>
 </template>
-
+            
 
 
 <script setup>
 import { onMounted, ref } from 'vue';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import Header from './Header.vue';
-import Sidebar from './Sidebar.vue';
 
-const logoSidebar = ref(null); // ✅ Ref pour le logo
 gsap.registerPlugin(ScrollTrigger);
 
-onMounted(() => {
-  const bandeauBleuText = document.querySelector('.bandeau_bleu-text');
+// ✅ Ref sur le logo
+const logoSidebar = ref(null);
 
-  // ✅ Animation texte principal
-  if (bandeauBleuText) {
+onMounted(() => {
+  // ✅ Animation du logo : zoom de 0 à 100% en 3 secondes
+  if (logoSidebar.value) {
     gsap.fromTo(
-      bandeauBleuText,
-      { opacity: 0, y: -40, scale: 0.8 },
+      logoSidebar.value,
       {
-        opacity: 1,
-        y: 0,
+        scale: 0,
+        opacity: 0,
+      },
+      {
         scale: 1,
-        duration: 2.5,
-        ease: 'power2.out',
+        opacity: 1,
+        duration: 4,
+        ease: 'back.out(1.7)',
         scrollTrigger: {
-          trigger: bandeauBleuText,
+          trigger: logoSidebar.value,
           start: 'top 85%',
-          toggleActions: 'play none none none',
+          toggleActions: 'play reverse play reverse',
         },
       }
     );
@@ -178,22 +234,5 @@ onMounted(() => {
       }
     });
   });
-
-  
-
-  // ✅ Animation du logo
-  if (logoSidebar.value) {
-    gsap.from(logoSidebar.value, {
-      scrollTrigger: {
-        trigger: logoSidebar.value,
-        start: 'top 85%',
-        toggleActions: 'play reverse play reverse',
-      },
-      scale: 0.8,
-      opacity: 0,
-      duration: 5,
-      ease: 'back.out(1.7)',
-    });
-  }
 });
 </script>

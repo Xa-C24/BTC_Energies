@@ -2,6 +2,7 @@
   <v-app>
     <v-main class="pa-0 ma-0">
       <v-row no-gutters class="pa-0 ma-0">
+
         <!-- Sidebar -->
         <v-col cols="12" md="2" class="pa-0">
           <div class="sidebar">
@@ -48,7 +49,7 @@
 
             <!-- Bloc blanc après la vidéo -->
             <section>
-              <v-container fluid class="page-blanche_app py-12">
+              <v-container fluid class="page-blanche2_app py-12">
                 <div class="page-blanche_app-wrapper">
                 
               
@@ -133,5 +134,5 @@ const envoyerFormulaire = () => {
   console.log({ nom: nom.value, email: email.value, message: message.value })
   alert('Formulaire envoyé (simulé) !')
 }
-</script>
 
+</script>
