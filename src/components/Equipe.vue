@@ -10,9 +10,9 @@
         </v-col>
 
         <!-- Contenu principal -->
-        <v-col class="pa-0 ma-0">
-          <div class="main-content">
-            <Header />
+        <v-col>
+        
+           
 
             <!-- Bloc vidéo -->
             <section class="video-banner relative w-full h-[90vh] overflow-hidden">
@@ -47,6 +47,9 @@
                 
               </div>
             </section>
+            <div class="main-content">
+
+              <Header />
 
             <!-- Bloc blanc après la vidéo -->
             <section>
@@ -566,7 +569,7 @@
 
           </div>
         </v-col>
-        
+
         <!-- Bandeau bas -->
         <div class="bandeau_bleu mt-6 w-full bg-gradient-to-r from-[#000926] to-[#3c5a81]">
               <div class="grid grid-cols-3 items-center text-white px-8 py-6">

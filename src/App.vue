@@ -2,14 +2,20 @@
   <div id="app">
     <HeaderMobile @toggleSidebar="toggleSidebar" />
     <Sidebar :isSidebarOpen="isSidebarOpen" @toggleSidebar="toggleSidebar" />
+
+    <!-- Contenu principal -->
     <div class="layout-wrapper lg:ml-72">
       <div class="layout-content">
         <router-view />
+        <Footer />
       </div>
-      <Footer />
     </div>
+
+    <!-- Footer en dehors du layout wrapper -->
+   
   </div>
 </template>
+
 
 <script setup>
 import { ref } from 'vue'
