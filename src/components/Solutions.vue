@@ -175,15 +175,16 @@
               alt="Nos services BTC Energies"
             />
           </div>
-        </div>
+        
 
-        <div class="gsap-bloc hover:scale-[1.04] transition-transform duration-300 ease-in-out">
+        <div class="hover:scale-[1.04] transition-transform duration-300 ease-in-out">
 
           <!-- Liste image 2 -->
           <ol class="text-gray-500 text-bolt text-xl space-y-2 px-6">
           <p class="text-center">Nous destinons notre production de méthane aux entreprises : industriels, fournisseurs de gaz et énergéticiens, stations services et aux collectivités.</p>
           </ol>
-        </div>  
+        </div> 
+      </div>
 <br>
 
         <div class="gsap-bloc hover:scale-[1.04] transition-transform duration-300 ease-in-out">

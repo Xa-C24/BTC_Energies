@@ -42,26 +42,27 @@
              
         
            <!-- Section Mentions Légales -->
-<div class="pl-20 sm:pl-24 md:pl-28 lg:pl-40 xl:pl-60">
-  <v-container class="min-h-screen bg-gray-200 flex flex-col items-start justify-start px-4 py-8">
+          <div class="bg-gray-100 pl-20 sm:pl-24 md:pl-28 lg:pl-40 xl:pl-60">
+            <v-container class="min-h-screen bg-gray-200 flex flex-col items-start justify-start px-4 py-8 gsap-mentions">
 
-    <!-- Titre + soulignement -->
-    <div class="text-left mb-10">
-      <h2 class="text-3xl font-bold text-[#555]">Mentions légales</h2>
-      <div class="w-16 h-1 bg-[#8BC367] rounded-full mt-1"></div>
-    </div>
 
-    <!-- Bloc principal : Logo à gauche / Infos à droite -->
-    <div class="flex flex-col md:flex-row w-full items-start justify-start gap-20">
+              <!-- Titre + soulignement -->
+              <div class="text-left mb-10">
+                <h2 class="text-3xl font-bold text-[#555]">Mentions légales</h2>
+                <div class="w-16 h-1 bg-[#8BC367] rounded-full mt-1"></div>
+              </div>
 
-      <!-- Colonne gauche : Logo + Coordonnées -->
-      <div class="flex flex-col items-center md:items-start ml-6">
-        <img
-          src="/favicon2.jpg"
-          alt="Logo BTC Energies"
-          class="w-48 md:w-60 h-auto rounded-md object-cover transition-transform duration-300 ease-in-out hover:scale-110 mb-4"
-        />
- </div>
+              <!-- Bloc principal : Logo à gauche / Infos à droite -->
+              <div class="flex flex-col md:flex-row w-full items-start justify-start gap-20">
+
+                <!-- Colonne gauche : Logo + Coordonnées -->
+                <div class="flex flex-col items-center md:items-start ml-6">
+                <img
+                  src="/favicon2.jpg"
+                  alt="Logo BTC Energies"
+                  class="w-48 md:w-60 h-auto rounded-md object-cover transition-transform duration-300 ease-in-out hover:scale-110 mb-4"
+                />
+              </div>
 
       <!-- Colonne droite : Infos légales -->
       <div class="flex-1">
@@ -167,18 +168,17 @@ const logoSidebar = ref(null);
 gsap.registerPlugin(ScrollTrigger);
 
 onMounted(() => {
-  gsap.utils.toArray(".gsap-bloc").forEach((bloc) => {
-    gsap.from(bloc, {
-      opacity: 0,
-      y: 50,
-      duration: 1,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: bloc,
-        start: "top 90%",
-        toggleActions: "play reverse play reverse",
-      }
-    });
+  // Animation du container "Mentions légales"
+  gsap.from(".gsap-mentions", {
+    scrollTrigger: {
+      trigger: ".gsap-mentions",
+      start: "top 80%", // quand 20% du container entre dans la vue
+      toggleActions: "play none none none"
+    },
+    y: 50,
+    opacity: 0,
+    duration: 3.2,
+    ease: "power3.out"
   });
 
   //  Animation du logo au scroll

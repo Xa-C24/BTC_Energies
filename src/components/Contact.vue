@@ -51,7 +51,7 @@
              <!-- Section Contact -->
 
              <div class="pl-16 sm:pl-20 md:pl-24 lg:pl-40 xl:pl-60">
-             <v-container class="min-h-screen bg-gray-200 flex items-center justify-center px-4 py-8">
+             <v-container class="min-h-screen bg-gray-200 flex items-center justify-center px-4 py-8 gsap-mentions">
               <div class="text-center mb-20">
 
                 <!-- Ligne de sépartion verte-->
@@ -267,5 +267,18 @@ onMounted(() => {
       });
     });
   }
+
+   // Animation du container "Contact"
+   gsap.from(".gsap-mentions", {
+    scrollTrigger: {
+      trigger: ".gsap-mentions",
+      start: "top 80%", // quand 20% du container entre dans la vue
+      toggleActions: "play none none none"
+    },
+    y: 50,
+    opacity: 0,
+    duration: 3.2,
+    ease: "power3.out"
+  });
 });
 </script>
