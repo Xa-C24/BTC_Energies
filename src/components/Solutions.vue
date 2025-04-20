@@ -248,7 +248,7 @@
 
           <!-- Liste image 6  -->
           <ol class="text-gray-500 text-bolt text-xl space-y-2 px-6">
-          <p class="text-center">La matières minérale peux contenir , en fonction de la matière valorisée, des engrais et des métaux. Il sont donc extraits et exploités par différents secteurs. </p>
+          <p class="text-center">La matières minérale peut contenir, en fonction de la matière valorisée, des engrais et des métaux. Il sont donc extraits et exploités par différents secteurs. </p>
         </ol>
       </div>
           

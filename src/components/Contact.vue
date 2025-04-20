@@ -50,9 +50,9 @@
         
              <!-- Section Contact -->
 
-             <div class="pl-16 sm:pl-20 md:pl-24 lg:pl-40 xl:pl-60">
-             <v-container class="min-h-screen bg-gray-200 flex items-center justify-center px-4 py-8 gsap-mentions">
-              <div class="text-center mb-20">
+             <div class="pl-16 sm:pl-20 md:pl-24 lg:pl-40 xl:pl-60 topography-bg">
+              <v-container class="min-h-screen bg-gray-200 flex items-center justify-center px-4 py-8 gsap-mentions topography-bg">
+                <div class="text-center mb-20">
 
                 <!-- Ligne de sépartion verte-->
                <div class="bandeau_bleu-trait border-t-2 border-[#8BC367] w-16 mx-auto mt-6"></div>
@@ -62,7 +62,7 @@
         <!-- Texte en tête -->
 
         <v-row justify="center">
-          <v-col cols="12" md="10">
+          <v-col cols="12" md="10 ">
             <h4 class="text-center text-[#475C79] font-bold pl-8">
             Vous souhaitez en savoir plus sur nos solutions, proposer un partenariat, ou tout simplement entrer en contact avec notre équipe&nbsp;?<br>
               Remplissez ce formulaire. Nous reviendrons vers vous dans les meilleurs délais.                    <br />
@@ -76,8 +76,7 @@
 
             <!-- Formulaire de Contact -->
 
-                <div class="min-h-screen flex items-center justify-center bg-gray-50 px-8 py-12" style="background-image: url('/pattern.svg');">
-            <div class="w-full max-w-4xl bg-white bg-opacity-70 p-8 rounded-lg shadow-md">
+            <div class="w-full max-w-4xl bg-white bg-opacity-70 p-8 rounded-lg shadow-md ml-12">
               <form @submit.prevent="envoyerFormulaire" class="space-y-6">
 
                 <div class="flex items-center mb-4">
@@ -125,7 +124,7 @@
                 </div>
               </form>
             </div>
-          </div>
+          
 
               </div>
              </v-container>
@@ -222,7 +221,7 @@ onMounted(() => {
         ease: 'back.out(1.7)',
         scrollTrigger: {
           trigger: logoSidebar.value,
-          start: 'top 85%',
+          start: 'top 95%',
           toggleActions: 'play reverse play reverse',
         },
       }
@@ -272,13 +271,23 @@ onMounted(() => {
    gsap.from(".gsap-mentions", {
     scrollTrigger: {
       trigger: ".gsap-mentions",
-      start: "top 80%", // quand 20% du container entre dans la vue
+      start: "top 40%", 
       toggleActions: "play none none none"
     },
     y: 50,
     opacity: 0,
-    duration: 3.2,
+    duration: 4.2,
     ease: "power3.out"
   });
 });
 </script>
+
+<style>
+.topography-bg {
+  background-image: url('/Topography/topography33.svg');
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+</style>
