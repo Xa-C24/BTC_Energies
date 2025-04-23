@@ -62,8 +62,7 @@
 <br>
 <br>           
                   <!-- bloc 1 -->
-                  <div class="gsap-bloc hover:scale-[1.08] transition-transform duration-300 ease-in-out">
-
+                  <div class="relative group hover:scale-[1.04] transition-transform duration-300 ease-in-out">
                  
 
                     <!-- Titre 1 + soulignement -->
@@ -107,6 +106,41 @@
                       </div>
                     </div>
                   </div>
+
+                      <!-- Bulle d'info (Popover) -->
+                  <div class="absolute left-1/2 transform -translate-x-1/2 top-0 hidden group-hover:flex 
+                              bg-white text-gray-700 p-6 rounded-lg shadow-2xl w-[95%] max-h-[50vh] 
+                              z-50 items-start overflow-auto">
+
+                      <div class="space-y-4">
+                          <h3 class="font-bold text-2xl">Thibault BÉTHENCOURT</h3>
+
+                          <p class="italic">“Dans ce monde, tout est imaginable. Mais il faut savoir convaincre et s’entourer des meilleurs pour que tout soit possible”</p>
+
+                          <p>
+                              Titulaire de plusieurs diplômes dans des disciplines complémentaires — Ingénierie et Gestion de Projets, Histoire, Relations Internationales & Géopolitique, Droit, Économie et Gestion. Il incarne un profil pluridisciplinaire rare, au croisement des enjeux techniques, stratégiques et géopolitiques.
+                              Fondateur et penseur du projet BTC Énergies, il en assure la direction depuis la présentation officielle de la technologie aux professionnels du secteur en février 2022, marquant ainsi le lancement opérationnel de l’initiative.
+                              Depuis, BTC Énergies a franchi une étape majeure avec sa sélection dans le cadre de l’Appel à Manifestation d’Intérêt lancé par Natran (ex-GRTgaz), spécifiquement dédié à la gazéification hydrothermale.
+                          </p>
+
+                          <p>
+                              Ce jalon confirme la pertinence de la solution développée par Thibault BÉTHENCOURT, ainsi que la reconnaissance croissante de son engagement, de sa vision et de sa capacité d’exécution.
+                              Entrepreneur visionnaire, créatif et résolument tourné vers l’innovation, il incarne une approche audacieuse et disruptive de l’industrie, faisant de lui une figure singulière et remarquée dans l’écosystème de la transition énergétique.
+                          </p>
+
+                          <p>
+                              Polyglotte, aventurier passionné et voyageur intrépide, il débute dès l’âge de 17 ans un parcours d’idéation nourri par un tour du monde à travers 11 pays et 3 continents.
+                              Confronté aux réalités énergétiques et environnementales sur le terrain, il affine une compréhension globale des enjeux, ce qui lui a permis d’identifier immédiatement le potentiel stratégique de la gazéification hydrothermale.
+                          </p>
+
+                          <p>
+                              Ses expériences internationales, entre observation pragmatique et immersion culturelle, façonnent une vision singulière et ambitieuse : faire de cette technologie une réponse concrète aux défis de la transition énergétique et de la ré-industrialisation.
+                              Son esprit en constante émulation fait de lui la boîte à idées de l’entreprise.
+                          </p>
+                      </div>
+
+                  </div>
+
                 </div>
 
 <br> 
