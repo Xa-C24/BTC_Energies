@@ -286,7 +286,7 @@ onMounted(() => {
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
-  width: 80vw;
+  width: 85vw;
   
 }
 
