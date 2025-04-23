@@ -49,21 +49,19 @@
              
         
              <!-- Section Contact -->
+             <div class="topography-bg min-h-screen w-full">
+              <v-container fluid class="flex flex-col items-center justify-center px-4 py-8 gsap-mentions">
+    
+    <div class="text-center mb-20">
 
-             <div class="pl-16 sm:pl-20 md:pl-24 lg:pl-40 xl:pl-60 topography-bg">
-              <v-container class="min-h-screen bg-gray-200 flex items-center justify-center px-4 py-8 gsap-mentions topography-bg">
-                <div class="text-center mb-20">
+      <!-- Ligne de séparation verte -->
+      <div class="bandeau_bleu-trait border-t-2 border-[#8BC367] w-16 mx-auto mt-6"></div>
+      <br>
 
-                <!-- Ligne de sépartion verte-->
-               <div class="bandeau_bleu-trait border-t-2 border-[#8BC367] w-16 mx-auto mt-6"></div>
- <br>
-
-
-        <!-- Texte en tête -->
-
-        <v-row justify="center">
-          <v-col cols="12" md="10 ">
-            <h4 class="text-center text-[#475C79] font-bold pl-8">
+      <!-- Texte en tête -->
+      <v-row justify="center">
+        <v-col cols="12" md="10" class="topography-bg">
+          <h4 class="text-center text-[#475C79] font-bold">
             Vous souhaitez en savoir plus sur nos solutions, proposer un partenariat, ou tout simplement entrer en contact avec notre équipe&nbsp;?<br>
               Remplissez ce formulaire. Nous reviendrons vers vous dans les meilleurs délais.                    <br />
             </h4>
@@ -288,6 +286,8 @@ onMounted(() => {
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
+  width: 80vw;
   
 }
+
 </style>

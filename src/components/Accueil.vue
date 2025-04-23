@@ -7,7 +7,7 @@
         <section>
             <div class="video-banner-gif">
               <video autoplay loop muted playsinline>
-                <source src="/videos/videoplayback.mp4" type="video/mp4">
+                <source src="/videos/Bienvenuesurnotresite.mp4" type="video/mp4" />
                 Votre navigateur ne supporte pas la lecture de vidéos HTML5.
               </video>
             </div>
@@ -30,8 +30,8 @@
     <v-main>
 
       <!-- Nos services -->
-      <v-container fluid class="page-blanche_app py-12">
-        <div class="page-blanche_app-wrapper">
+      <v-container fluid class="page-blanche_app py-12 topography-bg">
+        <div class="page-blanche_app-wrapper ml-12">
           <h2 class="page-blanche_app-title">Nos services</h2>
           <br><br>
 
@@ -396,4 +396,16 @@ export default {
   align-items: center;
   height: 100vh;
 }
+</style>
+
+<style>
+.topography-bg {
+  background-image: url('/Topography/topography33.svg');
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  width: 80vw;
+  
+}
+
 </style>

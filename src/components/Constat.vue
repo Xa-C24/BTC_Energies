@@ -18,7 +18,7 @@
 
               <div class="video-banner-gif">
           <video autoplay loop muted playsinline>
-            <source src="/videos/videoplayback.mp4" type="video/mp4">
+            <source src="/videos/Bienvenuesurnotresite.mp4" type="video/mp4" />
             Votre navigateur ne supporte pas la lecture de vidéos HTML5.
           </video>
         </div>
@@ -108,7 +108,7 @@
                 <!-- Image + légendes -->
                 <v-row justify="center" class="my-6">
                   <v-col cols="12" md="8" class="text-center">
-                    <img src="/Q_C_C.png" alt="Nos services BTC Energies" class="w-full max-w-3xl mx-auto  class= w-full max-w-3xl mx-auto transition-transform duration-500 transform hover:scale-105" />
+                    <img src="/Q_C_C.png" alt="Nos services BTC Energies" class="w-full max-w-3xl mx-auto class=w-full transition-transform duration-500 transform hover:scale-105" />
                     <div class="flex justify-center items-center gap-4 text-sm mt-2 text-gray-600">
                       <p>UM : Unité de Méthanisation</p>
                       <p>UGH : Unité de Gazéification Hydrothermale</p>
