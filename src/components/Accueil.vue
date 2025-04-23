@@ -246,8 +246,14 @@ export default {
           img: '/Trombi/T_B.png',
         },
         {
+          name: 'Jean-Marc BOUILLON',
+          title: 'Directeur Général',
+          phone: '+33 6 72 64 22 50',
+          img: '/Trombi/JM_B.jpg',
+        },
+        {
           name: 'Alain Degans',
-          title: 'Directeur Général (COO)',
+          title: 'Chef de Projet Digital',
           phone: '+33 7 88 10 07 46',
           img: '/Trombi/A_D.png',
         },

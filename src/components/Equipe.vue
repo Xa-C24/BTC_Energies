@@ -62,7 +62,7 @@
 <br>
 <br>           
                   <!-- bloc 1 -->
-                  <div class="relative group hover:scale-[1.04] transition-transform duration-300 ease-in-out">
+                  <div class="gsap-blocrelative group hover:scale-[1.04] transition-transform duration-300 ease-in-out">
                  
 
                     <!-- Titre 1 + soulignement -->
@@ -145,6 +145,56 @@
 
 <br> 
 <br> 
+
+                <!-- Bloc J-M Bouillon  -->
+                <div class="gsap-bloc hover:scale-[1.08] transition-transform duration-300 ease-in-out">
+
+                <!-- Titre 1 + soulignement -->
+                  <div class="flex flex-col md:flex-row items-start gap-8 bg-white rounded-lg shadow-md p-6 gsap-bloc">
+                  <!-- Image à gauche -->
+                  <div class="flex-shrink-0">
+                    <img
+                      src="/Trombi/JM_B.jpg"
+                      alt="Jean-Marc BOUILLON"
+                      class="w-48 md:w-60 h-auto rounded-md object-cover transition-transform duration-300 ease-in-out hover:scale-110"
+                      />
+                  </div>
+
+                  <!-- Texte à droite -->
+                  <div class="flex-1">
+                    <!-- Titre + soulignement -->
+                    <div class="text-left mb-4">
+                      <h2 class="text-3xl font-bold text-[#555]">Jean-Marc BOUILLON</h2>
+                      <div class="w-16 h-1 bg-[#8BC367] rounded-full mt-1"></div>
+                    </div>
+
+                    <br>
+
+                    <!-- Détails -->
+                    <ul class="text-gray-600 text-lg space-y-1">
+                      <li><strong>Directeur Général (COO)</strong></li>
+                      
+                      <li class="text-[#25A875]">+33 6 72 64 22 50</li>
+                    </ul>
+
+                    <!-- Ligne de sépartion verte-->
+                <div class="border-t-2 border-[#8BC367] w-16 mx-auto mt-6"></div>
+
+                    <!-- Études -->
+                    <div class="mt-4">
+                      <p class="italic font-semibold text-gray-700">Études :</p>
+                        <p class="text-gray-600 mt-1">
+                          Diplôme d'Ingénieur : Institut National Polytechnique de Grenoble<br />
+                          Doctorat : Sciences de Gestion<br />
+                          Certifications : PMP® (Project Management Institute), Médiateur diplômé (Université Panthéon-Assas)
+                        </p>
+
+                    </div>
+                  </div>
+                </div>
+                </div>
+    <br> 
+    <br> 
                  <!-- Bloc 2 -->
                  <div class="gsap-bloc hover:scale-[1.08] transition-transform duration-300 ease-in-out">
 
@@ -171,7 +221,7 @@
 
                    <!-- Détails -->
                    <ul class="text-gray-600 text-lg space-y-1">
-                     <li><strong>Directeur général (COO)</strong></li>
+                     <li><strong>Chef de Projet Digital – Cofondateur de BTC Énergies</strong></li>
                      
                      <li class="text-[#25A875]">+33 7 88 10 07 46</li>
                    </ul>
