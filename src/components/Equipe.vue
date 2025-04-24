@@ -62,11 +62,11 @@
 <br>
 <br>           
                   <!-- bloc 1 -->
-                  <div class="gsap-blocrelative group hover:scale-[1.04] transition-transform duration-300 ease-in-out">
+                  <div class="gsap-bloc relative group hover:scale-[1.04] transition-transform duration-300 ease-in-out">
                  
 
                     <!-- Titre 1 + soulignement -->
-                    <div class="flex flex-col md:flex-row items-start gap-8 bg-white rounded-lg shadow-md p-6 gsap-bloc">
+                    <div class="flex flex-col md:flex-row items-start gap-8 bg-white rounded-lg shadow-md p-6 gsap-bloc overflow-visible">
                     <!-- Image à gauche -->
                     <div class="flex-shrink-0">
                       <img
@@ -88,7 +88,7 @@
 
                       <!-- Détails -->
                       <ul class="text-gray-600 text-lg space-y-1">
-                        <li><strong>Président</strong></li>
+                        <li><strong>Président - Fondateur de BTC Énergies</strong></li>
                         <li>Porteur de projet (CEO)</li>
                         <li class="text-[#25A875]">+33 6 29 56 07 56</li>
                       </ul>
@@ -108,33 +108,93 @@
                   </div>
 
                       <!-- Bulle d'info (Popover) -->
-                  <div class="absolute left-1/2 transform -translate-x-1/2 top-0 hidden group-hover:flex 
-                              bg-white text-gray-700 p-6 rounded-lg shadow-2xl w-[95%] max-h-[50vh] 
-                              z-50 items-start overflow-auto">
+                      <div class="absolute left-[55%] transform -translate-x-1/3 top-0 hidden group-hover:flex 
+                        bg-white text-gray-700 p-6 rounded-lg shadow-2xl w-[75%] max-h-[90vh] 
+                        z-[10] items-start overflow-auto bulle-scroll overflow-y-scroll h-96">
 
                       <div class="space-y-4">
                           <h3 class="font-bold text-2xl">Thibault BÉTHENCOURT</h3>
 
-                          <p class="italic">“Dans ce monde, tout est imaginable. Mais il faut savoir convaincre et s’entourer des meilleurs pour que tout soit possible”</p>
+                              
 
+                          <!-- Détails -->
+                            <ul class="text-gray-600 text-lg space-y-1">
+                              <li><strong>Président - Fondateur de BTC Énergies</strong></li>
+                              <li>Porteur de projet (CEO)</li>
+                              <li class="text-[#25A875]">+33 6 29 56 07 56</li>
+                            </ul>
+
+                            <!-- Études -->
+                          <div class="mt-4">
+                            <p class="italic font-semibold text-gray-700">Études :</p>
+                            <p class="text-gray-600 mt-1">
+                              Bac+5 : Droit, Économie, Gestion (administration des institutions publiques)<br />
+                              Doctorat en préparation (Management stratégique)
+                            </p>
+                          </div>
+
+                            <!-- Ligne de sépartion verte-->
+                <div class="border-t-2 border-[#8BC367] w-16 mx-auto mt-6"></div>
+
+                   <p class="italic">“Dans ce monde, tout est imaginable. Mais il faut savoir convaincre et s’entourer des meilleurs pour que tout soit possible”</p>
+              
+                   <!-- Ligne de sépartion verte-->
+                <div class="border-t-2 border-[#8BC367] w-16 mx-auto mt-6"></div>
+
+                <!-- Logos des attributs symboliques -->
+                <p class="italic font-semibold text-gray-700">Attribut symboliques :</p>
+                          <!-- Conteneur parent flex -->
+            <div class="flex justify-center gap-8 mt-4 flex-wrap">
+
+            <!-- Bloc 1 -->
+            <div class="flex flex-col items-center max-w-xs text-center">
+                <img src="/Attributs/TB_FeuHydrothermie.png" alt="Feu Hydrothermie" class="w-40 h-40 object-contain">
+                <p class="italic text-sm mt-2">
+                    Le Feu Bleu de l’Hydrothermie : flamme rare et puissante, symbole de la gazéification hydrothermale, son feu sacré. Il éclaire un chemin nouveau dans la transition énergétique, porteur de rupture et d’espoir.
+                </p>
+            </div>
+
+            <!-- Bloc 2 -->
+            <div class="flex flex-col items-center max-w-xs text-center">
+                <img src="/Attributs/TB_LivFeMu.png" alt="Livre Fer Musique" class="w-40 h-40 object-contain">
+                <p class="italic text-sm mt-2">
+                    Le Livre aux Feuilles Multiples : chaque discipline y est une page — ingénierie, droit, économie, géopolitique. C’est la somme de des savoirs, l’intelligence synthétique que tu mobilises pour t’adresser à tous les niveaux du réel.
+                </p>
+            </div>
+
+            <!-- Bloc 3 -->
+            <div class="flex flex-col items-center max-w-xs text-center">
+                <img src="/Attributs/TB_Sextant.png" alt="Sextant" class="w-40 h-40 object-contain">
+                <p class="italic text-sm mt-2">
+                    Le Sextant : symbole de la navigation stratégique, il représente la capacité à t’orienter dans la complexité, à anticiper les courants du monde et à poser un cap visionnaire, qu’il s’agisse de géopolitique ou d’innovation industrielle.
+                </p>
+            </div>
+
+            </div>
+
+
+                <!-- Ligne de sépartion verte-->
+                <div class="border-t-2 border-[#8BC367] w-16 mx-auto mt-6"></div>
+
+                          
                           <p>
-                              Titulaire de plusieurs diplômes dans des disciplines complémentaires — Ingénierie et Gestion de Projets, Histoire, Relations Internationales & Géopolitique, Droit, Économie et Gestion. Il incarne un profil pluridisciplinaire rare, au croisement des enjeux techniques, stratégiques et géopolitiques.
+                            <span class="ml-5"></span>Titulaire de plusieurs diplômes dans des disciplines complémentaires — Ingénierie et Gestion de Projets, Histoire, Relations Internationales & Géopolitique, Droit, Économie et Gestion. Il incarne un profil pluridisciplinaire rare, au croisement des enjeux techniques, stratégiques et géopolitiques.
                               Fondateur et penseur du projet BTC Énergies, il en assure la direction depuis la présentation officielle de la technologie aux professionnels du secteur en février 2022, marquant ainsi le lancement opérationnel de l’initiative.
                               Depuis, BTC Énergies a franchi une étape majeure avec sa sélection dans le cadre de l’Appel à Manifestation d’Intérêt lancé par Natran (ex-GRTgaz), spécifiquement dédié à la gazéification hydrothermale.
                           </p>
 
                           <p>
-                              Ce jalon confirme la pertinence de la solution développée par Thibault BÉTHENCOURT, ainsi que la reconnaissance croissante de son engagement, de sa vision et de sa capacité d’exécution.
+                            <span class="ml-5"></span>Ce jalon confirme la pertinence de la solution développée par Thibault BÉTHENCOURT, ainsi que la reconnaissance croissante de son engagement, de sa vision et de sa capacité d’exécution.
                               Entrepreneur visionnaire, créatif et résolument tourné vers l’innovation, il incarne une approche audacieuse et disruptive de l’industrie, faisant de lui une figure singulière et remarquée dans l’écosystème de la transition énergétique.
                           </p>
 
                           <p>
-                              Polyglotte, aventurier passionné et voyageur intrépide, il débute dès l’âge de 17 ans un parcours d’idéation nourri par un tour du monde à travers 11 pays et 3 continents.
+                            <span class="ml-5"></span>Polyglotte, aventurier passionné et voyageur intrépide, il débute dès l’âge de 17 ans un parcours d’idéation nourri par un tour du monde à travers 11 pays et 3 continents.
                               Confronté aux réalités énergétiques et environnementales sur le terrain, il affine une compréhension globale des enjeux, ce qui lui a permis d’identifier immédiatement le potentiel stratégique de la gazéification hydrothermale.
                           </p>
 
                           <p>
-                              Ses expériences internationales, entre observation pragmatique et immersion culturelle, façonnent une vision singulière et ambitieuse : faire de cette technologie une réponse concrète aux défis de la transition énergétique et de la ré-industrialisation.
+                            <span class="ml-5"></span>Ses expériences internationales, entre observation pragmatique et immersion culturelle, façonnent une vision singulière et ambitieuse : faire de cette technologie une réponse concrète aux défis de la transition énergétique et de la ré-industrialisation.
                               Son esprit en constante émulation fait de lui la boîte à idées de l’entreprise.
                           </p>
                       </div>

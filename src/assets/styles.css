@@ -485,3 +485,32 @@ h1, h2, h3 {
   object-fit: cover;
 }
 
+/* ---------Style de Scroll ------*/
+
+/* Scrollbar générale */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e7e9e6;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #02081a;  /* Exemple : vert foncé pour le site */
+  border-radius: 6px;
+}
+
+/* Scrollbar personnalisée pour la bulle page Equipe */
+.bulle-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.bulle-scroll::-webkit-scrollbar-track {
+  background: #ffffff;  /* Fond blanc ou autre */
+}
+
+.bulle-scroll::-webkit-scrollbar-thumb {
+  background-color: #8BC367;  /* Vert clair BTC pour la bulle */
+  border-radius: 4px;
+}
