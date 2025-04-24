@@ -108,9 +108,10 @@
                   </div>
 
                       <!-- Bulle d'info (Popover) -->
-                      <div class="absolute left-[55%] transform -translate-x-1/3 top-0 hidden group-hover:flex 
+                      <div class="bulle-info absolute left-[55%] transform -translate-x-1/3 top-0 
                         bg-white text-gray-700 p-6 rounded-lg shadow-2xl w-[75%] max-h-[90vh] 
                         z-[10] items-start overflow-auto bulle-scroll overflow-y-scroll h-96">
+
 
                       <div class="space-y-4">
                           <h3 class="font-bold text-2xl">Thibault BÉTHENCOURT</h3>
@@ -146,7 +147,7 @@
                           <!-- Conteneur parent flex -->
             <div class="flex justify-center gap-8 mt-4 flex-wrap">
 
-            <!-- Bloc 1 -->
+            <!-- Bloc Attribut 1 -->
             <div class="flex flex-col items-center max-w-xs text-center">
                 <img src="/Attributs/TB_FeuHydrothermie.png" alt="Feu Hydrothermie" class="w-40 h-40 object-contain">
                 <p class="italic text-sm mt-2">
@@ -154,7 +155,7 @@
                 </p>
             </div>
 
-            <!-- Bloc 2 -->
+            <!-- Bloc Attribut 2 -->
             <div class="flex flex-col items-center max-w-xs text-center">
                 <img src="/Attributs/TB_LivFeMu.png" alt="Livre Fer Musique" class="w-40 h-40 object-contain">
                 <p class="italic text-sm mt-2">
@@ -162,7 +163,7 @@
                 </p>
             </div>
 
-            <!-- Bloc 3 -->
+            <!-- Bloc Attibut 3 -->
             <div class="flex flex-col items-center max-w-xs text-center">
                 <img src="/Attributs/TB_Sextant.png" alt="Sextant" class="w-40 h-40 object-contain">
                 <p class="italic text-sm mt-2">
@@ -767,7 +768,9 @@ const logoSidebar = ref(null);
 gsap.registerPlugin(ScrollTrigger);
 
 onMounted(() => {
+  // Animation scroll des blocs
   gsap.utils.toArray(".gsap-bloc").forEach((bloc) => {
+    // Animation d'apparition au scroll
     gsap.from(bloc, {
       opacity: 0,
       y: 50,
@@ -779,9 +782,42 @@ onMounted(() => {
         toggleActions: "play reverse play reverse",
       }
     });
+
+    // Animation de la bulle (effet page qui se tourne)
+    const bulle = bloc.querySelector('.bulle-info');
+
+    if (bulle) {
+      // Position initiale : bulle fermée et invisible
+      gsap.set(bulle, { 
+        transformOrigin: "left center", 
+        rotateY: -90,
+        opacity: 0,
+        pointerEvents: "none"
+      });
+
+      bloc.addEventListener('mouseenter', () => {
+        gsap.to(bulle, {
+          rotateY: 0,
+          opacity: 1,
+          pointerEvents: "auto",
+          duration: 1.8,
+          ease: "power2.out"
+        });
+      });
+
+      bloc.addEventListener('mouseleave', () => {
+        gsap.to(bulle, {
+          rotateY: -90,
+          opacity: 0,
+          pointerEvents: "none",
+          duration: 1,
+          ease: "power2.in"
+        });
+      });
+    }
   });
 
-  //  Animation du logo au scroll
+  // Animation du logo au scroll
   gsap.from(logoSidebar.value, {
     scrollTrigger: {
       trigger: logoSidebar.value,
@@ -795,4 +831,3 @@ onMounted(() => {
   });
 });
 </script>
-
