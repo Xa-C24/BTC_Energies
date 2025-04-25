@@ -10,6 +10,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /* utile pour couper tout débordement horizontal */
 }
 
 .v-application--wrap,
@@ -469,21 +470,20 @@ h1, h2, h3 {
 
 /* Video gif */
 
-.video-banner-gif{
+.video-banner-gif {
   position: relative;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 600px;
-  margin-left: calc(-50vw + 50%);
+  width: 100%;
+  height: 500px;   /* Hauteur fixe ou adaptable selon besoin */
   overflow: hidden;
 }
 
 .video-banner-gif video {
-  width: 100vw;
+  width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover;   /* Garde le bon ratio sans déformer */
+  object-position: center;  /* Centre la vidéo */
 }
+
 
 /* ---------Style de Scroll ------*/
 

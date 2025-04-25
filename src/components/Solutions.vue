@@ -140,7 +140,7 @@
               <!-- image 1 -->
           <div class="flex justify-center items-center my-6">
             <img
-              src="/solutions/image1.png"
+              src="/solutions/Solution1.png"
               alt="Nos services BTC Energies"
             />
           </div>
