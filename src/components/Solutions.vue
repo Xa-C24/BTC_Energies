@@ -171,7 +171,7 @@
                  <!-- image 2 -->
           <div class="flex justify-center items-center my-6">
             <img
-              src="/solutions/image2.png"
+              src="/solutions/Solution2.png"
               alt="Nos services BTC Energies"
             />
           </div>
@@ -192,7 +192,7 @@
               <!-- image 3 -->
               <div class="flex justify-center items-center my-6">
             <img
-              src="/solutions/image3.png"
+              src="/solutions/Solution3.png"
               alt="Nos services BTC Energies"
              />
           </div>
@@ -209,7 +209,7 @@
            <!-- image 4 -->
            <div class="flex justify-center items-center my-6">
             <img
-              src="/solutions/image4.png"
+              src="/solutions/Solution4.png"
               alt="Nos services BTC Energies"/>
           </div>
 
@@ -219,13 +219,14 @@
         </ol>
       </div> 
 <br>
+<br>
 
       <div class="gsap-bloc hover:scale-[1.04] transition-transform duration-300 ease-in-out">
 
         <!-- image 5 -->
         <div class="flex justify-center items-center my-6">
             <img
-              src="/solutions/image5.png"
+              src="/solutions/Solution5.png"
               alt="Nos services BTC Energies"/>
           </div>
       
@@ -235,13 +236,14 @@
         </ol>
       </div> 
 <br>
+<br>
 
       <div class="gsap-bloc hover:scale-[1.04] transition-transform duration-300 ease-in-out">
 
         <!-- image 6 -->
         <div class="flex justify-center items-center my-6">
             <img
-              src="/solutions/image6.png"
+              src="/solutions/Solution6.png"
               alt="Nos services BTC Energies"
             />
         </div>
