@@ -26,8 +26,8 @@
 
 
             <!-- Section Nos Solutions -->
-            <div class="pl-16 sm:pl-20 md:pl-24 lg:pl-40 xl:pl-60">
-            <v-container class="min-h-screen bg-gray-200 flex items-center justify-center px-4 py-8">
+            <div class="pl-1 sm:pl-20 md:pl-24 lg:pl-40 xl:pl-60 topography-bg">
+            <v-container class="min-h-screen flex items-center justify-center px-4 py-8 topography-bg">
               <div class="bg-white rounded-2xl shadow-md max-w-5xl w-full p-8">
             <section class="bg-white py-10 px-6 md:px-16">
               <h2 class="page-blanche_app-title">
@@ -266,7 +266,7 @@
 
         <!-- Bandeau bas -->
         <div class="bandeau_bleu mt-6 w-full bg-gradient-to-r from-[#000926] to-[#3c5a81]">
-              <div class="grid grid-cols-3 items-center text-white px-8 py-6">
+              <div class="grid grid-cols-3 items-center text-white px-8 py-6 ml-[-50px]">
                 
                 <!-- Colonne 1 : Logo -->
                 <div class="flex justify-center">
@@ -283,7 +283,7 @@
 
                 <!-- Colonne 3 : Texte et bouton -->
                 <div class="flex flex-col items-center text-center justify-self-start">
-                  <h2 class="font-montserrat font-semibold text-4xl mb-4 text-white">Nous contacter</h2>
+                  <h2 class="font-montserrat font-semibold text-4xl mb-4 ml-[-50px] text-white">Nous contacter</h2>
 
                   <a href="/contact"
                   class="font-montserrat font-bold text-black bg-[#C2C4C7] px-6 py-3 rounded-xl shadow transition duration-300 transform
@@ -384,3 +384,15 @@ onMounted(() => {
   }
 });
 </script>
+
+<style>
+.topography-bg {
+  background-image: url('/Topography/topography33.svg');
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  width: 70vw;
+  
+}
+
+</style>

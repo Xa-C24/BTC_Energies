@@ -147,18 +147,7 @@
                 <!-- Colonne 2 : Vide ou contenu futur -->
                 <div></div>
 
-                <!-- Colonne 3 : Texte et bouton -->
-                <div class="flex flex-col items-center text-center">
-                  <h2 class="font-montserrat font-semibold text-4xl mb-4 text-white">Nous contacter</h2>
-
-                  <a href="/contact"
-                  class="font-montserrat font-bold text-black bg-[#C2C4C7] px-6 py-3 rounded-xl shadow transition duration-300 transform
-                          hover:bg-[#989A9D] hover:text-white hover:scale-105 hover:shadow-lg
-                          active:scale-95 active:shadow-inner flex items-center gap-2">
-                            <span class="text-lg"></span>
-                            Nos Coordonnées
-                  </a>
-                </div>
+                
               </div>
             </div>
           </v-col>
@@ -286,7 +275,7 @@ onMounted(() => {
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
-  width: 85vw;
+  width: 80vw;
   
 }
 
