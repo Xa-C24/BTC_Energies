@@ -55,9 +55,10 @@
             <section>
 
               
-              <v-container fluid class="page-blanche_app py-12">
+              <v-container class="min-h-screen flex items-center justify-center px-4 py-8">
 
-                <div class="pl-16 sm:pl-20 md:pl-24 lg:pl-40 xl:pl-60">
+                <div class="pl-8 sm:pl-12 md:pl-16 lg:pl-20 xl:pl-24">
+
                   <div class="page-blanche_app-wrapper">
 <br>
 <br>           
@@ -190,7 +191,7 @@
                   <div class="flex-1">
                     <!-- Titre + soulignement -->
                     <div class="text-left mb-4">
-                      <h2 class="text-3xl font-bold text-[#555]">Jean-Marc BOUILLON</h2>
+                      <h2 class="text-3xl font-bold text-[#555]">ePhD Jean-Marc BOUILLON</h2>
                       <div class="w-16 h-1 bg-[#8BC367] rounded-full mt-1"></div>
                     </div>
 
@@ -542,7 +543,7 @@
                           <ul class="text-gray-600 text-lg space-y-1">
                             <li><strong>Ingénieur en génie industriel / Responsable technique (CTO)</strong></li>
                             <ul class="text-gray-600 text-lg space-y-1">
-                              <li><strong>Responsable Technique (CTO)</strong></li>
+                              
                             </ul> 
                           </ul>
 
@@ -1155,7 +1156,7 @@
                           <!-- Détails -->
                           <ul class="text-gray-600 text-lg space-y-1">
                             <li><strong>Architecte Web Full-Stack</strong></li>
-                            <li><strong>Conception d'outils numériques</strong></li>
+                            <li>Conception d'outils numériques</li>
 
                           </ul>
 

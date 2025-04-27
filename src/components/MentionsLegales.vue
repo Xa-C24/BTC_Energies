@@ -43,7 +43,7 @@
         
            <!-- Section Mentions Légales -->
             
-          <div class="bg-gray-100 pl-20 sm:pl-24 md:pl-28 lg:pl-40 xl:pl-60">
+           <div class="pl-8 sm:pl-12 md:pl-16 lg:pl-20 xl:pl-24">
             <v-container class="min-h-screen bg-gray-200 flex flex-col items-start justify-start px-4 py-8 gsap-mentions">
 
 

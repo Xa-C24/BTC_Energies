@@ -42,9 +42,9 @@
             
               <section>
               
-              <v-container fluid class="page-blanche_app py-12 px-4 sm:px-6">
+              <v-container class="min-h-screen flex items-center justify-center px-4 py-8">
                 
-                <div class="pl-16 sm:pl-20 md:pl-24 lg:pl-40 xl:pl-60">
+                <div class="pl-8 sm:pl-12 md:pl-16 lg:pl-20 xl:pl-24"> 
                 <div class="page-blanche_app-wrapper max-w-screen-xl mx-auto space-y-10">
 
                   <div class="gsap-bloc hover:scale-[1.08] transition-transform duration-300 ease-in-out">
@@ -199,6 +199,3 @@ onMounted(async () => {
   });
 });
 </script>
-
-
-

@@ -49,9 +49,9 @@
     
         
              <!-- Section Notre Constat -->
-             <div class="pl-16 sm:pl-20 md:pl-24 lg:pl-40 xl:pl-60">
+             <div class="pl-8 sm:pl-12 md:pl-16 lg:pl-20 xl:pl-24 topography-bg">
 
-             <v-container class="min-h-screen bg-gray-200 flex items-center justify-center px-4 py-8">
+             <v-container class="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-8 topography-bg">
               <div class="text-center mb-20">
              <div class="bg-white rounded-2xl shadow-md max-w-5xl w-full p-8">
 

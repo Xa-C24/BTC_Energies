@@ -1,5 +1,5 @@
 <template>
-  
+
   <v-app>
     
   <v-main class="pa-0 ma-0">
@@ -14,7 +14,8 @@
       </v-col>
 
       <!-- Contenu principal avec la vidéo -->
-      <v-col>    
+      
+        <v-col>    
 
            <!-- Bloc vidéo -->
       <section class="video-banner relative w-full h-[90vh] overflow-hidden">
@@ -42,14 +43,15 @@
 
                 <br> <br>
                 <!-- Trait inférieur -->
-                <div class="w-full max-w-4xl border-t-[1px] border-white mb-6"></div>
+                <div class="w-full max-w-4xl border-t-[1px] border-white mb-8"></div>
               </div>
             </section>
 
              
         
              <!-- Section Contact -->
-             <div class="topography-bg min-h-screen w-full">
+             
+            
               <v-container fluid class="flex flex-col items-center justify-center px-4 py-8 gsap-mentions">
     
     <div class="text-center mb-20">
@@ -60,7 +62,7 @@
 
       <!-- Texte en tête -->
       <v-row justify="center">
-        <v-col cols="12" md="10" class="topography-bg">
+        <v-col cols="12" md="10">
           <h4 class="text-center text-[#475C79] font-bold">
             Vous souhaitez en savoir plus sur nos solutions, proposer un partenariat, ou tout simplement entrer en contact avec notre équipe&nbsp;?<br>
               Remplissez ce formulaire. Nous reviendrons vers vous dans les meilleurs délais.                    <br />
@@ -126,8 +128,8 @@
 
               </div>
              </v-container>
-            </div>
             
+           
             
 
                         <!-- Bandeau bas -->
@@ -151,10 +153,12 @@
               </div>
             </div>
           </v-col>
-        </v-row>
+        
+      </v-row>
       
     </v-main>
   </v-app>
+
 </template>
             
 
@@ -268,15 +272,3 @@ onMounted(() => {
   });
 });
 </script>
-
-<style>
-.topography-bg {
-  background-image: url('/Topography/topography33.svg');
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
-  width: 80vw;
-  
-}
-
-</style>

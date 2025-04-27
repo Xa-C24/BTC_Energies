@@ -25,29 +25,28 @@
     
         
              <!-- Section Notre Constat -->
-             <div class="pl-16 sm:pl-20 md:pl-24 lg:pl-40 xl:pl-60">
+              <div class="pl-8 sm:pl-12 md:pl-16 lg:pl-20 xl:pl-24">
+                <v-container class="min-h-screen flex items-center justify-center px-4 py-8">
 
-             <v-container class="min-h-screen bg-gray-200 flex items-center justify-center px-4 py-8">
+                  <div class="bg-white rounded-2xl shadow-md max-w-5xl w-full p-8">
 
-             <div class="bg-white rounded-2xl shadow-md max-w-5xl w-full p-8">
+                    <h2 class="page-blanche_app-title">Notre Constat</h2>
 
-                <h2 class="page-blanche_app-title">Notre Constat</h2>
-
-                <br />
-                <br />
-                <div class="text-[#475C79] text-center font-bold">
-                  <p>
-                    Le monde continue d'évoluer à un rythme accéléré et de nouvelles opportunités se présentent chaque jour. 
-                    Dans cette ère de transformation, il est essentiel d'explorer les solutions qui façonneront notre avenir.
-                  </p>
-                  <br />
-                  <p>
-                    Ces solutions sont vastes et variées, mais elles ont toutes pour objectif commun de répondre aux défis de notre époque en utilisant l'innovation, 
-                    la créativité et la collaboration. Il est passionnant d'imaginer comment ces solutions émergentes façonneront notre avenir et ouvriront la voie à un monde meilleur. 
-                    Restons ouverts aux opportunités et prêts à embrasser le changement pour un avenir prometteur.
-                  </p>
-                </div>
-                
+                    <br />
+                    <br />
+                    <div class="text-[#475C79] text-center font-bold">
+                      <p>
+                        Le monde continue d'évoluer à un rythme accéléré et de nouvelles opportunités se présentent chaque jour. 
+                        Dans cette ère de transformation, il est essentiel d'explorer les solutions qui façonneront notre avenir.
+                      </p>
+                      <br />
+                      <p>
+                        Ces solutions sont vastes et variées, mais elles ont toutes pour objectif commun de répondre aux défis de notre époque en utilisant l'innovation, 
+                        la créativité et la collaboration. Il est passionnant d'imaginer comment ces solutions émergentes façonneront notre avenir et ouvriront la voie à un monde meilleur. 
+                        Restons ouverts aux opportunités et prêts à embrasser le changement pour un avenir prometteur.
+                      </p>
+                    </div>
+                    
 
                 <br />
                 <br />

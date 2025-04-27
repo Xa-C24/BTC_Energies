@@ -10,7 +10,11 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* utile pour couper tout débordement horizontal */
+  overflow-x: hidden;
+  background-image: url('/Topography/topography33.svg');
+  background-repeat: repeat;
+  background-size: 20%;
+  background-position: center;
 }
 
 .v-application--wrap,
@@ -44,6 +48,13 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
+}
+
+.contact-pattern {
+  background-image: url('/Topography/topography33.svg');
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 20%;
 }
 
 h1, h2, h3 {

@@ -30,8 +30,8 @@
     <v-main>
 
       <!-- Nos services -->
-      <v-container fluid class="page-blanche_app py-12 topography-bg">
-        <div class="page-blanche_app-wrapper ml-12">
+      <v-container fluid class="page-blanche_app py-10">
+        <div class="page-blanche_app-wrapper ml-2">
           <h2 class="page-blanche_app-title">Nos services</h2>
           <br><br>
 
@@ -404,14 +404,3 @@ export default {
 }
 </style>
 
-<style>
-.topography-bg {
-  background-image: url('/Topography/topography33.svg');
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
-  width: 80vw;
-  
-}
-
-</style>

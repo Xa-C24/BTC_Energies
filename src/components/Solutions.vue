@@ -26,8 +26,8 @@
 
 
             <!-- Section Nos Solutions -->
-            <div class="pl-1 sm:pl-20 md:pl-24 lg:pl-40 xl:pl-60 topography-bg">
-            <v-container class="min-h-screen flex items-center justify-center px-4 py-8 topography-bg">
+            <div class="pl-8 sm:pl-12 md:pl-16 lg:pl-20 xl:pl-24">
+            <v-container class="min-h-screen flex items-center justify-center px-4 py-8 ">
               <div class="bg-white rounded-2xl shadow-md max-w-5xl w-full p-8">
             <section class="bg-white py-10 px-6 md:px-16">
               <h2 class="page-blanche_app-title">
@@ -384,15 +384,3 @@ onMounted(() => {
   }
 });
 </script>
-
-<style>
-.topography-bg {
-  background-image: url('/Topography/topography33.svg');
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
-  width: 70vw;
-  
-}
-
-</style>

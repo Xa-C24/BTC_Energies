@@ -17,6 +17,7 @@ import router from './router'
 import vuetify from './plugins/vuetify'
 
 
+
 // ✅ Crée une seule fois l'app
 const app = createApp(App)
 
