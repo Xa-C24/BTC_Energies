@@ -52,7 +52,8 @@
              <!-- Section Contact -->
              
             
-              <v-container fluid class="flex flex-col items-center justify-center px-4 py-8 gsap-mentions">
+             <v-container fluid class="flex justify-end px-20 py-8 gsap-mentions">
+
     
     <div class="text-center mb-20">
 
@@ -63,7 +64,7 @@
       <!-- Texte en tête -->
       <v-row justify="center">
         <v-col cols="12" md="10">
-          <h4 class="text-center text-[#475C79] font-bold">
+          <h4 class="text-center  text-[#475C79] font-bold">
             Vous souhaitez en savoir plus sur nos solutions, proposer un partenariat, ou tout simplement entrer en contact avec notre équipe&nbsp;?<br>
               Remplissez ce formulaire. Nous reviendrons vers vous dans les meilleurs délais.                    <br />
             </h4>
@@ -76,7 +77,10 @@
 
             <!-- Formulaire de Contact -->
 
-            <div class="w-full max-w-4xl bg-white bg-opacity-70 p-8 rounded-lg shadow-md ml-12">
+            <div class="w-full max-w-4xl bg-white bg-opacity-70 p-8 rounded-lg shadow-md ml-0 sm:ml-16 md:ml-40 lg:ml-48">
+
+
+
               <form @submit.prevent="envoyerFormulaire" class="space-y-6">
 
                 <div class="flex items-center mb-4">

@@ -49,9 +49,9 @@
     
         
              <!-- Section Notre Constat -->
-             <div class="pl-8 sm:pl-12 md:pl-16 lg:pl-20 xl:pl-24 topography-bg">
+             <div class="pl-8 sm:pl-12 md:pl-16 lg:pl-20 xl:pl-24">
 
-             <v-container class="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-8 topography-bg">
+             <v-container class="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-8">
               <div class="text-center mb-20">
              <div class="bg-white rounded-2xl shadow-md max-w-5xl w-full p-8">
 
@@ -62,7 +62,7 @@
               <img src="/partenaire/ulule.png" alt="Ulule" class="w-30 hover:scale-110 transition-transform duration-300 ease-in-out" />
             </a>
           </div>
-          <p class="text-gray-500 text-xl">Cliquez sur les logos si vous souhaitez nous soutenir ou découvrir notre démarche RSE.</p>
+          <p class="text-gray-400 text-xl">Cliquez sur les logos si vous souhaitez nous soutenir ou découvrir notre démarche RSE.</p>
           
           <div class="bandeau_bleu-trait border-t-2 border-[#8BC367] w-16 mx-auto mt-6"></div>
 
