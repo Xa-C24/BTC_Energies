@@ -17,16 +17,17 @@
 
            <!-- Video GIF haut de page -->
       
-         <div class="video-banner-gif">
-          <video autoplay loop muted playsinline>
-            <source src="/videos/Bienvenuesurnotresite.mp4" type="video/mp4" />
-            Votre navigateur ne supporte pas la lecture de vidéos HTML5.
-          </video>
-        </div>
+                    <section class="video-banner relative w-full h-[100vh] overflow-hidden">
+                         <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover">
+                          <source src="/videos/Bienvenuesurnotresite.mp4" type="video/mp4" />
+                          Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+                        </video>
+                     
+                    </section>
 
 
             <!-- Section Nos Solutions -->
-            <div class="pl-8 sm:pl-12 md:pl-16 lg:pl-20 xl:pl-24">
+            <div class="pl-16 sm:pl-[56px] md:pl-20 lg:pl-24 xl:pl-24">
             <v-container class="min-h-screen flex items-center justify-center px-4 py-8 ">
               <div class="bg-white rounded-2xl shadow-md max-w-5xl w-full p-8">
             <section class="bg-white py-10 px-6 md:px-16">

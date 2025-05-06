@@ -77,7 +77,7 @@
 
             <!-- Formulaire de Contact -->
 
-            <div class="w-full max-w-4xl bg-white bg-opacity-70 p-8 rounded-lg shadow-md ml-0 sm:ml-16 md:ml-40 lg:ml-48">
+            <div class="w-full max-w-4xl bg-white bg-opacity-70 p-8 rounded-lg shadow-md pl-32 sm:pl-32 md:pl-32 lg:pl-32 xl:pl-32">
 
 
 

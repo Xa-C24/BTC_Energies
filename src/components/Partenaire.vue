@@ -49,7 +49,7 @@
     
         
              <!-- Section Notre Constat -->
-             <div class="pl-8 sm:pl-12 md:pl-16 lg:pl-20 xl:pl-24">
+             <div class="pl-16 sm:pl-[56px] md:pl-20 lg:pl-24 xl:pl-24">
 
              <v-container class="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-8">
               <div class="text-center mb-20">

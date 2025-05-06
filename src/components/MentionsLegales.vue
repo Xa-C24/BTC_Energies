@@ -43,8 +43,9 @@
         
            <!-- Section Mentions Légales -->
             
-           <div class="pl-8 sm:pl-12 md:pl-16 lg:pl-20 xl:pl-24">
-            <v-container class="min-h-screen bg-gray-200 flex flex-col items-start justify-start px-4 py-8 gsap-mentions">
+         
+           <v-container class="ml-[150px] bg-gray-100 flex flex-col items-start px-4 py-8 gsap-mentions">
+
 
 
               <!-- Titre + soulignement -->
@@ -116,7 +117,7 @@
           </div>
 
       </v-container>
-    </div>
+   
 
             
 

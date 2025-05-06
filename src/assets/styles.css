@@ -468,7 +468,7 @@ h1, h2, h3 {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 500px;
+  height: 550px;
   margin-left: calc(-50vw + 50%);
   overflow: hidden;
 }

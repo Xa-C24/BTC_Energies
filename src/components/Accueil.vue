@@ -4,13 +4,12 @@
 
     
     <!-- Video GIF haut de page -->
-        <section>
-            <div class="video-banner-gif">
-              <video autoplay loop muted playsinline>
+        <section class="video-banner relative w-full h-[100vh] overflow-hidden">
+                <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover">
                 <source src="/videos/Bienvenuesurnotresite.mp4" type="video/mp4" />
                 Votre navigateur ne supporte pas la lecture de vidéos HTML5.
               </video>
-            </div>
+            
           </section>
 
     <!-- Bandeau bleu -->
@@ -31,7 +30,7 @@
 
       <!-- Nos services -->
       <v-container fluid class="page-blanche_app py-10">
-        <div class="page-blanche_app-wrapper ml-2">
+        <div class="page-blanche_app-wrapper pl-16 sm:pl-[56px] md:pl-20 lg:pl-24 xl:pl-24">
           <h2 class="page-blanche_app-title">Nos services</h2>
           <br><br>
 
@@ -290,6 +289,7 @@ export default {
         {
           name: 'Xavier Piedallu',
           title: 'Architecte Web Full-Stack',
+          img: '/Trombi/XP2.jpg',
         },
         {
           name: 'Rubie',

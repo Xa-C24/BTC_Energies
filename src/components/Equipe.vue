@@ -27,7 +27,7 @@
               </div>
 
               
-
+            
               <!-- Texte centré -->
               <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 font-serif z-10">
                 <h2 class="text-4xl md:text-5xl font-bold mb-8 text-white">Notre équipe</h2>
@@ -57,7 +57,7 @@
               
               <v-container class="min-h-screen flex items-center justify-center px-4 py-8">
 
-                <div class="pl-8 sm:pl-12 md:pl-16 lg:pl-20 xl:pl-24">
+                <div class="pl-16 sm:pl-[56px] md:pl-20 lg:pl-24 xl:pl-24">
 
                   <div class="page-blanche_app-wrapper">
 <br>
@@ -442,6 +442,7 @@
                           <!-- Détails -->
                             <ul class="text-gray-600 text-lg space-y-1">
                               <li><strong>Responsable RH (HR Manager)</strong></li>
+                              <li>Chargée de communication</li>
                               
                               <li class="text-[#25A875]">+33 7 49 71 63 40</li>
                             </ul>
@@ -604,7 +605,7 @@
                           </ul> 
 
                           <ul class="text-gray-600 text-lg space-y-1">
-                            <li><strong>Architecte de la rentabilité, maître d’ouvrage de la structuration financière </strong></li>
+                            <li>Architecte de la rentabilité, maître d’ouvrage de la structuration financière</li>
                           </ul> 
 
                            <!-- Études -->
@@ -630,7 +631,7 @@
                           <!-- Détails -->
                             <ul class="text-gray-600 text-lg space-y-1">
                               <li><strong>Directeur Administratif et Financier</strong></li>
-                              <li><strong>Architecte de la rentabilité, maître d’ouvrage de la structuration financière</strong></li>
+                              <li>Architecte de la rentabilité, maître d’ouvrage de la structuration financière</li>
                             </ul>
 
                             <!-- Études -->
@@ -1137,7 +1138,7 @@
                       <!-- Image à gauche -->
                       <div class="flex-shrink-0">
                         <img
-                          src="/Trombi/C_C.jpg"
+                          src="/Trombi/X_P.jpg"
                           alt="Xavier Piedallu"
                           class="w-48 md:w-60 h-auto rounded-md object-cover transition-transform duration-300 ease-in-out hover:scale-110"
                           />
@@ -1186,7 +1187,8 @@
 
                           <!-- Détails -->
                             <ul class="text-gray-600 text-lg space-y-1">
-                              <li><strong>Webmaster/Architecte Web Full-Stack & Concepteur d'outils numériques</strong></li>
+                              <li><strong>Webmaster/Architecte Web Full-Stack</strong></li>
+                              <li>Concepteur d'outils numériques</li>
                               
                             </ul>
 
@@ -1376,6 +1378,7 @@
                 </div>
               </div>
             </div>
+          
 
       </v-row>
     </v-main>
