@@ -934,7 +934,7 @@
                         </div>
 
                         <br>
-                        <br>
+                       
 
                         <!-- Détails -->
                         <ul class="text-gray-600 text-lg space-y-1">
