@@ -934,6 +934,7 @@
                         </div>
 
                         <br>
+                        <br>
 
                         <!-- Détails -->
                         <ul class="text-gray-600 text-lg space-y-1">
@@ -1424,6 +1425,21 @@ onMounted(() => {
       });
 
       bloc.addEventListener('mouseenter', () => {
+         
+        // Fermer toutes les autres bulles
+      document.querySelectorAll('.bulle-info').forEach((autreBulle) => {
+        if (autreBulle !== bulle) {
+          gsap.to(autreBulle, {
+            rotateY: -90,
+            opacity: 0,
+            pointerEvents: "none",
+            duration: 1,
+            ease: "power2.in"
+          });
+        }
+      });
+
+      // Puis ouvrir celle du bloc actuel
         gsap.to(bulle, {
           rotateY: 0,
           opacity: 1,
