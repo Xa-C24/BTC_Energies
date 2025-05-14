@@ -4,14 +4,12 @@
 
     
     <!-- Video GIF haut de page -->
-        <section class="video-banner relative w-full min-h-[80vh] sm:min-h-[100vh] overflow-hidden">
-
-                <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover">
-                <source src="/videos/Bienvenuesurnotresite.mp4" type="video/mp4" />
-                Votre navigateur ne supporte pas la lecture de vidéos HTML5.
-              </video>
-            
-          </section>
+        <section class="video-banner relative w-full h-[100vh] overflow-hidden">
+                  <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover">
+                    <source src="/videos/Bienvenuesurnotresite.mp4" type="video/mp4" />
+                    Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+                  </video>
+              </section>
 
     <!-- Bandeau bleu -->
     <div class="bandeau_bleu w-full py-20 bg-gradient-to-r from-[#000926] to-[#3c5a81]">
