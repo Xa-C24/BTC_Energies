@@ -73,12 +73,13 @@
           <li>Forme Juridique : SAS</li>
           <li>Capital social : 120€</li>
           <li>Siège social : 9 RUE DE L'AVENIR, 31470 FONTENILLES</li>
+          <!-- Ligne de sépartion verte-->
+        <div class="bandeau_bleu-trait border-t-2 border-[#8BC367] w-12 mx-auto mt-6"></div>
         </ul>
 
         <div class="mb-8"></div>
 
-        <!-- Ligne de sépartion verte-->
-        <div class="bandeau_bleu-trait border-t-2 border-[#8BC367] w-16 mx-auto mt-6"></div>
+        
 
         <div class="mb-8"></div>
 

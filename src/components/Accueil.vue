@@ -4,7 +4,8 @@
 
     
     <!-- Video GIF haut de page -->
-        <section class="video-banner relative w-full h-[100vh] overflow-hidden">
+        <section class="video-banner relative w-full min-h-[80vh] sm:min-h-[100vh] overflow-hidden">
+
                 <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover">
                 <source src="/videos/Bienvenuesurnotresite.mp4" type="video/mp4" />
                 Votre navigateur ne supporte pas la lecture de vidéos HTML5.
@@ -13,15 +14,21 @@
           </section>
 
     <!-- Bandeau bleu -->
-    <div class="bandeau_bleu w-full py-30 bg-gradient-to-r from-[#000926] to-[#3c5a81]">
-  <div class="w-full max-w-[1200px] mx-auto text-center px-3">
-    <div class="w-[200px] h-1 bg-[#22B17A] mb-14 bandeau_bleu-trait mx-auto"></div>
-    <h1 class="bandeau_bleu-text font-montserrat text-white whitespace-nowrap" style="font-size: clamp(1rem, 2.5vw, 2rem);">
+    <div class="bandeau_bleu w-full py-20 bg-gradient-to-r from-[#000926] to-[#3c5a81]">
+  <div class="w-full max-w-[1200px] mx-auto text-center px-4">
+    
+    <div class="w-[200px] h-1 bg-[#22B17A] mb-8 bandeau_bleu-trait mx-auto"></div>
+    
+    <h1 class="bandeau_bleu-text font-montserrat text-white text-center leading-snug break-words"
+        style="font-size: clamp(1rem, 1.6vw, 2rem);">
       Développement, Gestion et Exploitation de projets industriels
     </h1>
-    <div class="w-[200px] h-1 bg-[#22B17A] mt-14 bandeau_bleu-trait mx-auto"></div>
+    
+    <div class="w-[200px] h-1 bg-[#22B17A] mt-8 bandeau_bleu-trait mx-auto"></div>
+    
   </div>
 </div>
+
 
 
 
@@ -30,7 +37,8 @@
 
       <!-- Nos services -->
       <v-container fluid class="page-blanche_app py-10">
-        <div class="page-blanche_app-wrapper pl-16 sm:pl-[56px] md:pl-20 lg:pl-24 xl:pl-24">
+        <div class="page-blanche_app-wrapper pl-4 sm:pl-6 md:pl-10 lg:pl-24">
+
           <h2 class="page-blanche_app-title">Nos services</h2>
           <br><br>
 
