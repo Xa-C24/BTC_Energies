@@ -178,7 +178,7 @@
         <h2 class="page-blanche_app-title">Notre équipe</h2>
         <br><br>
 
-        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 trombinoscope-app-container">
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
 
           <div
             class="text-center trombi-card"
