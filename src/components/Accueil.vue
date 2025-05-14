@@ -156,16 +156,20 @@
 
         
 
-        <div class="video-app-constat w-full max-w-4xl mx-auto aspect-video">
-          <iframe
-            class="w-full h-full"
-            src="https://www.youtube.com/embed/hOIWuE_eEsM"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </div>
+        <div class="w-full px-1 sm:px-4 md:px-8 max-w-[98%] sm:max-w-4xl mx-auto my-6">
+          <div class="relative pb-[56.25%] h-0 overflow-hidden rounded-md sm:rounded-xl shadow-lg">
+
+            <iframe
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/hOIWuE_eEsM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+      </div>
+
       
       
 
@@ -174,27 +178,28 @@
         <h2 class="page-blanche_app-title">Notre équipe</h2>
         <br><br>
 
-        <v-row class="trombinoscope-app-container" justify="center">
-          <v-col
-            cols="12"
-            md="3"
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 trombinoscope-app-container">
+
+          <div
             class="text-center trombi-card"
             v-for="member in team"
             :key="member.name"
           >
-            <div class="bg-white rounded-xl p-4 shadow-sm transition transform hover:scale-110 duration-500 leading-relaxed">
+            <div class="bg-white rounded-xl p-2 sm:p-3 md:p-4 shadow-sm transition transform hover:scale-105 duration-300 leading-snug">
+
               <img
                 :src="member.img"
                 :alt="member.name"
-                class="mx-auto w-56 h-56 object-cover rounded-xl"
+                class="mx-auto w-40 h-40 sm:w-56 sm:h-56 object-cover rounded-xl"
+
               />
-              <p class="profile-name font-bold mt-4">{{ member.name }}</p>
-              <p class="profile-title italic text-sm text-gray-600">{{ member.title }}</p>
+              <p class="profile-name font-semibold text-sm sm:text-base mt-2">{{ member.name }}</p>
+              <p class="profile-title italic text-xs sm:text-sm">{{ member.title }}</p>
               <p v-if="member.role" class="profile-role italic text-sm text-gray-600 mt-2 font-semibold">{{ member.role }}</p>
               <p v-if="member.phone" class="profile-phone text-sm text-gray-500 font-bold mt-2">{{ member.phone }}</p>
             </div>
-          </v-col>
-        </v-row>
+          </div>
+        </div>
       </div>
       </v-container>
 
@@ -202,7 +207,8 @@
 
     <!-- Mentions légales -->
     <div class="bandeau_bleu mt-6 w-full bg-gradient-to-r from-[#000926] to-[#3c5a81]">
-      <div class="grid grid-cols-2 items-center text-white px-8 py-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 items-center text-white px-4 sm:px-8 py-6 overflow-hidden">
+
 
         <!-- Logo -->
         <div class="flex justify-start pl-0 ml-4">
@@ -210,21 +216,21 @@
             ref="bandeau_bleu-logo"
             src="/logo_sidebar.png"
             alt="BTC Énergies Logo"
-            class="w-40 h-auto max-h-32 bandeau_bleu-logo"
+            class="w-20 sm:w-32 md:w-40 h-auto max-h-24 sm:max-h-28 md:max-h-32 bandeau_bleu-logo"
+
           />
         </div>
 
         <!-- Texte -->
-        <div class="text-white text-center md:text-left">
-          <h2 class="font-bold text-white text-xl mb-1">Mentions légales</h2>
-          <br />
-          <p class="text-xs">BTC Énergies (SAS) au capital de 120€, enregistrée au RCS de Toulouse</p>
-          <p class="text-xs">Numéro SIRET : 928 497 585 00010</p>
-        </div>
-      </div>
+          <div class="w-full text-white text-center sm:text-left text-[10px] sm:text-xs leading-tight sm:leading-snug space-y-0.5">
+            <h2 class="font-bold text-white text-xl mb-1">Mentions légales</h2>
+            <br />
+            <p class="text-xs">BTC Énergies (SAS) au capital de 120€, enregistrée au RCS de Toulouse</p>
+            <p class="text-xs">Numéro SIRET : 928 497 585 00010</p>
+          </div>
       
+      </div>
     </div>
-
   </div>
 </template>
 
