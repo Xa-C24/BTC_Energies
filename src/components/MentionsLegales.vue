@@ -50,7 +50,7 @@
 
               <!-- Titre + soulignement -->
               <div class="text-left mb-10">
-                <h2 class="text-3xl font-bold text-[#555]">Mentions légales</h2>
+                <h1 class="text-3xl font-bold text-[#555]">Mentions légales</h1>
                 <div class="w-16 h-1 bg-[#8BC367] rounded-full mt-1"></div>
               </div>
 
