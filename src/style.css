@@ -88,7 +88,7 @@ html, body {
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin-left: 260px; /* Largeur de la sidebar */
+  margin-left: 0px; /* Largeur de la sidebar */
   min-height: 100vh;
 }
 

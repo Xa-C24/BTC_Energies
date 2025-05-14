@@ -17,4 +17,8 @@ Bienvenue dans le projet de refonte du site web de **BTC Énergies** ! Ce projet
 - **Design** : Tailwind CSS pour des composants personnalisés et une mise en page flexible.
 - **APIs** : Intégration avec des services externes pour des fonctionnalités comme les cartes interactives et les outils de cartographie.
 
+npm run dev
 
+npm run build
+
+netlify deploy --prod

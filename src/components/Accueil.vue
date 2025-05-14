@@ -4,7 +4,7 @@
 
     
     <!-- Video GIF haut de page -->
-        <section class="video-banner relative w-full h-[100vh] overflow-hidden">
+        <section class="video-banner w-screen h-[100vh] overflow-hidden relative">
                   <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover">
                     <source src="/videos/Bienvenuesurnotresite.mp4" type="video/mp4" />
                     Votre navigateur ne supporte pas la lecture de vidéos HTML5.
@@ -133,7 +133,7 @@
             </v-row>
 
             <!-- bloc 6 -->
-            <v-row class="page-blanche_app-block" align="center">
+            <v-row class="page-blanche_app-block align=center">
               <v-col cols="12" md="2" class="page-blanche_app-logo">
                 <img src="/logo6app.png" alt="Nos services BTC Energies">
               </v-col>
@@ -236,6 +236,20 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 
 // Enregistrement du plugin ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
+
+// ⚠️ Correction du bug sur mobile (scroll tactile)
+ScrollTrigger.defaults({
+  scroller: window,
+  invalidateOnRefresh: true,
+});
+
+// Met à jour manuellement sur scroll tactile
+window.addEventListener('touchmove', () => {
+  ScrollTrigger.update();
+});
+window.addEventListener('scroll', () => {
+  ScrollTrigger.update();
+});
 
 export default {
   name: 'Accueil',
@@ -409,4 +423,3 @@ export default {
   height: 100vh;
 }
 </style>
-
