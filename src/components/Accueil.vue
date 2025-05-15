@@ -5,7 +5,7 @@
     
     <!-- Video GIF haut de page -->
        <section class="w-full overflow-hidden relative">
-   <div class="relative aspect-[2/1] sm:aspect-video md:aspect-[5/2] w-full">
+   <div class="relative aspect-[1/1] sm:aspect-video md:aspect-[5/2] w-full">
 
     <video
       autoplay
