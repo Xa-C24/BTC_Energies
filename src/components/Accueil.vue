@@ -4,12 +4,24 @@
 
     
     <!-- Video GIF haut de page -->
-        <section class="video-banner w-screen h-[100vh] overflow-hidden relative">
-                  <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover">
-                    <source src="/videos/Bienvenuesurnotresite.mp4" type="video/mp4" />
-                    Votre navigateur ne supporte pas la lecture de vidéos HTML5.
-                  </video>
-              </section>
+       <section class="w-full overflow-hidden relative">
+   <div class="relative aspect-[2/1] sm:aspect-video md:aspect-[5/2] w-full">
+
+    <video
+      autoplay
+      loop
+      muted
+      playsinline
+      class="absolute top-0 left-0 w-full h-full object-cover object-center"
+    >
+      <source src="/videos/Bienvenuesurnotresite.mp4" type="video/mp4" />
+      Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+    </video>
+  </div>
+</section>
+
+
+
 
     <!-- Bandeau bleu -->
     <div class="bandeau_bleu w-full py-20 bg-gradient-to-r from-[#000926] to-[#3c5a81]">
@@ -157,7 +169,7 @@
         
 
         <div class="w-full px-1 sm:px-4 md:px-8 max-w-[98%] sm:max-w-4xl mx-auto my-6">
-          <div class="relative pb-[56.25%] h-0 overflow-hidden rounded-md sm:rounded-xl shadow-lg">
+          <div class="relative pb-[75%] sm:pb-[56.25%] h-0 overflow-hidden rounded-md sm:rounded-xl shadow-lg">
 
             <iframe
               class="absolute top-0 left-0 w-full h-full"
@@ -207,7 +219,7 @@
 
     <!-- Mentions légales -->
     <div class="bandeau_bleu mt-6 w-full bg-gradient-to-r from-[#000926] to-[#3c5a81]">
-      <div class="grid grid-cols-1 sm:grid-cols-2 items-center text-white px-4 sm:px-8 py-6 overflow-hidden">
+      <div class="flex justify-start pl-0 ml-0 order-1 sm:order-none">
 
 
         <!-- Logo -->
@@ -216,17 +228,17 @@
             ref="bandeau_bleu-logo"
             src="/logo_sidebar.png"
             alt="BTC Énergies Logo"
-            class="w-20 sm:w-32 md:w-40 h-auto max-h-24 sm:max-h-28 md:max-h-32 bandeau_bleu-logo"
+            class="w-16 sm:w-16 md:w-40 h-auto max-h-24 sm:max-h-28 md:max-h-32 bandeau_bleu-logo"
 
           />
         </div>
 
         <!-- Texte -->
           <div class="w-full text-white text-center sm:text-left text-[10px] sm:text-xs leading-tight sm:leading-snug space-y-0.5">
-            <h2 class="font-bold text-white text-xl mb-1">Mentions légales</h2>
+            <h2 class="font-bold text-white text-xl sm-1">Mentions légales</h2>
             <br />
-            <p class="text-xs">BTC Énergies (SAS) au capital de 120€, enregistrée au RCS de Toulouse</p>
-            <p class="text-xs">Numéro SIRET : 928 497 585 00010</p>
+            <p class="text-[6px]">BTC Énergies (SAS) au capital de 120€, enregistrée au RCS de Toulouse</p>
+            <p class="text-[6px]">Numéro SIRET : 928 497 585 00010</p>
           </div>
       
       </div>
