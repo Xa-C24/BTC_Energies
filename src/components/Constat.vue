@@ -203,37 +203,34 @@
             
             
 
-                        <!-- Bandeau bas -->
-            <div class="bandeau_bleu mt-6 w-full bg-gradient-to-r from-[#000926] to-[#3c5a81]">
-              <div class="grid grid-cols-3 items-center text-white px-8 py-6">
-                
-                <!-- Colonne 1 : Logo -->
-                <div class="flex justify-center">
-                  <img
-                    src="/logo_sidebar.png"
-                    alt="BTC Énergies Logo"
-                    class="w-40 h-auto max-h-32"
-                  />
-                </div>
-
-                <!-- Colonne 2 : Vide ou contenu futur -->
-                <div></div>
-
-                <!-- Colonne 3 : Texte et bouton -->
-                <div class="flex flex-col items-center text-center">
-                  <h2 class="font-montserrat font-semibold text-4xl mb-4 text-white">Nous contacter</h2>
-
-                  <a href="/contact"
-                    class="font-montserrat font-bold text-xs sm:text-base md:text-lg lg:text-xl text-black bg-[#C2C4C7] px-6 py-3 rounded-xl shadow transition duration-300 transform
-                            hover:bg-[#989A9D] hover:text-white hover:scale-105 hover:shadow-lg
-                            active:scale-95 active:shadow-inner flex items-center gap-2">
-                      <span class="text-lg"></span>
-                      Nos Coordonnées
-                  </a>
-
-                </div>
-              </div>
+                 <!-- Bandeau bas -->
+        <div class="bandeau_bleu mt-6 w-full bg-gradient-to-r from-[#000926] to-[#3c5a81]">
+          <div class="grid grid-cols-1 sm:grid-cols-3 items-center text-white px-4 sm:px-8 py-6 gap-6">
+            <!-- Colonne 1 : Logo -->
+            <div class="flex justify-center">
+              <img
+                src="/logo_sidebar.png"
+                ref="logoSidebar"
+                alt="BTC Énergies Logo"
+                class="w-28 sm:w-40 h-auto max-h-32"
+              />
             </div>
+
+            <!-- Colonne 2 : Vide ou contenu futur -->
+            <div></div>
+
+            <!-- Colonne 3 : Texte et bouton -->
+            <div class="flex flex-col items-center text-center">
+              <h2 class="font-semibold text-2xl sm:text-4xl mb-4 text-white">Nous contacter</h2>
+              <a href="/contact"
+                class="font-bold text-black bg-[#C2C4C7] px-6 py-3 rounded-xl shadow transition duration-300 transform
+                       hover:bg-[#989A9D] hover:text-white hover:scale-105 hover:shadow-lg
+                       active:scale-95 active:shadow-inner flex items-center gap-2">
+                Nos Coordonnées
+              </a>
+            </div>
+          </div>
+        </div>
           </v-col>
         </v-row>
       

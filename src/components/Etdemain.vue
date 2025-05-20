@@ -45,7 +45,7 @@
               <v-container class="min-h-screen flex items-center justify-center px-4 py-8">
                 
                 
-              <div class="pl-16 sm:pl-[56px] md:pl-20 lg:pl-24 xl:pl-24">
+              <div class="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
                 <div class="page-blanche_app-wrapper max-w-screen-xl mx-auto space-y-10">
 
                   <div class="gsap-bloc hover:scale-[1.08] transition-transform duration-300 ease-in-out">
