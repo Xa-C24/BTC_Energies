@@ -1,15 +1,7 @@
 <template>
-  <v-app>
-    <v-main class="pa-0 ma-0">
-      <v-row no-gutters class="pa-0 ma-0">
+  
 
-        <!-- Sidebar -->
-        <v-col cols="12" md="2" class="pa-0">
-          <div class="sidebar">
-            <Sidebar />
-          </div>
-        </v-col>
-
+       <div class="main-content-wrapper ">
         <!-- Contenu principal -->
         <v-col class="pa-0 ma-0">
           <div class="main-content">
@@ -306,10 +298,8 @@
                 </div>
               </div>
             </div>
-          
-      </v-row>
-    </v-main>
-  </v-app>
+         </div>
+ 
 </template>
 
 <style>
