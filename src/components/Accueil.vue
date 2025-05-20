@@ -228,7 +228,7 @@
             ref="bandeau_bleu-logo"
             src="/logo_sidebar.png"
             alt="BTC Énergies Logo"
-            class="w-16 sm:w-16 md:w-40 h-auto max-h-24 sm:max-h-28 md:max-h-32 bandeau_bleu-logo"
+            class="w-24 sm:w-24 md:w-40 h-auto max-h-24 sm:max-h-28 md:max-h-32 bandeau_bleu-logo"
 
           />
         </div>

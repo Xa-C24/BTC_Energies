@@ -16,16 +16,25 @@
       <!-- Contenu principal avec la vidéo -->
       <v-col>    
 
-              <section class="video-banner relative w-full h-[100vh] overflow-hidden">
-                  <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover">
+              <section class="w-full overflow-hidden relative">
+                 <div class="relative aspect-[1/1] sm:aspect-video md:aspect-[5/2] w-full">
+              
+                  <video
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    class="absolute top-0 left-0 w-full h-full object-cover object-center"
+                  >
                     <source src="/videos/Bienvenuesurnotresite.mp4" type="video/mp4" />
                     Votre navigateur ne supporte pas la lecture de vidéos HTML5.
                   </video>
+                </div>
               </section>
     
         
              <!-- Section Notre Constat -->
-             <div class="pl-16 sm:pl-20 md:pl-24 lg:pl-28 xl:pl-32">
+             <div class="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
 
                 <v-container class="min-h-screen flex items-center justify-center px-4 py-8">
 
@@ -215,12 +224,13 @@
                   <h2 class="font-montserrat font-semibold text-4xl mb-4 text-white">Nous contacter</h2>
 
                   <a href="/contact"
-                  class="font-montserrat font-bold text-black bg-[#C2C4C7] px-6 py-3 rounded-xl shadow transition duration-300 transform
-                          hover:bg-[#989A9D] hover:text-white hover:scale-105 hover:shadow-lg
-                          active:scale-95 active:shadow-inner flex items-center gap-2">
-                            <span class="text-lg"></span>
-                            Nos Coordonnées
+                    class="font-montserrat font-bold text-xs sm:text-base md:text-lg lg:text-xl text-black bg-[#C2C4C7] px-6 py-3 rounded-xl shadow transition duration-300 transform
+                            hover:bg-[#989A9D] hover:text-white hover:scale-105 hover:shadow-lg
+                            active:scale-95 active:shadow-inner flex items-center gap-2">
+                      <span class="text-lg"></span>
+                      Nos Coordonnées
                   </a>
+
                 </div>
               </div>
             </div>

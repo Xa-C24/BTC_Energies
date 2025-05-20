@@ -18,7 +18,8 @@
 
            <!-- Bloc vidéo -->
       <section class="video-banner relative w-full h-[90vh] overflow-hidden">
-        <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover">
+      
+        <video autoplay loop muted playsinline class="relative aspect-[1/1] sm:aspect-video md:aspect-[5/2] w-full">
           <source src="/videos/animation_eau2.mp4" type="video/mp4" />
           Votre navigateur ne supporte pas la lecture de vidéos HTML5.
         </video>
@@ -49,9 +50,9 @@
     
         
              <!-- Section Notre Constat -->
-             <div class="pl-16 sm:pl-[56px] md:pl-20 lg:pl-24 xl:pl-24">
+              <div class="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
 
-             <v-container class="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-8">
+             <v-container class="min-h-screen flex items-center justify-center px-4 py-8">
               <div class="text-center mb-20">
              <div class="bg-white rounded-2xl shadow-md max-w-5xl w-full p-8">
 
@@ -131,14 +132,13 @@
             <div class="bandeau_bleu mt-6 w-full bg-gradient-to-r from-[#000926] to-[#3c5a81]">
               <div class="grid grid-cols-3 items-center text-white px-8 py-6">
                 
-               <!-- Colonne 1 : Logo -->
-               <div class="flex justify-center">
+                <!-- Colonne 1 : Logo -->
+                <div class="flex justify-center">
                   <img
-                  ref="logoSidebar"
-                  src="/logo_sidebar.png"
-                  alt="BTC Énergies Logo"
-                  class="w-40 h-auto max-h-32"
-                />
+                    src="/logo_sidebar.png"
+                    alt="BTC Énergies Logo"
+                    class="w-40 h-auto max-h-32"
+                  />
                 </div>
 
                 <!-- Colonne 2 : Vide ou contenu futur -->
@@ -149,12 +149,13 @@
                   <h2 class="font-montserrat font-semibold text-4xl mb-4 text-white">Nous contacter</h2>
 
                   <a href="/contact"
-                  class="font-montserrat font-bold text-black bg-[#C2C4C7] px-6 py-3 rounded-xl shadow transition duration-300 transform
-                          hover:bg-[#989A9D] hover:text-white hover:scale-105 hover:shadow-lg
-                          active:scale-95 active:shadow-inner flex items-center gap-2">
-                            <span class="text-lg"></span>
-                            Nos Coordonnées
+                    class="font-montserrat font-bold text-xs sm:text-base md:text-lg lg:text-xl text-black bg-[#C2C4C7] px-6 py-3 rounded-xl shadow transition duration-300 transform
+                            hover:bg-[#989A9D] hover:text-white hover:scale-105 hover:shadow-lg
+                            active:scale-95 active:shadow-inner flex items-center gap-2">
+                      <span class="text-lg"></span>
+                      Nos Coordonnées
                   </a>
+
                 </div>
               </div>
             </div>
