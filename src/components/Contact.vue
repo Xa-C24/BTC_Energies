@@ -19,7 +19,7 @@
 
            <!-- Bloc vidéo -->
       <section class="video-banner relative w-full h-[90vh] overflow-hidden">
-        <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover">
+        <video autoplay loop muted playsinline class="relative aspect-[1/1] sm:aspect-video md:aspect-[5/2] w-full">
           <source src="/videos/animation_eau2.mp4" type="video/mp4" />
           Votre navigateur ne supporte pas la lecture de vidéos HTML5.
         </video>
@@ -52,7 +52,7 @@
              <!-- Section Contact -->
              
             
-             <v-container fluid class="flex justify-end px-20 py-8 gsap-mentions">
+             <v-container fluid class="min-h-screen flex items-center justify-center px-4 py-8 gsap-mentions">
 
     
     <div class="text-center mb-20">

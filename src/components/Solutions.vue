@@ -28,7 +28,7 @@
 
             <!-- Section Nos Solutions -->
              <v-container fluid class="page-blanche_app py-10">
-              <div class="page-blanche_app-wrapper pl-4 sm:pl-6 md:pl-10 lg:pl-24">
+              <div class="page-blanche_app-wrapper pl-6 sm:pl-6 md:pl-10 lg:pl-24">
             
               <div class="bg-white rounded-2xl shadow-md max-w-5xl w-full p-8">
             <section class="bg-white py-10 px-6 md:px-16">

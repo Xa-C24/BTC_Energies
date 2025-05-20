@@ -16,7 +16,7 @@
 
             <!-- Bloc vidéo -->
             <section class="video-banner relative w-full h-[90vh] overflow-hidden">
-              <video autoplay loop muted playsinline preload="auto" class="w-full h-full object-cover">
+              <video autoplay loop muted playsinline preload="auto" class="relative aspect-[1/1] sm:aspect-video md:aspect-[5/2] w-full">
                 <source src="/videos/animation_eau2.mp4" type="video/mp4" />
                 Votre navigateur ne supporte pas la lecture de vidéos HTML5.
               </video>
@@ -43,6 +43,7 @@
               <section>
               
               <v-container class="min-h-screen flex items-center justify-center px-4 py-8">
+                
                 
               <div class="pl-16 sm:pl-[56px] md:pl-20 lg:pl-24 xl:pl-24">
                 <div class="page-blanche_app-wrapper max-w-screen-xl mx-auto space-y-10">
