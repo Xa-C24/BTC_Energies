@@ -22,3 +22,18 @@ npm run dev
 npm run build
 
 netlify deploy --prod
+
+Miroir
+
+git clone --mirror https://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@github.com/Xa-C24/BTC_Energies.git
+cd BTC_Energies.git
+git push --mirror https://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@github.com/Xa-C24/BTC_Energies-Backup.git
+
+
+
+
+cd ~/BTC_Energies.git
+git fetch -p origin
+git push --mirror https://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@github.com/Xa-C24/BTC_Energies-Backup.git
+
+git push --mirror https://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@github.com/Xa-C24/BTC_Energies-Backup.git 
