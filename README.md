@@ -23,6 +23,8 @@ npm run build
 
 netlify deploy --prod
 
+npm run build && npm run preview
+
 Miroir
 
 git clone --mirror https://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@github.com/Xa-C24/BTC_Energies.git
